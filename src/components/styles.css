@@ -1,0 +1,89 @@
+
+/* NAME STYLES */
+.name {
+  font-size: 100px;
+  color:white;
+  padding: 200px;
+  animation-name: joann;
+    animation-duration:1.5s;
+
+}
+@keyframes joann {
+0%{
+    margin-left: 300%;
+    font-size: 0px;
+    color:rgba(0,0,0,0);
+  }
+
+  80%{
+    color:rgba(0,0,0,0.6);
+  }
+  100%to{margin-left: 0%}
+}
+
+
+/* MENU STYLES */
+.menu{
+  background: rgba(0,0,0,0);
+  height:100px;
+  padding:30px;
+  color:lightskyblue;
+  font-size: 30px;
+  display:inline-flex;
+
+}
+.dropDownContents {
+  display:none;
+  list-style: none;
+  font-size: 30px;
+}
+ .resume:hover + .dropDownContents {
+  display:block;
+  position: relative;
+  z-index: 3;
+
+}
+.dropDownContents:hover{
+  display:block;
+}
+.githubLink{
+  color: lightskyblue;
+  text-decoration: none;
+  padding: 0 100px;
+}
+.githubLink:hover{
+   color:rgba(215,240,243,0.3);
+
+}
+.contactDetails{
+  display: none;
+}
+.contact:hover + .contactDetails{
+display:block;
+}
+.contactDetails:hover{
+  display: block;
+}
+.contactDetails a{
+  padding:0 50px;
+  text-decoration: none;
+}
+.adventureStories{
+  display:none;
+}
+.adventure{
+  padding:100px;
+}
+.adventure:hover + .adventureStories{
+  display:block;
+}
+.adventureStories:hover{
+  display:block;
+}
+
+/* FOOTER STYLE */
+.footer{
+  color:red;
+  padding:100px;
+  font-size: 30px;
+}
