@@ -1,11 +1,11 @@
 import React from 'react';
-import resume from '../Resume.png'
+import Pdf from './images/Resume.pdf'
 
 
 function Resume() {
   return (
     <div>
-      <img alt='resume' src={resume}></img>
+        <a href = {Pdf} target = "_blank">Download My Resume</a>
     </div>
   );
 }
