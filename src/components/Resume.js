@@ -1,10 +1,10 @@
 import React from 'react';
-import resume from '../resume.png'
+import resume from '../Resume.png'
 
 
 function Resume() {
   return (
-    <div style={{height:'100px', width:'100px'}}>
+    <div>
       <img alt='resume' src={resume}></img>
     </div>
   );

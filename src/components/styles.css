@@ -5,7 +5,7 @@
   color:white;
   padding: 200px;
   animation-name: joann;
-    animation-duration:1.5s;
+  animation-duration:1.5s;
 
 }
 @keyframes joann {
@@ -26,10 +26,15 @@
 .menu{
   background: rgba(0,0,0,0);
   height:100px;
-  padding:30px;
+  padding: 30px 50px;
   color:lightskyblue;
   font-size: 30px;
-  display:inline-flex;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  position: sticky;
+  top:0;
+
 
 }
 .dropDownContents {
@@ -46,10 +51,38 @@
 .dropDownContents:hover{
   display:block;
 }
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background: rgba(0,0,0,.6);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  font-size: 20px;
+ top:0px;
+ left:0px;
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+
+}
 .githubLink{
   color: lightskyblue;
   text-decoration: none;
-  padding: 0 100px;
+
 }
 .githubLink:hover{
    color:rgba(215,240,243,0.3);
@@ -57,23 +90,24 @@
 }
 .contactDetails{
   display: none;
+  background: rgba(215,240,243,0.5);
 }
 .contact:hover + .contactDetails{
-display:block;
+ display:block;
+
 }
 .contactDetails:hover{
   display: block;
 }
 .contactDetails a{
-  padding:0 50px;
   text-decoration: none;
+font-size: 20px;
+padding:30px
 }
 .adventureStories{
   display:none;
 }
-.adventure{
-  padding:100px;
-}
+
 .adventure:hover + .adventureStories{
   display:block;
 }
@@ -81,9 +115,14 @@ display:block;
   display:block;
 }
 
+
 /* FOOTER STYLE */
 .footer{
   color:red;
-  padding:100px;
+  background: rgba(0,0,0,0);
+  height:100px;
   font-size: 30px;
+  position: sticky;
+  bottom:0;
+  padding: 30px 50px;
 }
