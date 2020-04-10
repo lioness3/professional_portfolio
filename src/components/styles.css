@@ -3,7 +3,6 @@
 .name {
   font-size: 100px;
   color:white;
-  padding: 200px;
   animation-name: joann;
   animation-duration:1.5s;
 
@@ -19,6 +18,26 @@
     color:rgba(0,0,0,0.6);
   }
   100%to{margin-left: 0%}
+}
+.text {
+  visibility: hidden;
+  font-size: 20px;
+  position: absolute;
+  top:250px;
+  left:100px;
+}
+.name:hover{
+  color: lightgrey;
+  text-shadow: 2px 2px 4px lightskyblue;
+  margin:0;
+  padding:0;
+ 
+}
+.name:hover  .text{
+  color:red;
+  text-shadow: none;
+  visibility: visible;
+
 }
 
 
@@ -118,11 +137,5 @@ padding:30px
 
 /* FOOTER STYLE */
 .footer{
-  color:red;
-  background: rgba(0,0,0,0);
-  height:100px;
-  font-size: 30px;
-  position: sticky;
-  bottom:0;
-  padding: 30px 50px;
+
 }

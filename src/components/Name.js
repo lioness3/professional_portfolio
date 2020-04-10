@@ -5,7 +5,8 @@ import Resume from './Resume'
 function Name() {
   return (
   <div className="name">
-<p>Joann Carter</p>
+    <p>Joann Carter</p>
+    <p class='text'>Thats me!</p>
   </div>
   );
 }

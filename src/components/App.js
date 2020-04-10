@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from './Menu';
 import Name from './Name';
+import Lion from './Lion';
 import Footer from './Footer';
 import './App.css';
 
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
         <Menu/>
         <Name/>
+       
         <Footer />
     </div>
   );
