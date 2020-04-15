@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.css';
 import Resume from './Resume';
 import Mailto from 'react-protected-mailto';
+import { Switch, Route, Link } from 'react-router-dom';
 
 function Menu() {
   return (
@@ -30,7 +31,7 @@ function Menu() {
       </div>
 
       <div className='adventureDropDown'>
-        <span className='adventure'>Adventures</span>
+        <span className='adventure'><Link to='/themes'>SHOW ME COOL</Link></span>
         <div className='adventureStories'>
           <p>Adventure stories...</p>
         </div>
