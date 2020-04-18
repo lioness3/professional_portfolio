@@ -7,7 +7,10 @@ import { Switch, Route, Link } from 'react-router-dom';
 function Menu() {
   return (
     <div className="menu">
-
+     
+<div className='home'>
+<Link to='/'>Home</Link>
+</div>
       <div className='menuDropDown'>
         <span className='resume' >Resume</span>
 

@@ -5,6 +5,8 @@
   color:white;
   animation-name: joann;
   animation-duration:1.5s;
+  position: absolute;
+  bottom: 0;
 
 }
 @keyframes joann {
@@ -15,16 +17,15 @@
   }
 
   80%{
-    color:rgba(0,0,0,0.6);
+    color:rgba(0,0,0,0);
   }
-  100%to{margin-left: 0%}
+  100%{margin-left: 0%}
 }
 .text {
   visibility: hidden;
   font-size: 20px;
   position: absolute;
-  top:250px;
-  left:100px;
+  bottom:0;
 }
 .name:hover{
   color: lightgrey;
@@ -43,15 +44,18 @@
 
 /* MENU STYLES */
 .menu{
-  background: rgba(0,0,0,0);
-  height:100px;
-  padding: 30px 50px;
+ background-color: rgba(0,0,0,.6);
+background-attachment: local;
+margin:0;
+padding-top:60px;
   color:lightskyblue;
   font-size: 30px;
   display:flex;
   flex-direction:row;
   justify-content: space-between;
-  position: sticky;
+  position: absolute;
+  width:100%;
+  height:100px;
   top:0;
 
 
@@ -135,7 +139,4 @@ padding:30px
 }
 
 
-/* FOOTER STYLE */
-.footer{
 
-}

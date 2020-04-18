@@ -1,0 +1,6 @@
+.page{
+    background-image: url('../components/images/waterfall.jpg');
+    min-width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+}

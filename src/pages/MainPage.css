@@ -1,5 +1,58 @@
 .mainPage{
-    
- 
+  /* background-image: url('../components/images/lio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed; */
+  height:100vh;
+  width:100vw;
+}
+.leaf{
+
+  animation: fall 20s infinite
+
+}
+.leaves{
+  position: absolute;
+  z-index: 20;
+  bottom: -200px;
+  left: -100px;
+  animation: leaves 5s infinite;
+  animation-direction: alternate;
+  animation-delay: 20s;
+}
+.leaves:hover{
+  z-index: 0;
+}
+@keyframes leaves{
   
+ 0% {
+    transform: rotate(0deg);
   }
+100% {
+    transform: rotate(3deg);
+  }
+}
+@keyframes fall{
+  
+  0% {
+    transform: rotate(0deg);
+     margin-top: 0%;
+   }
+   20% {
+    transform: rotate(30deg);
+  
+
+   }
+   40% {
+    transform: rotate(60deg);
+   margin-left:10%;
+   }
+   80%{
+    transform: rotate(-110deg);
+   }
+ 100% {
+  
+  transition: ease-out;
+     margin-top: 100%;
+   }
+ }
