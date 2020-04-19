@@ -13,9 +13,12 @@ function ColorfulPage() {
   return (
     <div className="colorfulPage">
 
-        
-<img src={vine} alt='vine' className='vine'/> 
- 
+        {/* ZOOM IN CLICK HERE TO LEARM MORE */}
+{/* <img src={vine} alt='vine' className='vine'/>  */}
+ <div className='zoomContainer'>
+   <p className='zoomText'>CLICK TO LEARN ABOUT ME</p>
+
+ </div>
     </div>
   );
 }

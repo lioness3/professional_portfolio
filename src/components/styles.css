@@ -24,16 +24,9 @@
 .text {
   visibility: hidden;
   font-size: 20px;
-  position: absolute;
-  bottom:0;
+
 }
-.name:hover{
-  color: lightgrey;
-  text-shadow: 2px 2px 4px lightskyblue;
-  margin:0;
-  padding:0;
- 
-}
+
 .name:hover  .text{
   color:red;
   text-shadow: none;
@@ -41,6 +34,10 @@
 
 }
 
+.name:hover{
+  position: absolute;
+  z-index: 99;
+}
 
 /* MENU STYLES */
 .menu{

@@ -9,3 +9,47 @@
    
    
 }
+.zoomText{
+    animation-name: zoom;
+    color: yellow;
+    animation-duration: 5s;
+    animation-iteration-count: 0;
+    position: absolute;
+    left: 40%;
+    top:50%;
+    font-size: 50px;
+    letter-spacing: -25px;
+   transform: rotate(90deg);
+   
+  
+}
+@keyframes zoom {
+    0%{
+        position: absolute;
+        left: 50%;
+        top:500px;
+        color:black;
+        filter: blur(100%);
+        transform: rotate(180deg);
+
+    }
+    50%{
+        position: absolute;
+        left: 50%;
+        top:550px;
+        transform: rotate(180deg);
+        color:black;
+        filter: blur(80%);
+       
+    }
+    100%{
+        position: absolute;
+        left: 50%;
+        top:800px;
+        color:white;
+  
+        font-size: 50px;
+        letter-spacing: unset;
+       
+    }
+}
