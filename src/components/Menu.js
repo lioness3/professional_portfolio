@@ -34,10 +34,8 @@ function Menu() {
       </div>
 
       <div className='adventureDropDown'>
-        <span className='adventure'><Link to='/themes'>SHOW ME COOL</Link></span>
-        <div className='adventureStories'>
-          <p>Adventure stories...</p>
-        </div>
+        <span className='adventure'><Link to='/colorful'>ABOUT ME</Link></span>
+      
       </div>
 
     </div>

@@ -38,14 +38,25 @@
   position: absolute;
   z-index: 99;
 }
-
+.lion{
+  position:absolute;
+  z-index: 20;
+  right:0;
+  bottom:0;
+}
+.stillLeaves{
+  position: absolute;
+  z-index: 0;
+  right:0;
+  bottom:0;
+}
 /* MENU STYLES */
 .menu{
  background-color: rgba(0,0,0,.6);
 background-attachment: local;
 margin:0;
-padding-top:60px;
-  color:lightskyblue;
+padding:60px;
+  color:white;
   font-size: 30px;
   display:flex;
   flex-direction:row;
