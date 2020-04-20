@@ -14,7 +14,7 @@ function MainPage() {
   return (
     <div className="mainPage">
       <Menu/> 
-      {/* <img src={leaves} className='stillLeaves' alt='stillLeaves'/> */}
+      <img src={leaves} className='stillLeaves' alt='stillLeaves'/>
               <img src={leaves} className='leaves' alt='leaves'/>
               <img src={leaf} className='leaf' alt='leaf'/>
               <img src={lion} className='lion' alt='lion'/>

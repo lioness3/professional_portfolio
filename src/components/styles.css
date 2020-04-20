@@ -40,15 +40,18 @@
 }
 .lion{
   position:absolute;
-  z-index: 20;
-  right:0;
-  bottom:0;
-}
-.stillLeaves{
-  position: absolute;
   z-index: 0;
   right:0;
   bottom:0;
+  filter: drop-shadow(16px 16px 20px black);
+}
+.stillLeaves{
+  position: absolute;
+  z-index: 10;
+  right:-100px;
+  top:-100px;
+  transform: rotate(180deg);
+  filter: drop-shadow(16px 16px 20px darkgreen);
 }
 /* MENU STYLES */
 .menu{
