@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import Menu from '../components/Menu';
-import Name from '../components/Name';
+
 import './ColorfulPage.css'
 import Footer from '../components/Footer';
 import leaves from '../components/images/leafs.png'
@@ -21,7 +21,7 @@ function ColorfulPage() {
   return (
     <div className="colorfulPage">
  <div className='adventureMenu'>
- <p className='homeLink'>Home</p>
+ <Link to='/' className='homeLink'>Joann Carter</Link>
  
  </div>
       {/* cross country section 

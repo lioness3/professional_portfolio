@@ -1,25 +1,6 @@
 
 /* NAME STYLES */
-.name {
- 
-  animation-name: joann;
-  animation-duration:1.5s;
-  position: absolute;
-  bottom: 0;
 
-}
-@keyframes joann {
-0%{
-    margin-left: 300%;
-    font-size: 0px;
-    color:rgba(0,0,0,0);
-  }
-
-  80%{
-    color:rgba(0,0,0,0);
-  }
-  100%{margin-left: 0%}
-}
 .text {
   visibility: hidden;
   font-size: 20px;
@@ -39,110 +20,33 @@
 }
 
 
-/* MENU STYLES */
-.menu{
- background-color: rgba(0,0,0,.6);
-background-attachment: local;
 
-
-
-  color:white;
-  font-size: 30px;
-display: flex;
-  flex-direction:row;
-  justify-content: space-around;
-  position: absolute;
-width:100%;
-  height:100px;
-  top:0;
-
-
-}
-.dropDownContents {
-  display:none;
-  list-style: none;
-  font-size: 30px;
-}
- .resume:hover + .dropDownContents {
-  display:block;
-  position: relative;
-  z-index: 3;
-
-}
-.dropDownContents:hover{
-  display:block;
-}
-
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background: rgba(0,0,0,.6);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  font-size: 20px;
- top:0px;
- left:0px;
-
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-
-}
-.githubLink{
-  color: lightskyblue;
-  text-decoration: none;
-
-}
-.githubLink:hover{
-   color:rgba(215,240,243,0.3);
-
-}
-.contactDetails{
-  display: none;
-
-}
-.contact:hover + .contactDetails{
- display:block;
-
-}
-.contactDetails:hover{
-  display: block;
-}
-.contactDetails a{
-  text-decoration: none;
-font-size: 20px;
-padding:30px
-}
-
-
-.aboutLink a{
-  text-decoration: none;
-  color:white;
-}
 .footer{
-
+ text-align: center;
   z-index: 50;
   color:white;
   width:100vw;
   position:absolute;
   bottom:0;
+  animation-name: zoomFromRight;
+  animation-duration:1.5s;
 }
 .fixedInfo{
- 
-  width:max-content;
+ border-radius: 300px;
+background-color: rgba(0,0,0,0.3);
+  width:300px;
   padding:20px;
- 
+  box-shadow: 0px 0px 20px lightyellow;
 
+}
+
+@keyframes zoomFromRight {
+0%{
+    margin-left: 300%;
+
+   
+  }
+
+ 
+  100%{margin-left: 0%}
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import MainPage from '../pages/MainPage';
-
+import Footer from './Footer'
 import ColorfulPage  from '../pages/ColorfulPage'
 
 
@@ -19,10 +19,11 @@ function App() {
          <Route  exact path='/' render={() => <MainPage/> } />
 
         <Route   exact path='/colorful' render={()=> <ColorfulPage/>} />
-
+        <Footer/> 
        </Switch>
-       
+  
     </div>
+
   );
 }
 
