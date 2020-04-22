@@ -1,8 +1,7 @@
 
 /* NAME STYLES */
 .name {
-  font-size: 100px;
-  color:white;
+ 
   animation-name: joann;
   animation-duration:1.5s;
   position: absolute;
@@ -38,27 +37,22 @@
   position: absolute;
   z-index: 99;
 }
-.lion{
-  position:absolute;
-  z-index: 0;
-  right:0;
-  bottom:0;
-  filter: drop-shadow(16px 16px 20px black);
-}
+
 
 /* MENU STYLES */
 .menu{
  background-color: rgba(0,0,0,.6);
 background-attachment: local;
-margin:0;
-padding:60px;
+
+
+
   color:white;
   font-size: 30px;
-  display:flex;
+display: flex;
   flex-direction:row;
-  justify-content: space-between;
+  justify-content: space-around;
   position: absolute;
-  width:100%;
+width:100%;
   height:100px;
   top:0;
 
@@ -117,7 +111,7 @@ padding:60px;
 }
 .contactDetails{
   display: none;
-  background: rgba(215,240,243,0.5);
+
 }
 .contact:hover + .contactDetails{
  display:block;
@@ -131,16 +125,24 @@ padding:60px;
 font-size: 20px;
 padding:30px
 }
-.adventureStories{
-  display:none;
+
+
+.aboutLink a{
+  text-decoration: none;
+  color:white;
 }
+.footer{
 
-.adventure:hover + .adventureStories{
-  display:block;
+  z-index: 50;
+  color:white;
+  width:100vw;
+  position:absolute;
+  bottom:0;
 }
-.adventureStories:hover{
-  display:block;
+.fixedInfo{
+ 
+  width:max-content;
+  padding:20px;
+ 
+
 }
-
-
-

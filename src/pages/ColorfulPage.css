@@ -5,7 +5,7 @@ height: 100vh;
 width:inherit;
     background-size:cover;
  margin:0;
- 
+
 
    
    
@@ -27,7 +27,7 @@ width:inherit;
     color:white;
 }
 .section img{
-    height:400px;
+   width:90%;
     border-radius: 10px;
 }
 
@@ -38,26 +38,28 @@ width:inherit;
  }
 .zoomContainer{
     animation: contentBox 2s; 
-     animation-delay: 2s;
+     animation-delay: 1s;
     position: absolute;
-    max-height:100vh;
+    max-height:100%;
     width:700px;
 margin:300px;
 margin-top: 0;
 margin-bottom: 0;
     background-color: rgba(0, 0, 0, .7);
-
+padding: 0 50px;
  
 
     box-shadow: 0px 0px 40px black ;
     overflow-y: scroll;
+ 
     align-content: center;
     justify-content: center;
 }
 
+
 .homeLink {
     animation-name: homeLink ;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     color:yellow;
     text-shadow: 8px 8px 5px black;

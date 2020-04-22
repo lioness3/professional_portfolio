@@ -27,12 +27,12 @@ function Menu() {
       <div className='contactDropDown'>
         <span className='contact'>Contact </span>
         <div className= 'contactDetails'>
-          <Mailto email='joann333carter@gmail.com'/> <Mailto tel='603-566-5610'/>
+          <div><Mailto email='joann333carter@gmail.com'/> </div><div><Mailto tel='603-566-5610'/></div>
         </div>
       </div>
 
-      <div className='adventureDropDown'>
-        <span className='adventure'><Link to='/colorful'>About</Link></span>
+      <div className='aboutLink'>
+  <Link to='/colorful'>About</Link>
       
       </div>
 
