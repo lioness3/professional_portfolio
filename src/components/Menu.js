@@ -8,9 +8,7 @@ function Menu() {
   return (
     <div className="menu">
      
-<div className='home'>
-<Link to='/'>Home</Link>
-</div>
+
       <div className='menuDropDown'>
         <span className='resume' >Resume</span>
 
@@ -27,14 +25,14 @@ function Menu() {
 
 
       <div className='contactDropDown'>
-        <span className='contact'>Contact</span>
+        <span className='contact'>Contact </span>
         <div className= 'contactDetails'>
           <Mailto email='joann333carter@gmail.com'/> <Mailto tel='603-566-5610'/>
         </div>
       </div>
 
       <div className='adventureDropDown'>
-        <span className='adventure'><Link to='/colorful'>ABOUT ME</Link></span>
+        <span className='adventure'><Link to='/colorful'>About</Link></span>
       
       </div>
 

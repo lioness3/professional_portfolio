@@ -45,14 +45,7 @@
   bottom:0;
   filter: drop-shadow(16px 16px 20px black);
 }
-.stillLeaves{
-  position: absolute;
-  z-index: 10;
-  right:-100px;
-  top:-100px;
-  transform: rotate(180deg);
-  filter: drop-shadow(16px 16px 20px darkgreen);
-}
+
 /* MENU STYLES */
 .menu{
  background-color: rgba(0,0,0,.6);
