@@ -1,14 +1,10 @@
 .colorfulPage {
     background-image: url('../components/images/bridge.jpg');
-  background-attachment: fixed;
-height: 100vh;
-width:inherit;
+    background-attachment: fixed;
+    height: 100vh;
+    width:inherit;
     background-size:cover;
- margin:0;
-
-
-   
-   
+    margin:0;
 }
 .section{
     border:5px solid black;
@@ -31,29 +27,21 @@ width:inherit;
     border-radius: 10px;
 }
 
- .streetAdventure{
-     transform:rotate(90deg);
-     width:400px;
  
- }
 .zoomContainer{
-    animation: contentBox 2s; 
-     animation-delay: 1s;
+    animation: contentBox 6s; 
+ 
     position: absolute;
     max-height:100%;
     width:700px;
-margin:300px;
-margin-top: 0;
-margin-bottom: 0;
+    margin:300px;
+    margin-top: 0;
+    margin-bottom: 0;
     background-color: rgba(0, 0, 0, .7);
-padding: 0 50px;
- 
-
+    padding: 0 50px;
     box-shadow: 0px 0px 40px black ;
     overflow-y: scroll;
- 
-    align-content: center;
-    justify-content: center;
+
 }
 
 
@@ -77,29 +65,18 @@ padding: 0 50px;
 
 @keyframes homeLink{
     0%{
-margin-left: 100%;
-
-
+        margin-left: 100%;
     }
     50%{
-      
         transform: rotate(90deg);
-     transform: rotateY(180deg);
-    
+        transform: rotateY(180deg);
         text-shadow: 10px 10px 10px black;
-      
-       
     }
     100%{
        margin-left: 0%;
-       
-  
-     
-       
-       
-    }
+    } 
 }
 @keyframes contentBox{
-    from{margin-top: -900px;}
-    to{margin-top:0px;}
+    from{margin-top: -200%;}
+    to{margin-top:0%;}
 }

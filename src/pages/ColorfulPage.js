@@ -20,60 +20,39 @@ function ColorfulPage() {
 
   return (
     <div className="colorfulPage">
- <div className='adventureMenu'>
- <Link to='/' className='homeLink'>Joann Carter</Link>
- 
- </div>
+
+      <Link to='/' className='homeLink'>Joann Carter</Link>
+
       {/* cross country section 
       favorite things section
       fun facts section 
       hobbies */}
+      <div className='zoomContainer'>
+        <h3 className='zoomText'>My Latest Adventure</h3>
+        <img src={leaf} className='leaf' alt='leaf'/>
+        <div className='section' >
+          <p>I recently drove across the country with my co pilot, Shadow. </p>
+          <span>We drove from Newhampshire to Niagra Falls and then across the top of the country to Oregon.It was in oregon that I attended a coding bootcamp where i discovered my passion for front end Development</span>
+          <img src={cat} className='cat' alt='cat'/>
+          <img src={coPiolit} className='coPiolit' alt='cat image'/>
+          <img src={shadow} className='shadow' alt='cat'/>
+          <img src={Niagra} className='niagra' alt='image of niagra falls'/>
+        </div>
 
+        <div className='section'>
+          <p>Some of my favorite things</p>
+          <img src={leaves} className='leaves' alt='leaves'/> 
+        </div>
 
+        <div className='section'>
+          <p>Hobbies</p>
+          <span>I feel grounded when im in nature. creating crafts. and creating mobile apps in my spare time..</span>
+          <img src={waterfallAdventure} className='waterfallAdventure' alt='image'/>
+          <img src={craft} className='craft' alt='craft image' /> 
+        </div>
+      </div>
+     </div>
 
- <div className='zoomContainer'>
-   <h3 className='zoomText'>My Latest Adventure</h3>
-  
-   <div className='section' >
-    <p>I recently drove across the country with my co pilot, Shadow. </p>
-<span>We drove from Newhampshire to Niagra Falls and then across the top of the country to Oregon.It was in oregon that I attended a coding bootcamp where i discovered my passion for front end Development</span>
-    <img src={cat} className='cat' alt='cat'/>
-    <img src={coPiolit} className='coPiolit' alt='cat image'/>
-<img src={shadow} className='shadow' alt='cat'/>
-
-  <img src={Niagra} className='niagra' alt='image of niagra falls'/>
-  </div>
-
-<div className='section'>
-<p>Some of my favorite things</p>
-<img src={leaves} className='leaves' alt='leaves'/> 
-</div>
- 
- <div className='section'>
-  
-<p>Hobbies</p>
-<span>I feel grounded when im in nature. creating crafts. and creating mobile apps in my spare time..</span>
-<img src={waterfallAdventure} className='waterfallAdventure' alt='image'/>
-  <img src={craft} className='craft' alt='craft image' /> 
-</div>
-
-            <img src={leaf} className='leaf' alt='leaf'/>
-<div>
- 
-
-
-</div>
-<div>
-<p> 
-     
-     
-     
-  </p>
- 
-</div>
- </div>
-
-    </div>
   );
 }
 
