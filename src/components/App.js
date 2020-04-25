@@ -19,7 +19,7 @@ function App() {
          <Route  exact path='/' render={() => <MainPage/> } />
 
         <Route   exact path='/colorful' render={()=> <ColorfulPage/>} />
-        <Footer/> 
+      
        </Switch>
   
     </div>

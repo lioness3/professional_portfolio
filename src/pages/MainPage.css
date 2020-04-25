@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
-height: 100vh;
+  height: 100vh;
   width:100vw;
 
 }
@@ -13,51 +13,27 @@ height: 100vh;
 .star{
 
 position: absolute;
-top:100px;
+/* top:100px; */
 filter: grayscale(80%);
   animation: fall 10s;
 height:40px;
 }
 .starLeft{
   position: absolute;
-  top:-100px;
+  /* top:-100px; */
   filter: grayscale(80%);
     animation: leftStar 10s;
   height:40px;
   }
   .starRight{
     position: absolute;
-    top:-100px;
+    /* top:-100px; */
     filter: grayscale(80%);
       animation: rightStar 10s;
     height:40px;
     }
- /* .leaves{
-  position: absolute;
-  z-index: 20;
-  top: -100px;
- right: -150px;
-  animation: leaves 5s infinite;
-  animation-direction: alternate;
-  animation-delay: 20s;
-  transform: rotate(180deg);
 
-  filter: drop-shadow(2px 2px 4px rgb(32, 68, 32))sepia(10%)
-} */
-/* 
-.leaves:hover{
-  z-index: 0;
-} */
 
-/* @keyframes leaves{
-  
- 0% {
-    transform: rotate(208deg);
-  }
-100% {
-    transform: rotate(210deg);
-  }
-}  */
 @keyframes fall{
 
 
@@ -71,7 +47,7 @@ height:40px;
 
  100% {
   left:800px;
-  position: absolute; top: 633px;
+  position: absolute; top: 100px;
 
    }
  }
@@ -85,13 +61,19 @@ height:40px;
 
 
    }
-
+   80% {
+  
+    position: absolute; top: 633px;
+    left:700px;
+    transform: rotate(10deg);
+  height:30px;
+     }
  100% {
   
   position: absolute; top: 633px;
-  left:800px;
+  left:1000px;
   transform: rotate(10deg);
-
+  height:20px;  
    }
  }
  @keyframes rightStar{

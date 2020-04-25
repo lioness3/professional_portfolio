@@ -9,20 +9,20 @@ function Menu() {
     <div className="menu">
       
 
-      <div className='tooltip'>
+      <div className='tooltip menuCol'>
         
       <a href = {Pdf} target = "_blank" className='resume'>Resume</a>
       
         <span className='tooltiptext'>Download my resume</span>
       </div>
       
-      <div className="tooltip">
+      <div className="tooltip menuCol">
         <a href='https://github.com/lioness3' className='githubLink'>GitHub</a>
         <span className="tooltiptext">
           Github Link</span>
       </div>
 
-      <div className='tooltip'>
+      <div className='tooltip menuCol'>
       {/* <div className='contactDropDown'>
         <span className='contact'>Contact </span>
         <div className= 'contactDetails'>
@@ -33,11 +33,11 @@ function Menu() {
         <span className='tooltiptext'>Contact Me Directly</span>
       </div>
      
-      <div className='tooltip'>
+      <div className='tooltip menuCol'>
  
           <Link to='/colorful' className='aboutLink'>About</Link>
        
-        <span className='tooltiptext'>Download my resume</span>
+        <span className='tooltiptext'>Learn More About Me</span>
       </div>
 
   
