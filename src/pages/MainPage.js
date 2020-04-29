@@ -17,15 +17,12 @@ function MainPage() {
     <div className="mainPage">
     
       <Menu/> 
-      
     
       <img src={star} className='star' alt='star' />
+      <img src={star} className='star2' alt='star' />
       <img src={star} className='starLeft' alt='star' />
       <img src={star} className='starRight' alt='star' />
-   
-
-         {/* <Name/> */}
-
+  
     </div>
   );
 }

@@ -31,14 +31,14 @@
     .tooltip {
       position: relative;
       display: inline-flex;
-
+      
 
     }
     
     /* Tooltip text */
  .tooltiptext {
       display: none;
-
+      padding:5px 10px;
       background: rgba(0,0,0,.6);
       color: #fff;
       border-radius: 6px;

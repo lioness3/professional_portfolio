@@ -11,77 +11,75 @@
 
 
 .star{
+  position: absolute;
+  top:-100px;
 
-position: absolute;
-/* top:100px; */
-filter: grayscale(80%);
+  background-color: yellow;
+  /* filter: grayscale(80%); */
   animation: fall 10s;
-height:40px;
+  height:40px;
+}
+.star2{
+  position: absolute;
+  top:350px;
+  left:900px;
+
+  filter: grayscale(90%);
+
+  height:40px;
 }
 .starLeft{
   position: absolute;
-  /* top:-100px; */
+  top:200px;
+  left:200px;
   filter: grayscale(80%);
-    animation: leftStar 10s;
+  animation: leftStar 10s infinite alternate;
+ 
+
+}
+.starRight{
+  position: absolute;
+  top:-10px;
+  background-color: red;
+  /* filter: grayscale(80%); */
+  animation: rightStar 10s;
   height:40px;
-  }
-  .starRight{
-    position: absolute;
-    /* top:-100px; */
-    filter: grayscale(80%);
-      animation: rightStar 10s;
-    height:40px;
-    }
+}
 
 
 @keyframes fall{
 
-
-  
   0% {
-    position: absolute; top: -450px;
-    left:40px;
+    position: absolute;
+    top:-10px;
+    left:400px;
     transform: rotate(0deg);
 
    }
 
- 100% {
-  left:800px;
-  position: absolute; top: 100px;
-
-   }
+  100% {
+    position: absolute;
+    top:1000px;
+    left:-200px;
+    height:0px;
+    }
  }
  @keyframes leftStar{
 
-
-  
   0% {
-    position: absolute; top:100;
-    left:40px;
-
+  height:20px;
 
    }
-   80% {
-  
-    position: absolute; top: 633px;
-    left:700px;
-    transform: rotate(10deg);
-  height:30px;
-     }
+   
  100% {
-  
-  position: absolute; top: 633px;
-  left:1000px;
-  transform: rotate(10deg);
-  height:20px;  
+    height:40px; 
+   
    }
  }
  @keyframes rightStar{
-
-
-  
   0% {
-    position: absolute; top: -450px;
+    position: absolute; 
+    top: -450px;
     left:40px;
     transform: rotate(0deg);
 
