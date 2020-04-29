@@ -20,7 +20,13 @@ function MainPage() {
     
       <img src={star} className='star' alt='star' />
       <img src={star} className='star2' alt='star' />
-      <img src={star} className='starLeft' alt='star' />
+      <img src={star} className='star3' alt='star' />
+      <img src={star} className='star4' alt='star' />
+      <img src={star} className='star5' alt='star' />
+      <img src={star} className='star6' alt='star' />
+      <img src={star} className='star7' alt='star' />
+      <img src={star} className='star8' alt='star' />
+      <img src={star} className='star9' alt='star' />
       <img src={star} className='starRight' alt='star' />
   
     </div>
