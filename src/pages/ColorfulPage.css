@@ -1,40 +1,40 @@
-
-.colorfulPage {
+html{
     background-image: url('../components/images/bridge.jpg');
     background-size:cover;
-    min-height: 100vh;
-    min-width:100vw;
+   
+background-repeat: no-repeat;
+    /* border: 60px solid black; */
+   
+}
+.colorfulPage {
+    /* padding:100px 0px; */
+    height: 80%;
+    width:80%;
     margin:0;
-
-     padding:0;
-    border: 60px solid black
+  
+     
+   
 }
 .zoomContainer{
     animation: contentBox 4s; 
     position: absolute;
-    height: 100vh;
-    width:600px;
-    right:150px;
-    
+    /* height: 100vh; */
+    width:700px;
+    right:100px;
+    margin-top:150px;
     padding: 0px;
-    display: flex;
-    flex-direction: column;
-    /* box-shadow: 0px 0px 40px black ; */
-    overflow-y: scroll;
-    /* border: 30px solid black; */
+
   
 }
 .section{
-    
-   
-  
-    
+/*  
+    height:max-content; */
     text-align: center;
-    border-left:3px solid grey;
-    border-right:3px solid grey;
-    background:rgba(0, 0, 0, .6);
-    font-size: 20px;
+   
 
+}
+.section p {
+    margin:0;
 }
 
 .section img{
@@ -43,15 +43,16 @@
    border-radius: 10px;
    margin:20px 0px;
 }
+
 .heading{
-    position:sticky;
+    position:relative;
     z-index:8;
     top:0;
     padding:20px;
     background:rgba(0, 0, 0, .99);
     color:white;
-    height:30px;
-    margin:0;
+    height:60px;
+   margin-bottom:0;
     font-size: 30px;
     border-bottom: 2px solid grey;
     border-top: 2px solid grey;
@@ -71,10 +72,12 @@
 .zoomContainer2{
     animation: contentBox 4s; 
     position: absolute;
-    height: 100vh;
+    /* height: 100vh; */
     width:600px;
-    left:150px;
-    padding: 0px;
+    left:100px;
+    padding: 0;
+    margin-top: 150px;
+  
 
 }
 
@@ -84,8 +87,8 @@
        padding:20px;
        background:rgba(0, 0, 0, .99);
        color:white;
-       height:30px;
-       margin:0;
+       height:60px;
+     
        font-size: 30px;
        border-bottom: 2px solid grey;
        border-top: 2px solid grey;
@@ -93,14 +96,16 @@
 
 .section2{
     
-    height:max-content;
+    /* height:max-content; */
 
     text-align: center;
-    border-left:3px solid black;
-    border-right:3px solid black;
+
     /* background:rgba(0, 0, 0, .6); */
     font-size: 20px;
 
+}
+.section2 p{
+ margin:0;
 }
 
 
@@ -110,9 +115,12 @@
     animation-iteration-count: 1;
     color:#9FBE2C;
     position: absolute;
-    padding:0px 150px;
-    top:10px; 
-    font-size: 40px;
+   width:100%;
+   background-color: black;
+    top:0; 
+    left:0;
+    padding:30px 0px 10px 20px;
+    font-size: 60px;
     text-decoration: none;
 
 }
@@ -160,19 +168,15 @@
     margin:0;
  }
 .info{
-  display:grid;
-border-spacing: 0;
-row-gap: 0;
-
-    
-      /* padding:20px; */
-  
-      color:white;
-     
-      height:40vh;
-       background-color: black;
-      font-size: 24px;
    
+    display:grid;
+    
+    color:white;
+    height:100%;
+    background-color: black;
+    font-size: 24px;
+   margin:0;
+   padding:20px;
    }
    .infoHidden{
        display:none;
