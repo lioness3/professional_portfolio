@@ -35,7 +35,7 @@ function Menu() {
      
       <div className='tooltip menuCol'>
  
-          <Link to='/colorful' className='aboutLink'>About</Link>
+          <Link to='/about' className='aboutLink'>About</Link>
        
         <span className='tooltiptext'>Learn More About Me</span>
       </div>

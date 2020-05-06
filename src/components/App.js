@@ -18,7 +18,7 @@ function App() {
       
          <Route  exact path='/' render={() => <MainPage/> } />
 
-        <Route   exact path='/colorful' render={()=> <ColorfulPage/>} />
+        <Route   exact path='/about' render={()=> <ColorfulPage/>} />
       
        </Switch>
   
