@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import Menu from '../components/Menu';
+
 
 import './ColorfulPage.css'
-import Footer from '../components/Footer';
-import leaves from '../components/images/leafs.png'
-import leaf from '../components/images/leaf.png'
+
+
 import shadow from '../components/images/shadow.jpeg'
-import vine from '../components/images/vi.png'
+
 import workBuddy from '../components/images/workBuddy.jpeg'
 import coPiolit from '../components/images/coPiolit.jpeg'
 import waterfallAdventure from '../components/images/waterfallAdventure.jpeg'
@@ -118,14 +117,6 @@ const showHobbiesInfo = ()=>{
               <p className='raceCar'>Race Cars <span className='raceCarEmoji'>🏎</span></p>
               <p className='crafts'>Crafts <span className='craftsEmoji'>🧶</span></p>
           
-         
-
-             
-  
-            
-         
-  
-             
           
           </div>
 
