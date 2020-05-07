@@ -4,7 +4,6 @@ import Menu from '../components/Menu';
 
 import './MainPage.css'
 
-
 import star from '../components/images/star.png'
 
 

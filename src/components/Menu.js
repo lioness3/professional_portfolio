@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Menu.css';
 
 
 import { Switch, Route, Link } from 'react-router-dom';
 import Pdf from './images/Resume.pdf'
 function Menu() {
+  const [contactInfo, setContactInfo] = useState(null)
+  const show = (  <div>
+                 <p><a href="tel:+16035665610">call</a></p> 
+                 <p><a href="sms://+16035665610">text</a></p> 
+                 <p><a href="mailto:+16035665610">joann333carter@gmail.com</a></p>
+                   </div>)
+  
+  
+  const showContactInfo = () =>{
+   
+    if (contactInfo === null){
+      setContactInfo(show)
+    }else {
+      setContactInfo(null)
+    }
+    
+  }
   return (
     <div className="menu">
       
@@ -22,10 +39,10 @@ function Menu() {
           Github Link</span>
       </div>
 
-      <div className='tooltip menuCol'  >
-        <Link to ='/contact' className='contact'>Contact</Link>
-  
-        <span className='tooltiptext'>Contact Me Directly</span>
+      <div className='tooltip menuCol'onClick={()=>{showContactInfo()}}  >
+        <span className='contact' >Contact</span>
+        <span className='tooltiptext'>Contact Information</span>
+        {contactInfo}
       </div>
      
       <div className='tooltip menuCol'>
