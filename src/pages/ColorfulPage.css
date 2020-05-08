@@ -2,7 +2,7 @@
 .colorfulPage {
     height: 100vh;
     width:100vw;
-    overflow:scroll;
+position:fixed; 
     background-image: url('../components/images/bridge.jpg');
     background-size:cover;
     background-repeat: no-repeat;
@@ -20,11 +20,24 @@
     font-size:30px;
     border-bottom: 1px solid white;
 }
+.caption{
+    position: sticky;
+    z-index:5;
+    top:47px;
+    text-align: center;
+    background:rgba(0, 0, 0, .99);
+    color:white;
+    height:50px;
+    margin:0;
+    padding:15px 0px;
+    font-size: 20px;
+ 
+}
 .closeView{
     margin:0;
     height:40px;
      width:20px;
-     position:relative;
+     position:sticky;
      z-index: 6;
      top:0;
      font-size: 30px;
@@ -49,9 +62,9 @@
     float:left;
     color:white;
     font-size:40;
-    margin-top:100px;
+   padding-top:150px;
     background-color:black;
-    height:100vh;
+    height:100%;
 }
 .detailedContent{
    
@@ -77,32 +90,9 @@
     height:300px;
     margin:50px;
 }
-.caption{
-    position: sticky;
-    z-index:5;
-    top:100px;
-    text-align: center;
-    background:rgba(0, 0, 0, .99);
-    color:white;
-    height:50px;
-    margin:0;
-    font-size: 20px;
- 
-}
 
-.heading{
-    position:relative;
-    z-index:8;
-    top:0;
-    padding:20px;
-    background:rgba(0, 0, 0, .99);
-    color:white;
-    height:60px;
-    margin-bottom:0;
-    font-size: 30px;
-    border-bottom: 2px solid grey;
-    border-top: 2px solid grey;
-}
+
+
 
 .changeableContent{
    
