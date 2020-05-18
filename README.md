@@ -5,15 +5,13 @@
 #### _By: Joann Carter_
 ***************
 # _Description_
-This is an application written in React with a downloadable PDF of my Resume.
+This is an application written in React with information about myself.
 ******************
 #### _Known Bugs_
-* This app is currently a work in progress
+* This app is currently(and always will be) a work in progress
 ******************
 #### _Instructions_
-* clone repo
-* run 'npm install'
-* run 'npm run start'
+* visit www.joannCarter.com
 ***************
 # _Technology Used_
 * React

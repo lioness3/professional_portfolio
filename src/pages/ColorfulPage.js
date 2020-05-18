@@ -1,25 +1,27 @@
 import React, {useState} from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-
-
 import './ColorfulPage.css'
-
-
+import catStretched from '../components/images/catStretched.jpeg'
 import shadow from '../components/images/shadow.jpeg'
-
+import van from '../components/images/van.jpeg'
+import canyonCat from '../components/images/canyonCat.jpeg'
 import workBuddy from '../components/images/workBuddy.jpeg'
+import cliff from '../components/images/cliff.jpeg'
+import hike from '../components/images/hike.jpeg'
 import coPiolit from '../components/images/coPiolit.jpeg'
+import beach from '../components/images/beach.jpeg'
 import waterfallAdventure from '../components/images/waterfallAdventure.jpeg'
-
 import Niagra from '../components/images/Niagra.jpeg'
-import cat from '../components/images/cat.jpeg'
 import craft from '../components/images/craft.jpeg'
+
 function ColorfulPage() {
+
 const [displayMentionables, setDisplayMentionables] = useState('infoHidden')
 const [displayFavorites, setDisplayFavorites] = useState('infoHidden')
 const [displayAdventures, setDisplayAdventures]= useState('infoHidden')
 const [displayHobbies, setDisplayHobbies] = useState('infoHidden')
 const [display, setDisplay]= useState(null)
+
 const showMentionablesInfo = ()=>{
   if (displayMentionables === 'infoHidden'){
     setDisplayMentionables('info')
@@ -73,8 +75,8 @@ const interests = (
     <div className='closeView' onClick={()=>{
       handleDisplay(null)
     }}>x</div>
-    <p className='banner'>INTERESTS</p>
-    <p>Front End Developer</p>
+    <p className='banner'>CAREER INTERESTS</p>
+    <p  className='topListItem'>Front End Development</p>
     <p>UI Design</p>
     <p>UX Design</p>
   </div>
@@ -85,7 +87,7 @@ const languages = (
       handleDisplay(null)
     }}>x</div>
     <p className='banner'>LANGUAGES</p>
-    <p>React</p>
+    <p className='topListItem'>React</p>
     <p>React Native</p>
     <p>Ruby </p>
     <p>Rails</p>
@@ -98,9 +100,9 @@ const skills = (
       handleDisplay(null)
     }}>x</div>
     <p className='banner'>SKILLS</p>
-    <p>Pair Programming</p>
+    <p className='topListItem'>Pair Programming</p>
     <p>User Experiance </p>
-    <p>Web and Mobile Developer</p>
+    <p>Web and Mobile Design</p>
     <p>Customer Service</p>
   </div>
 )
@@ -110,10 +112,10 @@ const funFacts = (
       handleDisplay(null)
     }}>x</div>
     <p className='banner'>FUN FACTS</p>
-    <p>Ham Radio License</p>
+    <p className='topListItem'>Ham Radio Operator</p>
     <p>Licensed Manicurist</p>
-    <p>Sig Sauer Certifications</p>
-    <p>Barbizon Modeling Academy</p>
+    <p>Sig Sauer Training</p>
+    <p>Van Life</p>
   </div>
 )
 const adventures = (
@@ -122,13 +124,13 @@ const adventures = (
       handleDisplay(null)
     }}>x</div>
     <p className='banner'>ADVENTURES</p>
-    <p className='caption'>I recently drove across the country with my co pilot, Shadow. </p>
+    <p className='caption'>I often travel with the cutest co pilot, Shadow( see more cat pictures in the 'MY CAT' section). </p>
     <img src={coPiolit} className='coPiolit' alt='cat image'/>
-    <p className='caption'>We explored Niagra Falls</p>
+    <p className='caption'>I love to explore and see all that nature has to offer.</p>
     <img src={Niagra} className='niagra' alt='image'/>
-    <p className='caption'> Our final destination was Washington, where we currently reside.</p>
-    <img src={cat} className='cat' alt='cat'/>
-    <img src={shadow} className='shadow' alt='cat'/>
+    <img src={hike} alt='image'/>
+    <img src={cliff} alt='image of edge of cliff'/>
+  
   </div>
 )
 const crafts =(
@@ -138,11 +140,26 @@ const crafts =(
       handleDisplay(null)
     }}>x</div>
     <p className='banner'>HOBBIES</p>
-    <p className='caption'>I feel grounded when im in nature.</p> 
-    <img src={waterfallAdventure} className='waterfallAdventure' alt='image'/>
-    <p className='caption'>I enjoy creating crafts out of recycled material. </p>
+    <p className='caption'>For self-care, I am most relaxed when in nature.</p> 
+    <img src={beach} alt='image'/>
+    <p className='caption'>I achieve a great sense of acomplishment when I am able to create crafts out of recycled material. </p>
     <img src={craft} className='craft' alt='craft image' /> 
+    <p className='caption'>In my free time, I find myself drawn to all things related to customization.</p>
+    <p className='caption'> Currently, I am renovating a camper van as I discover the hidden treasures of our beautiful country.</p>
+    <img src={van} alt='image of a van'/>
   </div>
+)
+const cat=(
+  <div className='detailedContent content' >  
+  <div className='closeView' onClick={()=>{
+    handleDisplay(null)
+  }}>x</div>
+  <p className='banner'>PICTURES OF MY CAT</p>
+  <img src={shadow} className='shadow' alt='shadow'/>
+  <img src={catStretched}  alt='shadow'/>
+  <img src={workBuddy} alt='image of cat'/>
+  <img src={canyonCat} alt='image of cat'/>
+</div>
 )
 const handleDisplay=(content)=>{
 setDisplay(content)
@@ -162,7 +179,7 @@ setDisplay(content)
             <p>SKILLS</p>
           </div> 
           <div className='title' onClick={()=>{handleDisplay(interests)}}>
-            <p>INTERESTS</p>
+            <p>CAREER INTERESTS</p>
           </div> 
           <div className='title' onClick={()=>{handleDisplay(fav)}}>
             <p>FAVORITES</p>
@@ -171,7 +188,10 @@ setDisplay(content)
             <p>ADVENTURES</p>
           </div>  
           <div className='title' onClick={()=>{handleDisplay(crafts)}}>
-            <p>CRAFTS</p>
+            <p>HOBBIES</p>
+          </div> 
+          <div className='title' onClick={()=>{handleDisplay(cat)}}>
+            <p>MY CAT</p>
           </div> 
          
         </div>

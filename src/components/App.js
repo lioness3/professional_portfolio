@@ -6,7 +6,7 @@ import ColorfulPage  from '../pages/ColorfulPage';
 
 
 
-import './App.css';
+
 
 function App() {
 

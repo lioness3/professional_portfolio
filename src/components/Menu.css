@@ -9,7 +9,7 @@
       justify-content: space-evenly;
       border-bottom: 5px solid black ;
       position:relative;
-      width:100%;
+      width:100vw;
       height:100px;
       padding-top:50px;
       z-index: 200;
