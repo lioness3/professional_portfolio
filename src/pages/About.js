@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import './ColorfulPage.css'
+import './About.css'
 import catStretched from '../components/images/catStretched.jpeg'
 import shadow from '../components/images/shadow.jpeg'
 import van from '../components/images/van.jpeg'
@@ -14,7 +14,7 @@ import waterfallAdventure from '../components/images/waterfallAdventure.jpeg'
 import Niagra from '../components/images/Niagra.jpeg'
 import craft from '../components/images/craft.jpeg'
 
-function ColorfulPage() {
+function About() {
 
 const [displayMentionables, setDisplayMentionables] = useState('infoHidden')
 const [displayFavorites, setDisplayFavorites] = useState('infoHidden')
@@ -165,7 +165,7 @@ const handleDisplay=(content)=>{
 setDisplay(content)
 }
   return (
-    <div className="colorfulPage" >
+    <div className="About" >
  
         <Link to='/' className='homeLink'>Joann Carter</Link>
         <div className='titleCol' >
@@ -203,4 +203,4 @@ setDisplay(content)
   );
 }
 
-export default ColorfulPage;
+export default About;
