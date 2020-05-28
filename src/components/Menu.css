@@ -1,17 +1,18 @@
 /* MENU STYLES */
     .menu{
       background-color: black;
-      background-attachment: local;
+    
       box-shadow: 0px -10px 50px grey;   
       color:white;
       font-size: 30px;
-      display:flex;
+      display: inline-flex;
       justify-content: space-evenly;
       border-bottom: 5px solid black ;
-      position:relative;
-      width:100vw;
+      min-width: 100%;
+      background-size: cover;
       height:100px;
       padding-top:50px;
+      position: absolute;
       z-index: 200;
       margin:0;
     }
