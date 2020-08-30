@@ -197,7 +197,7 @@ setDisplay(content)
           <div className='title' onClick={()=>{handleDisplay(cat)}}>
             <p>MY CAT</p>
           </div> 
-         
+     
           
           <div className='rightArrow'><AiOutlineDoubleRight/></div>
          

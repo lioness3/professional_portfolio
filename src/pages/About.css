@@ -53,26 +53,30 @@ body{
 }
 
 .title p{
-  padding:50px;
+    display: flex;
+  margin:40px 100px;
     text-align: center;
-    
+
+  
 }
 .title:hover{
     text-shadow: 2px 2px 30px burlywood;
 }
 .titleCol{
     /* float:left; */
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
     color:white;
     font-size:20px;
     display:flex;
   flex-direction: row;
 width:100%;
 overflow-x: scroll;
-
-margin-top:10vh;
+position: relative;
+top:10vh;
     /* padding: 2vh 10vw 2vh 10vw; */
     background-color:black;
-    height:max-content;
+  
    
    
 }
@@ -89,6 +93,7 @@ margin-top:10vh;
     width:60vw;
     position: relative;
     top:10vh;
+    left:20vw;
     color:white;
     font-size: 20px;
     text-align: center;
@@ -164,10 +169,11 @@ margin-top:10vh;
 }
 @keyframes contentBox{
     from{margin-top: -100vh;
+        
 
 }
     to{margin-top:0;
-
+       
      
     }
 }
