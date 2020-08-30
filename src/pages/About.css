@@ -2,6 +2,7 @@
 .About {
     height: 100vh;
     width:100vw;
+    display: inline-flex;
     background-position: fixed;
     background-image: url('../components/images/bridge.jpg');
     background-size:cover;
