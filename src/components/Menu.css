@@ -1,9 +1,9 @@
 /* MENU STYLES */
     .menu{
-      background-color: black;
+      background-color: lightgrey;
     
       box-shadow: 0px 0px 30px grey;   
-      color: lightgrey;
+      color:black;
       font-size: 50px;
       display: inline-flex;
       justify-content: space-evenly;
@@ -16,7 +16,9 @@
       z-index: 200;
       margin:0;
     }
-
+.tooltip  .contact{
+  color:black
+}
     .resume, .githubLink, .aboutLink, .contact{
       text-decoration: none;
       color:inherit;
@@ -32,13 +34,13 @@
       text-decoration: none;
       display: flex;
       flex-direction: row;
-  
+      
 
     }
     .contactInfo  :link{
       font-size: 20px;
       text-decoration: none;
-      color:white;
+      color:black;
       padding-left:10px;
   
       
@@ -51,16 +53,17 @@
       color: #fff;
       border-radius: 6px;
       font-size: 15px;
+      width:max-content;
       position:relative;
-      top:20px;
+      top:40px;
     }
     
     /* Show the tooltip text when you mouse over the tooltip container */
     .tooltip:hover .tooltiptext {
       position: absolute;
-      display:inline-block;
-      columns: 1;
-      margin-top:20px;
+      display:block;
+     flex-direction: row;
+      margin:20px;
    
     
     }
