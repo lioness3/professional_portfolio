@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './Menu.css';
+import { AiFillGithub } from 'react-icons/ai';
+import { MdEmail } from 'react-icons/md';
+import { BsInfoCircleFill } from 'react-icons/bs';
+
 
 
 import { Switch, Route, Link } from 'react-router-dom';
@@ -34,20 +38,20 @@ function Menu() {
       </div>
       
       <div className="tooltip menuCol">
-        <a href='https://github.com/lioness3' rel="noopener noreferrer" target = "_blank" className='githubLink'>GitHub</a>
+        <a href='https://github.com/lioness3' rel="noopener noreferrer" target = "_blank" className='githubLink'><AiFillGithub/></a>
         <span className="tooltiptext">
           Github Link</span>
       </div>
 
       <div className='tooltip menuCol'onClick={()=>{showContactInfo()}}  >
-        <span className='contact' >Contact</span>
+        <span className='contact' ><MdEmail/></span>
         <span className='tooltiptext'>Contact Information</span>
         {contactInfo}
       </div>
      
       <div className='tooltip menuCol'>
  
-          <Link to='/about' className='aboutLink'>About</Link>
+          <Link to='/about' className='aboutLink'><BsInfoCircleFill/></Link>
         <span className='tooltiptext'>Learn More About Me</span>
       </div>
 
