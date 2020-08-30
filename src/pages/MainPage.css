@@ -12,24 +12,24 @@ body{
 
 }
 .card {
-  background-color: black;
+  background-color:rgba(15, 214, 237, .8  );
   position: relative;
   top: 25vh;
-  width:20vw;
-  height:10vh;
-  border: 2px solid grey;
- margin: 0px 30px;
+  width:30vw;
+  height:15vh;
+  border: 5px solid white;
+ margin: 0px 20px;
  text-align: center;
- padding:10px;
- font-size: 30px;
+
+ font-size: 40px;
 }
 .card p{
   margin:0;
   font-size: 15px;
-  color: darkgrey;
+  color: black;
 }
 .available{
-  color: lightgrey;
+  color: white;
   float:left;
 }
 .unAvailable{
@@ -38,18 +38,19 @@ body{
 }
 .contact{
   float:right;
-  color: lightgrey;
+  color: white;
 }
 .contactDetails{
-  display: inline-flex;
-  flex-direction: row;
+  /* display: inline-flex; */
+  /* flex-direction: row; */
   position: absolute;
-  bottom:30vh;
+  top:40vh;
+  right:1vw;
 }
 .contactDetails a{
   color: white;
-  font-size: 20px;
-  margin:3px;
+  font-size: 30px;
+  margin:5px;
   text-decoration: none;
 }
 /* .star{

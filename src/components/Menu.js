@@ -44,11 +44,11 @@ function Menu() {
           Github Link</span>
       </div>
 
-      <div className='tooltip menuCol'onClick={()=>{showContactInfo()}}  >
+      {/* <div className='tooltip menuCol'onClick={()=>{showContactInfo()}}  >
         <span className='contact' ><MdEmail/></span>
         <span className='tooltiptext'>Contact Information</span>
         {contactInfo}
-      </div>
+      </div> */}
      
       <div className='tooltip menuCol'>
  
