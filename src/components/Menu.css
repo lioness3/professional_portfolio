@@ -11,7 +11,7 @@
       width: 100vw;
  
       height:10vh;
-      padding-top:50px;
+      padding-top:2vh;
       position: absolute;
       z-index: 200;
       margin:0;
@@ -22,8 +22,8 @@
       color:inherit;
       border: 2px solid white;
       height:max-content;
-      padding:10px 100px;
       border-radius: 20px;
+      padding: 5px ;
       box-shadow: 0px 0px 20px lightgrey;
     }
     .tooltip {
@@ -41,8 +41,6 @@
       font-size: 15px;
       position:relative;
       top:20px;
-
-    
     }
     
     /* Show the tooltip text when you mouse over the tooltip container */

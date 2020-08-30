@@ -15,7 +15,7 @@ function MainPage() {
     
       <Menu/> 
     
-      <img src={star} className='star' alt='star' />
+      {/* <img src={star} className='star' alt='star' />
       <img src={star} className='star2' alt='star' />
       <img src={star} className='star3' alt='star' />
       <img src={star} className='star4' alt='star' />
@@ -24,7 +24,7 @@ function MainPage() {
       <img src={star} className='star7' alt='star' />
       <img src={star} className='star8' alt='star' />
       <img src={star} className='star9' alt='star' />
-      <img src={star} className='starRight' alt='star' />
+      <img src={star} className='starRight' alt='star' /> */}
   
     </div>
   );

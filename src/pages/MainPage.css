@@ -2,16 +2,15 @@
   
   background-image: url('../components/images/lio.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
+
   background-position: bottom right;
   height:100vh;
   width: 100vw;
-  min-height:750px;
-  min-width: 1080px;
+
 }
 
 
-.star{
+/* .star{
   position: absolute;
   top:-100px;
   animation: fall 4s;
@@ -139,4 +138,4 @@
    height:0px;
 
    }
- }
+ } */
