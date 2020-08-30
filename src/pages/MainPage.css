@@ -13,13 +13,13 @@ body{
 }
 .card {
   position: relative;
-  top: 40vh;
-  left: 20vw;
+  top: 30vh;
+  left: 10vw;
   height: max-content;
   width:30vw;
-  border: 2px solid yellow;
+  border: 2px solid grey;
   text-align: center;
-  padding:20px;
+  padding:10px;
  
 }
 .card p{

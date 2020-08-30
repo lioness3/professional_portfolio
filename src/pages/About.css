@@ -40,9 +40,10 @@ body{
 .closeView{
     margin:0;
   
-     position:sticky;
+     position:relative;
      z-index: 6;
-     top:0;
+     top:1vh;
+     left:1vw;
      font-size: 30px;
      float:left;
   
@@ -51,23 +52,25 @@ body{
      
 }
 
-.title p{
+/* .title p{
     background-color: black;
-    /* margin:0; */
-    /* padding:20px; */
-    font-size: 40px;
-}
+    margin:0; 
+
+    
+} */
 .title:hover{
     text-shadow: 2px 2px 30px burlywood;
 }
 .titleCol{
     float:left;
     color:white;
-    font-size:40px;
-    padding-top:20vh;
+    font-size:15px;
+  
+    padding-top:10vh;
     padding-left: 2vw;
+    padding-right:2vw;
     background-color:black;
-    height:80vh;
+    height:90vh;
    
    
 }
@@ -80,12 +83,12 @@ body{
     animation: contentBox 1s;  
     float: right;
     border: 3px solid black;
-    height:100vh;
-    width:50vw;
+    height:80vh;
+    width:60vw;
     position: relative;
     top:10vh;
     color:white;
-    font-size: 30px;
+    font-size: 0px;
     text-align: center;
     background-color: black;
 
