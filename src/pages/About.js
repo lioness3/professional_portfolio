@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import { AiFillCloseCircle } from 'react-icons/ai';
+import { AiFillCloseCircle, AiOutlineDoubleLeft, AiOutlineDoubleRight} from 'react-icons/ai';
+import {  RiArrowLeftSLine, RiArrowRightSLine  } from 'react-icons/ri';
 import './About.css'
 import catStretched from '../components/images/catStretched.jpeg'
 import shadow from '../components/images/shadow.jpeg'
@@ -170,6 +171,8 @@ setDisplay(content)
  
         <Link to='/' className='homeLink'>Joann Carter</Link>
         <div className='titleCol' >
+        <div className='leftArrow'><AiOutlineDoubleLeft/></div>
+          
           <div className=' title' onClick={()=>{handleDisplay(languages)}}>
             <p>LANGUAGES</p>
           </div> 
@@ -194,6 +197,9 @@ setDisplay(content)
           <div className='title' onClick={()=>{handleDisplay(cat)}}>
             <p>MY CAT</p>
           </div> 
+     
+          
+          <div className='rightArrow'><AiOutlineDoubleRight/></div>
          
         </div>
         <div className='changeableContent'>
