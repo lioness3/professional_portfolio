@@ -13,7 +13,7 @@ import beach from '../components/images/beach.jpeg'
 import waterfallAdventure from '../components/images/waterfallAdventure.jpeg'
 import Niagra from '../components/images/Niagra.jpeg'
 import craft from '../components/images/craft.jpeg'
-
+import {AiFillCloseCircle} from 'react-icons/ai'
 function About() {
 
 const [displayMentionables, setDisplayMentionables] = useState('infoHidden')
@@ -59,7 +59,7 @@ const fav=(
   <div className='content'>
     <div  onClick={()=>{
       handleDisplay(null)
-    }}> <p className='closeView'>x</p>
+    }}> <p className='closeView'><AiFillCloseCircle/></p>
     <p className='banner'>FAVORITES</p></div>
    
     <p className='pizza'>Pizza <span className='pizzaEmoji'>🍕</span></p>
@@ -74,7 +74,7 @@ const interests = (
   <div className='content'>
     <div className='closeView' onClick={()=>{
       handleDisplay(null)
-    }}>x</div>
+    }}><AiFillCloseCircle/></div>
     <p className='banner'>CAREER INTERESTS</p>
     <p  className='topListItem'>Front End Development</p>
     <p>UI Design</p>
@@ -85,7 +85,7 @@ const languages = (
   <div className='content'>
     <div className='closeView' onClick={()=>{
       handleDisplay(null)
-    }}>x</div>
+    }}><AiFillCloseCircle/></div>
     <p className='banner'>LANGUAGES</p>
     <p className='topListItem'>React</p>
     <p>React Native</p>
@@ -98,7 +98,7 @@ const skills = (
   <div className='content'>
     <div className='closeView' onClick={()=>{
       handleDisplay(null)
-    }}>x</div>
+    }}><AiFillCloseCircle/></div>
     <p className='banner'>SKILLS</p>
     <p className='topListItem'>Pair Programming</p>
     <p>User Experiance </p>
@@ -110,7 +110,7 @@ const funFacts = (
   <div className='content'>
     <div className='closeView' onClick={()=>{
       handleDisplay(null)
-    }}>x</div>
+    }}><AiFillCloseCircle/></div>
     <p className='banner'>FUN FACTS</p>
     <p className='topListItem'>Ham Radio Operator</p>
     <p>Licensed Manicurist</p>
@@ -122,7 +122,7 @@ const adventures = (
   <div className='detailedContent content' >  
     <div className='closeView' onClick={()=>{
       handleDisplay(null)
-    }}>x</div>
+    }}><AiFillCloseCircle/></div>
     <p className='banner'>ADVENTURES</p>
     <p className='caption'>I often travel with the cutest co pilot, Shadow( see more cat pictures in the 'MY CAT' section). </p>
     <img src={coPiolit} className='coPiolit' alt='cat image'/>
@@ -138,7 +138,7 @@ const crafts =(
   <div className='detailedContent content'>
     <div className='closeView' onClick={()=>{
       handleDisplay(null)
-    }}>x</div>
+    }}><AiFillCloseCircle/></div>
     <p className='banner'>HOBBIES</p>
     <p className='caption'>For self-care, I am most relaxed when in nature.</p> 
     <img src={beach} alt='image'/>
@@ -153,7 +153,7 @@ const cat=(
   <div className='detailedContent content' >  
   <div className='closeView' onClick={()=>{
     handleDisplay(null)
-  }}>x</div>
+  }}><AiFillCloseCircle/></div>
   <p className='banner'>PICTURES OF MY CAT</p>
   <img src={shadow} className='shadow' alt='shadow'/>
   <img src={catStretched}  alt='shadow'/>
