@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App';
-import * as serviceWorker from './serviceWorker';
+import './src/index.css';
+import App from './src/components/App';
+import * as serviceWorker from './src/serviceWorker';
 import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(<HashRouter>
