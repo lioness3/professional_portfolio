@@ -52,7 +52,7 @@
       border-radius: 6px;
       font-size: 15px;
       position:relative;
-      bottom:2px;
+      top:20px;
     }
     
     /* Show the tooltip text when you mouse over the tooltip container */
