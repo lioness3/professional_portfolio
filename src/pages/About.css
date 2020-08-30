@@ -1,7 +1,11 @@
-
+body{
+    margin:0;
+}
 .About {
     height: 100vh;
     width:100vw;
+    display: inline-flex;
+    justify-content: space-between;
     background-position: fixed;
     background-image: url('../components/images/bridge.jpg');
     background-size:cover;
@@ -14,7 +18,7 @@
     color:white;
     font-weight: bold;
     margin:0;
-    top:0;
+    /* top:0; */
     padding:50px 0px;
     z-index: 0;
     font-size:40px;
@@ -23,7 +27,7 @@
 .caption{
     position: sticky;
     z-index:5;
-    top:47px;
+    /* top:47px; */
     text-align: center;
     background:rgba(0, 0, 0, .99);
     color:white;
@@ -35,24 +39,22 @@
 }
 .closeView{
     margin:0;
-    height:40px;
-     width:20px;
+  
      position:sticky;
      z-index: 6;
      top:0;
      font-size: 30px;
-    float:left;
-     background-color: black;
-    text-align: center;
-    border-radius: 10px;
-     color:red;
+     float:left;
+  
+    padding:3px;
+     color:darkred;
      
 }
 
 .title p{
     background-color: black;
-    margin:0;
-    padding:20px;
+    /* margin:0; */
+    /* padding:20px; */
     font-size: 40px;
 }
 .title:hover{
@@ -62,32 +64,35 @@
     float:left;
     color:white;
     font-size:40px;
-    padding-top:150px;
+    padding-top:20vh;
+    padding-left: 2vw;
     background-color:black;
-    height:100%;
+    height:80vh;
+   
+   
 }
 .detailedContent{
-   
+    float: right;
     overflow:scroll;
 
 }
 .content{
     animation: contentBox 1s;  
-    float:right;
+    float: right;
     border: 3px solid black;
     height:100vh;
-    width:700px;
+    width:50vw;
     position: relative;
-    top:100px;
+    top:10vh;
     color:white;
     font-size: 30px;
     text-align: center;
     background-color: black;
 
 }
-.topListItem{
+/* .topListItem{
     margin-top: 250px;
-}
+} */
 .detailedContent img{
     height:300px;
     margin:50px;
@@ -100,7 +105,8 @@
     animation-iteration-count: 1;
     color:#9FBE2C;
     position: absolute;
-   width:100%;
+   width:100vw;
+   height:10vh;
    background-color: black;
     top:0; 
     left:0;
@@ -135,10 +141,10 @@
     } 
 }
 @keyframes contentBox{
-    from{margin-top: -100%;
+    from{margin-top: -100vh;
 
 }
-    to{margin-top:0%;
+    to{margin-top:0;
 
      
     }

@@ -14,8 +14,13 @@ function MainPage() {
     <div className="mainPage">
     
       <Menu/> 
+     <div className='card'>
+       <p>Download My App</p>
+       <p>Dine or Ditch </p>
+       <p>For when you cant decide where to eat</p>
+     </div>
     
-      <img src={star} className='star' alt='star' />
+      {/* <img src={star} className='star' alt='star' />
       <img src={star} className='star2' alt='star' />
       <img src={star} className='star3' alt='star' />
       <img src={star} className='star4' alt='star' />
@@ -24,7 +29,7 @@ function MainPage() {
       <img src={star} className='star7' alt='star' />
       <img src={star} className='star8' alt='star' />
       <img src={star} className='star9' alt='star' />
-      <img src={star} className='starRight' alt='star' />
+      <img src={star} className='starRight' alt='star' /> */}
   
     </div>
   );
