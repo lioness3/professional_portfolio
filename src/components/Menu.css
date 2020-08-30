@@ -8,9 +8,9 @@
       display: inline-flex;
       justify-content: space-evenly;
       border-bottom: 5px solid black ;
-      min-width: 100%;
-      background-size: cover;
-      height:100px;
+      width: 100vw;
+ 
+      height:10vh;
       padding-top:50px;
       position: absolute;
       z-index: 200;
