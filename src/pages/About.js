@@ -78,7 +78,7 @@ const interests = (
       handleDisplay(null)
     }}><AiFillCloseCircle/></div>
     <p className='banner'>CAREER INTERESTS</p>
-    <p  className='topListItem'>Front End Development</p>
+    <p >Front End Development</p>
     <p>UI Design</p>
     <p>UX Design</p>
   </div>
@@ -89,7 +89,7 @@ const languages = (
       handleDisplay(null)
     }}><AiFillCloseCircle/></div>
     <p className='banner'>LANGUAGES</p>
-    <p className='topListItem'>React</p>
+    <p>React</p>
     <p>React Native</p>
     <p>Ruby </p>
     <p>Rails</p>
@@ -102,7 +102,7 @@ const skills = (
       handleDisplay(null)
     }}><AiFillCloseCircle/></div>
     <p className='banner'>SKILLS</p>
-    <p className='topListItem'>Pair Programming</p>
+    <p>Pair Programming</p>
     <p>User Experiance </p>
     <p>Web and Mobile Design</p>
     <p>Customer Service</p>
@@ -114,7 +114,7 @@ const funFacts = (
       handleDisplay(null)
     }}><AiFillCloseCircle/></div>
     <p className='banner'>FUN FACTS</p>
-    <p className='topListItem'>Ham Radio Operator</p>
+    <p>Ham Radio Operator</p>
     <p>Licensed Manicurist</p>
     <p>Sig Sauer Training</p>
     <p>Van Life</p>
@@ -176,14 +176,11 @@ setDisplay(content)
           <div className=' title' onClick={()=>{handleDisplay(languages)}}>
             <p>LANGUAGES</p>
           </div> 
-          <div className=' title ' onClick={()=>{handleDisplay(funFacts)}}>
+          <div className='title' onClick={()=>{handleDisplay(funFacts)}}>
             <p>FUN FACTS</p>
           </div> 
           <div className='title' onClick={()=>{handleDisplay(skills)}}>
             <p>SKILLS</p>
-          </div> 
-          <div className='title' onClick={()=>{handleDisplay(interests)}}>
-            <p>CAREER INTERESTS</p>
           </div> 
           <div className='title' onClick={()=>{handleDisplay(fav)}}>
             <p>FAVORITES</p>

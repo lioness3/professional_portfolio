@@ -1,114 +1,16 @@
 body{
     margin:0;
+    
 }
 .About {
+
     height: 100vh;
     width:100vw;
-    /* display: inline-flex;
-    justify-content: space-between; */
     background-position: fixed;
     background-image: url('../components/images/bridge.jpg');
     background-size:cover;
     background-repeat: no-repeat;
 }
-.banner{
-    background-color: black;
-    position:sticky;
-    width:100%;
-    color:white;
-    font-weight: bold;
-    margin:0;
-    /* top:0; */
-    padding:50px 0px;
-    z-index: 0;
-    font-size:30px;
-    border-bottom: 1px solid white;
-}
-.caption{
-    position: sticky;
-    z-index:5;
-    /* top:47px; */
-    text-align: center;
-    background:rgba(0, 0, 0, .99);
-    color:white;
-    height:50px;
-    margin:0;
-    padding:15px 0px;
-    font-size: 20px;
- 
-}
-.closeView{
-    margin:0;
-  
-     position:relative;
-     z-index: 6;
-     top:1vh;
-     left:1vw;
-     font-size: 30px;
-     float:left;
-  
-    padding:3px;
-     color:darkred;
-     
-}
-
-.title p{
-    display: flex;
-  margin:40px 100px;
-    text-align: center;
-
-  
-}
-.title:hover{
-    text-shadow: 2px 2px 30px burlywood;
-}
-.titleCol{
-    /* float:left; */
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    color:white;
-    font-size:20px;
-    display:flex;
-  flex-direction: row;
-width:100%;
-overflow-x: scroll;
-position: relative;
-top:10vh;
-    /* padding: 2vh 10vw 2vh 10vw; */
-    background-color:black;
-  
-   
-   
-}
-.detailedContent{
-    
-    overflow:scroll;
-
-}
-.content{
-    animation: contentBox 1s;  
-   justify-self: center;
-    border: 3px solid black;
-    height:80vh;
-    width:60vw;
-    position: relative;
-    top:10vh;
-    left:20vw;
-    color:white;
-    font-size: 20px;
-    text-align: center;
-    background-color: black;
-
-}
-/* .topListItem{
-    margin-top: 250px;
-} */
-.detailedContent img{
-    height:300px;
-    margin:50px;
-}
-
-
 .homeLink {
     animation-name: homeLink ;
     animation-duration: 2s;
@@ -120,8 +22,8 @@ top:10vh;
    background-color: black;
     top:0; 
     left:0;
-    padding:30px 0px 10px 20px;
-    font-size: 50px;
+    padding:3vh 0vw 3vh 3vw;
+    font-size: 60px;
     text-decoration: none;
 
 }
@@ -131,21 +33,126 @@ top:10vh;
     text-shadow: 0px 0px 5px #D5FE3D;
 }
 .rightArrow, .leftArrow{
-    color:darkgrey;
-    margin-top: 15vh;
-    font-size: 20px;
+    color:rgba(92, 92, 92, .8);
+
+    font-size: 30px;
     position: sticky;
    z-index: 5;
-   
+  
 }
 .rightArrow{
-    right:40vw;
+    
+    right:2vw;
+  
 }
 .leftArrow{
 
-   left:40vw;
+   left:2vw;
 
 }
+.title{
+    padding: 0vh 5vw;
+    
+    }
+    .title p{
+        text-align: center;
+        width:40vw;
+        padding: 0;
+      
+    
+    }
+    
+    
+    .title:hover{
+        text-shadow: 2px 2px 30px burlywood;
+    }
+    .titleCol{
+    
+        border-top: 3px solid grey;
+        border-bottom: 3px solid grey;
+        color:white;
+        font-size:20px;
+        display:flex;
+    
+        width:100%;
+        overflow-x: scroll;
+        position: absolute;
+        top:13vh;
+        height:10vh;
+       align-items: center;
+      
+        background-color:black;
+    
+    }
+.banner{
+    background-color: black;
+    position:sticky;
+    top:0;
+    width:100%;
+    color:white;
+    font-weight: bold;
+    margin:0;
+    padding:5vh 0vw;
+    z-index: 0;
+    font-size:30px;
+    border-bottom: 3px solid grey;
+}
+.caption{
+    position: sticky;
+    z-index:5;
+    top: 5vh;
+    text-align: center;
+    background:rgba(0, 0, 0, .99);
+    color:white;
+    height:50px;
+    margin:0;
+    padding:15px 0px;
+    font-size: 20px;
+ 
+}
+.closeView{
+    margin:0;
+     position:sticky;
+     z-index: 6;
+     top:1vh;
+     left:1vw;
+     font-size: 30px;
+     float:left;
+     padding:3px;
+     color:rgb(111, 8, 8 );
+     
+}
+
+.detailedContent{
+    
+    overflow:scroll;
+
+}
+.content{
+    animation: contentBox 1s;  
+   justify-self: center;
+    border: 3px solid darkgrey;
+    box-shadow: 40px 100px 50px rgba(0, 0 ,0 ,.6);
+    height:80vh;
+    width:60vw;
+    position: absolute;
+    top:23vh;
+    left:20vw;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+
+}
+
+.detailedContent img{
+    height:40vh;
+    margin:5vh;
+}
+
+
+
+
 
 @keyframes homeLink{
     0%{
