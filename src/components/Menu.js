@@ -11,10 +11,12 @@ import { Switch, Route, Link } from 'react-router-dom';
 import Pdf from './images/Resume.pdf'
 function Menu() {
   const [contactInfo, setContactInfo] = useState(null)
+  const [emailColor, setEmailColor] = useState('black')
+  
   const show = (  <div className='contactInfo'>
-                 <p><a href="tel:+16035665610">Call <MdCall/></a></p> 
-                 <p><a href="sms://+16035665610">Text <MdSms/></a></p> 
-                 <p><a href="mailto: joann333carter@gmail.com">Email <MdEmail/></a></p>
+                    <a href="tel:+16035665610"><MdCall/> Call</a> 
+                    <a href="sms://+16035665610"><MdSms/> Text</a> 
+                    <a href="mailto: joann333carter@gmail.com"><MdEmail/> Email</a>
                    </div>)
   
   
@@ -27,33 +29,32 @@ function Menu() {
     }
     
   }
+  const handleIconColor = ( icon, seticon)=>{
+   let iconColor =  (icon === 'black')? 'rgba(15, 214, 237, .3  )': 'black'
+    seticon(iconColor)
+  }
+
   return (
     <div className="menu">
       
 
-      <div className='tooltip menuCol'>
-        
-      <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className='resume'><VscFilePdf/></a>
-      
-        <span className='tooltiptext'>Download my resume</span>
+      <div className='option'onClick={()=>{handleIconColor(emailColor, setEmailColor); showContactInfo()}} >
+       
+        <span className='icon' style={{color: `${emailColor}`}} ><MdEmail/></span>
+        <p className='description'>Contact</p>
       </div>
-      
-      <div className="tooltip menuCol">
-        <a href='https://github.com/lioness3' rel="noopener noreferrer" target = "_blank" className='githubLink'><AiFillGithub/></a>
-        <span className="tooltiptext">
-          Github Link</span>
+      {contactInfo}
+      <div className="option" >
+        <a href='https://github.com/lioness3' rel="noopener noreferrer" target = "_blank" className='icon' ><AiFillGithub/></a>
+        <p className="description">GitHub</p>
       </div>
 
-      {/* <div className='tooltip menuCol'onClick={()=>{showContactInfo()}}  >
-        <span className='contact' ><MdEmail/></span>
-        <span className='tooltiptext'>Contact Information</span>
-        {contactInfo}
-      </div> */}
-     
-      <div className='tooltip menuCol'>
  
-          <Link to='/about' className='aboutLink'><BsInfoCircleFill/></Link>
-        <span className='tooltiptext'>Learn More About Me</span>
+     
+      <div className='option' >
+ 
+          <Link to='/about' className='icon'><BsInfoCircleFill/></Link>
+        <p className='description'>About</p>
       </div>
 
      
