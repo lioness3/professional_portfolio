@@ -62,9 +62,7 @@ const [details, setDetails] = useState(contactMe)
       </div>
 
       <div className='card resume'>
-        <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className='resume'> <VscFilePdf/> <p>Download My Resume</p>  </a>
-     
- 
+        <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className=''> <VscFilePdf/> <p>Download My Resume</p>  </a>
       </div>
 
 
