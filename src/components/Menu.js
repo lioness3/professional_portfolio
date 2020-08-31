@@ -3,12 +3,12 @@ import './Menu.css';
 import { AiFillGithub } from 'react-icons/ai';
 import { MdEmail, MdCall, MdSms } from 'react-icons/md';
 import { BsInfoCircleFill } from 'react-icons/bs';
-import { VscFilePdf } from 'react-icons/vsc';
+
 
 
 
 import { Switch, Route, Link } from 'react-router-dom';
-import Pdf from './images/Resume.pdf'
+
 function Menu() {
   const [contactInfo, setContactInfo] = useState(null)
   const [emailColor, setEmailColor] = useState('black')
