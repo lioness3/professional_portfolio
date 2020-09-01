@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import Menu from '../components/Menu';
-import { MdEmail, MdCall, MdSms, MdGetApp } from 'react-icons/md';
+import Name from '../components/Name';
+import { MdEmail, MdCall, MdSms, MdGetApp,MdHelpOutline } from 'react-icons/md';
 import { VscFilePdf } from 'react-icons/vsc';
 import './MainPage.css';
 import Pdf from '../components/images/Resume.pdf';
-
+import Message from '../components/Message'
 
 
 
 function MainPage() {
 const [contact, setContactInfo]= useState(null)
+const [message, setMessage] = useState(false)
+
 const contactMe = (
   <div>
     <MdEmail/>
@@ -48,12 +51,20 @@ const [details, setDetails] = useState(contactMe)
     setContactInfo(null)
   }
 }
+const handleMessageDisplay = ()=>{
+  if(message){
+    setMessage(false)
+  }else{
+    setMessage(true)
+  }
+  
+}
 
   return (
     <div className="mainPage">
-    
+   
       <Menu/> 
-
+    <Message show={message}/>
       <div className={`card  ${available}`} onClick={()=>{ 
       handleAppStore()
         }}>
@@ -65,9 +76,14 @@ const [details, setDetails] = useState(contactMe)
         <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className=''> <VscFilePdf/> <p>Download My Resume</p>  </a>
       </div>
 
-
-
+      <Name/>
+      <div className='help' onClick={()=>{
+handleMessageDisplay()
+      }}>
+      <MdHelpOutline color='red' size='40px'/>
   
+      </div>
+
     </div>
   );
 }

@@ -14,11 +14,12 @@ body{
 }
 .card{
   background-color:rgba(15, 214, 237, .8  );
-  width:30vw;
-  height:15vh;
+  width:20vw;
+  height:max-content;
   border: 5px solid white;
   text-align: center;
   font-weight: bold;
+  padding:2vh;
  font-size: 50px;
 
 
@@ -37,20 +38,20 @@ line-height: 100%;
   color: white;
   position: absolute;
   bottom: 40vh;
-  left:10vw;
+  left:3vw;
 
 }
 .unAvailable{
   color: red;
   position: absolute;
   bottom: 40vh;
-  left:10vw;
+  left:3vw;
 
 }
 .resume {
   position: absolute;
   bottom: 40vh;
-  right:10vw;
+  right:3vw;
 
 }
 .resume :any-link{
@@ -59,3 +60,9 @@ line-height: 100%;
   color: white;
  
  } 
+ .help{
+   position: absolute;
+   bottom:0;
+   right:0;
+   z-index: 100;
+ }

@@ -6,16 +6,16 @@
   justify-content: space-evenly;
   border-bottom: 5px solid black ;
   width: 100vw;
-  height:10vh;
+  height:5vh;
   padding:3vh;
   margin:0;
 }
 .contactInfo a:link{
-font-size: 20px;
+font-size: 25px;
 text-decoration: none;
 color:black;
-display: flex;
-line-height: 4vh;
+padding:10px;
+align-content: center;
 font-weight:bold;
 }
 

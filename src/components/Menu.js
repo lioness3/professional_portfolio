@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Menu.css';
-import { AiFillGithub } from 'react-icons/ai';
-import { MdEmail, MdCall, MdSms } from 'react-icons/md';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { MdEmail, MdCall, MdSms, MdInfo } from 'react-icons/md';
 import { BsInfoCircleFill } from 'react-icons/bs';
 
 
@@ -48,12 +48,16 @@ function Menu() {
         <a href='https://github.com/lioness3' rel="noopener noreferrer" target = "_blank" className='icon' ><AiFillGithub/></a>
         <p className="description">GitHub</p>
       </div>
+      <div className="option" >
+        <a href='https://www.linkedin.com/in/joann-carter/' rel="noopener noreferrer" target = "_blank" className='icon' ><AiFillLinkedin/></a>
+        <p className="description">LinkedIn</p>
+      </div>
 
  
      
       <div className='option' >
  
-          <Link to='/about' className='icon'><BsInfoCircleFill/></Link>
+          <Link to='/about' className='icon'><MdInfo/></Link>
         <p className='description'>About</p>
       </div>
 

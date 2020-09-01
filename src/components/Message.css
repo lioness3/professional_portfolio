@@ -1,0 +1,50 @@
+.message{
+    color:black
+}
+.welcome{
+    background-color:grey;
+    width:100vw;
+    height:15vh;
+    border: 5px solid white;
+    text-align: center;
+    margin-top: 3vh;;
+}
+.hireMe{
+    animation: hire 2s 1s 1 alternate;
+    background-color:rgba(15, 214, 237, .8  );
+    width:20vw;
+    height:max-content;
+    border: 5px solid white;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 2vh;
+    position: absolute;
+   top: 33vh;
+    left: 40vw;
+
+}
+.hireMe p{
+
+margin: 0;
+}
+h1{
+    color: white;
+    text-shadow: 2px 2px 30px yellow;
+    text-decoration: underline;
+}
+@keyframes hire{
+    0%{transform: rotate(0deg);
+        
+
+}
+   40%{transform: rotate(10deg);
+       
+     
+    
+    }
+    80%{transform: rotate(-10deg)
+    }
+    100%{transform: rotate(0deg)
+
+    }
+}
