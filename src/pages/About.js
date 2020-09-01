@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import { AiFillCloseCircle, AiOutlineDoubleLeft, AiOutlineDoubleRight} from 'react-icons/ai';
+import '../components/Menu.css';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { MdEmail, MdCall, MdSms, MdInfo } from 'react-icons/md';
 import {  RiArrowLeftSLine, RiArrowRightSLine  } from 'react-icons/ri';
 import './About.css'
 import catStretched from '../components/images/catStretched.jpeg'
@@ -23,6 +26,29 @@ const [displayFavorites, setDisplayFavorites] = useState('infoHidden')
 const [displayAdventures, setDisplayAdventures]= useState('infoHidden')
 const [displayHobbies, setDisplayHobbies] = useState('infoHidden')
 const [display, setDisplay]= useState(null)
+const [contactInfo, setContactInfo] = useState(null)
+const [emailColor, setEmailColor] = useState('black')
+
+const show = (  <div className='contactInfo'>
+                  <a href="tel:+16035665610"><MdCall/> Call</a> 
+                  <a href="sms://+16035665610"><MdSms/> Text</a> 
+                  <a href="mailto: joann333carter@gmail.com"><MdEmail/> Email</a>
+                 </div>)
+
+
+const showContactInfo = () =>{
+ 
+  if (contactInfo === null){
+    setContactInfo(show)
+  }else {
+    setContactInfo(null)
+  }
+  
+}
+const handleIconColor = ( icon, seticon)=>{
+ let iconColor =  (icon === 'black')? 'rgba(15, 214, 237, .3  )': 'black'
+  seticon(iconColor)
+}
 
 const showMentionablesInfo = ()=>{
   if (displayMentionables === 'infoHidden'){
@@ -168,6 +194,28 @@ setDisplay(content)
 }
   return (
     <div className="About" >
+
+
+
+    <div className="menu">
+      
+
+      <div className='option'onClick={()=>{handleIconColor(emailColor, setEmailColor); showContactInfo()}} >
+       
+        <span className='icon' style={{color: `${emailColor}`}} ><MdEmail/></span>
+        <p className='description'>Contact</p>
+      </div>
+      {contactInfo}
+      <div className="option" >
+        <a href='https://github.com/lioness3' rel="noopener noreferrer" target = "_blank" className='icon' ><AiFillGithub/></a>
+        <p className="description">GitHub</p>
+      </div>
+      <div className="option" >
+        <a href='https://www.linkedin.com/in/joann-carter/' rel="noopener noreferrer" target = "_blank" className='icon' ><AiFillLinkedin/></a>
+        <p className="description">LinkedIn</p>
+      </div>
+
+    </div>
  
         <Link to='/' className='homeLink'>Joann Carter</Link>
         <div className='titleCol' >

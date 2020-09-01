@@ -23,7 +23,7 @@ function ForHire(props) {
   }else{
       return (
           <div className='hireMe'>
-        <h1>FOR HIRE!</h1>
+        <p>FOR HIRE!</p>
         </div>
       )
   }

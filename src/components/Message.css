@@ -3,11 +3,12 @@
 }
 .welcome{
     background-color:grey;
-    width:100vw;
-    height:15vh;
+    width:90vw;
+    padding:0;
+    height:max-content;
     border: 5px solid white;
     text-align: center;
-    margin-top: 3vh;;
+    margin-top: 3vmin;
 }
 .hireMe{
     animation: hire 2s 1s 1 alternate;
@@ -17,10 +18,10 @@
     border: 5px solid white;
     text-align: center;
     font-weight: bold;
-    padding-bottom: 2vh;
+    
     position: absolute;
-   top: 33vh;
-    left: 40vw;
+   top: 40vh;
+    left: 39vw;
 
 }
 .moreDetails{
@@ -30,20 +31,21 @@
     border: 5px solid white;
     text-align: center;
     font-weight: bold;
+    
     position: absolute;
-   top: 33vh;
-    left: 40vw;
+   top: 40vh;
+    left: 39vw;
 }
 .moreDetails p{
-
+    font-size: 3vmin;
 margin: 0;
 }
 .moreDetails :last-child{
- font-size: 10px;
+ font-size: 2vmin;
 line-height: 100%;
 
 }
-.hireMe h1{
+.hireMe {
     color: white;
     text-shadow: 2px 2px 30px yellow;
     text-decoration: underline;

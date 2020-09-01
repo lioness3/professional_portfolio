@@ -15,7 +15,7 @@ body{
 .card{
   background-color:rgba(15, 214, 237, .8  );
   width:20vw;
-  height:max-content;
+  height:10vmax;
   border: 5px solid white;
   text-align: center;
   font-weight: bold;
@@ -27,10 +27,10 @@ body{
 
 }
 .card p{
-  font-size: 15px;
+  font-size: 1vmax;
   color: black;
 line-height: 100%;
-
+margin:0;
  
 
 }
@@ -42,7 +42,7 @@ line-height: 100%;
 
 }
 .unAvailable{
-  color: red;
+  color: rgb(111, 8, 8 );
   position: absolute;
   bottom: 40vh;
   left:3vw;

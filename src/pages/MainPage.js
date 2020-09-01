@@ -79,11 +79,11 @@ handleMessageDisplay(forHire, setForHire)
         <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className=''> <VscFilePdf/> <p>Download My Resume</p>  </a>
       </div>
 
-      <Name/>
+      <Link to='/about'><Name /></Link> 
       <div className='help' onClick={()=>{
 handleMessageDisplay(message, setMessage)
       }}>
-      <MdHelpOutline color='red' size='40px'/>
+      <MdHelpOutline color='rgb(111, 8, 8 )' size='5vmax'/>
  
       </div>
 
