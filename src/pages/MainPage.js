@@ -7,13 +7,12 @@ import { VscFilePdf } from 'react-icons/vsc';
 import './MainPage.css';
 import Pdf from '../components/images/Resume.pdf';
 import Message from '../components/Message'
-
-
+import ForHire from '../components/ForHire'
 
 function MainPage() {
 const [contact, setContactInfo]= useState(null)
 const [message, setMessage] = useState(false)
-
+const [forHire, setForHire] = useState(false)
 const contactMe = (
   <div>
     <MdEmail/>
@@ -51,11 +50,11 @@ const [details, setDetails] = useState(contactMe)
     setContactInfo(null)
   }
 }
-const handleMessageDisplay = ()=>{
-  if(message){
-    setMessage(false)
+const handleMessageDisplay = (content, setContent)=>{
+  if(content){
+    setContent(false)
   }else{
-    setMessage(true)
+    setContent(true)
   }
   
 }
@@ -71,17 +70,21 @@ const handleMessageDisplay = ()=>{
           <MdGetApp/>
          <p>Download My App</p>     
       </div>
-
+      <div onClick={()=>{
+handleMessageDisplay(forHire, setForHire)
+      }}>
+      <ForHire show={forHire}/>
+      </div>
       <div className='card resume'>
         <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className=''> <VscFilePdf/> <p>Download My Resume</p>  </a>
       </div>
 
       <Name/>
       <div className='help' onClick={()=>{
-handleMessageDisplay()
+handleMessageDisplay(message, setMessage)
       }}>
       <MdHelpOutline color='red' size='40px'/>
-  
+ 
       </div>
 
     </div>

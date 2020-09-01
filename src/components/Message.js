@@ -11,17 +11,7 @@ function Message(props) {
              <p>There is an about sectkion, a PDF download for my resume, contact information, my custom App download, and even pictures of my cat.</p>
              <p>Im currently looking for a career in front end development. </p>
           </div>
-          <div className='hireMe'>
-            <h1>FOR HIRE!</h1>
-          
-           
-                <p>Hard Working</p>
-                <p>Creative</p>
-                <p>Interpersonal Skills</p>
-                <p>Problem Solver</p>
        
-    
-          </div>
     
         
         </div>

@@ -173,9 +173,6 @@ setDisplay(content)
         <div className='titleCol' >
         <div className='leftArrow'><AiOutlineDoubleLeft/></div>
           
-          <div className=' title' onClick={()=>{handleDisplay(languages)}}>
-            <p>LANGUAGES</p>
-          </div> 
           <div className='title' onClick={()=>{handleDisplay(funFacts)}}>
             <p>FUN FACTS</p>
           </div> 

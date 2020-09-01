@@ -23,11 +23,27 @@
     left: 40vw;
 
 }
-.hireMe p{
+.moreDetails{
+    background-color:rgba(15, 214, 237, .8  );
+    width:20vw;
+    height:max-content;
+    border: 5px solid white;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+   top: 33vh;
+    left: 40vw;
+}
+.moreDetails p{
 
 margin: 0;
 }
-h1{
+.moreDetails :last-child{
+ font-size: 10px;
+line-height: 100%;
+
+}
+.hireMe h1{
     color: white;
     text-shadow: 2px 2px 30px yellow;
     text-decoration: underline;

@@ -33,9 +33,10 @@ body{
     text-shadow: 0px 0px 5px #D5FE3D;
 }
 .rightArrow, .leftArrow{
-    color:rgba(128, 139, 150, .5);
+    color:rgba(255, 255, 255, .6);
 
     font-size: 40px;
+    margin:0;
     position: sticky;
    z-index: 5;
   
