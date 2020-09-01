@@ -16,7 +16,7 @@ body{
     animation-duration: 2s;
     animation-iteration-count: 1;
     color:#9FBE2C;
-    position: absolute;
+    position: fixed;
    width:100vmin;
    height:9vmax;
    background-color: black;
@@ -131,8 +131,9 @@ body{
 .detailedContent{
     
     overflow:scroll;
-
+    padding-bottom: 50vh;
 }
+
 .content{
     animation: contentBox 1s;  
 

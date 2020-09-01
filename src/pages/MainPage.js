@@ -8,9 +8,10 @@ import './MainPage.css';
 import Pdf from '../components/images/Resume.pdf';
 import Message from '../components/Message'
 import ForHire from '../components/ForHire'
-
+import { AiFillCloseCircle} from 'react-icons/ai';
 function MainPage() {
 const [contact, setContactInfo]= useState(null)
+const [appDetails, setAppDetails] = useState('Download My App')
 const [message, setMessage] = useState(false)
 const [forHire, setForHire] = useState(false)
 const contactMe = (
@@ -21,12 +22,15 @@ const contactMe = (
 )
 const [details, setDetails] = useState(contactMe)
   const [available, setAvailability] = useState('available')
+
   const handleAppStore = ()=>{
-    console.log('clicked');
+   
     
     if (available === 'available'){
+      setAppDetails('Work in Progress')
       setAvailability('unAvailable')
     }else {
+      setAppDetails('Download My App')
       setAvailability('available')
     }
   }
@@ -63,12 +67,16 @@ const handleMessageDisplay = (content, setContent)=>{
     <div className="mainPage">
    
       <Menu/> 
-    <Message show={message}/>
+      
+  
+        <Message show={message} handleMessageDisplay={()=>{
+handleMessageDisplay(message, setMessage)
+    }} />
       <div className={`card  ${available}`} onClick={()=>{ 
       handleAppStore()
         }}>
           <MdGetApp/>
-         <p>Download My App</p>     
+         <p>{appDetails}</p>     
       </div>
       <div onClick={()=>{
 handleMessageDisplay(forHire, setForHire)

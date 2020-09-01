@@ -18,7 +18,11 @@ import beach from '../components/images/beach.jpeg'
 import waterfallAdventure from '../components/images/waterfallAdventure.jpeg'
 import Niagra from '../components/images/Niagra.jpeg'
 import craft from '../components/images/craft.jpeg'
-
+import volcano from '../components/images/volcano.jpeg'
+import catInVan from '../components/images/catInVan.jpeg'
+import workingCat from '../components/images/workingCat.jpeg'
+import peace from '../components/images/peace.jpeg'
+import nebraska from '../components/images/nebraska.jpeg'
 function About() {
 
 const [displayMentionables, setDisplayMentionables] = useState('infoHidden')
@@ -55,39 +59,24 @@ const handleIconColor = ( icon, setIcon)=>{
  let iconColor =  (icon === 'black')? 'rgba(15, 214, 237, .3  )': 'black'
   setIcon(iconColor)
 }
+const handleDisplay=(content)=>{
+  setDisplay(content)
+  }
+const handleWordColor = (word, setWord)=>{
+ let wordColor =  (word === 'white')? '#D5FE3D': 'white'
+  setFactColor('white')
+  setSkillColor('white')
+  setFavColor('white')
+  setAdventureColor('white')
+  setHobbyColor('white')
+  setCatColor('white')
+    setWord(wordColor)
+  }
 
-const showMentionablesInfo = ()=>{
-  if (displayMentionables === 'infoHidden'){
-    setDisplayMentionables('info')
-  }else{
-    setDisplayMentionables('infoHidden')
-  }
+
+
   
-}
-const showFavoritesInfo = ()=>{
-  if (displayFavorites === 'infoHidden'){
-    setDisplayFavorites('info')
-  }else{
-    setDisplayFavorites('infoHidden')
-  }
-  
-}
-const showAdventuresInfo = ()=>{
-  if (displayAdventures === 'infoHidden'){
-    setDisplayAdventures('stories')
-  }else{
-    setDisplayAdventures('infoHidden')
-  }
-  
-}
-const showHobbiesInfo = ()=>{
-  if (displayHobbies === 'infoHidden'){
-    setDisplayHobbies('stories')
-  }else{
-    setDisplayHobbies('infoHidden')
-  }
-  
-}
+
 
 const fav=(
   <div className='content'>
@@ -164,6 +153,8 @@ const adventures = (
     <img src={Niagra} className='niagra' alt='image'/>
     <img src={hike} alt='image'/>
     <img src={cliff} alt='image of edge of cliff'/>
+    <img src={volcano} alt='image of scenery'/>
+    <img src={nebraska} alt='image of scenery'/>
   
   </div>
 )
@@ -176,6 +167,7 @@ const crafts =(
     <p className='banner'>HOBBIES</p>
     <p className='caption'>For self-care, I am most relaxed when in nature.</p> 
     <img src={beach} alt='image'/>
+    <img src={peace} alt='image of scenery'/>
     <p className='caption'>I achieve a great sense of acomplishment when I am able to create crafts out of recycled material. </p>
     <img src={craft} className='craft' alt='craft image' /> 
     <p className='caption'>In my free time, I find myself drawn to all things related to customization.</p>
@@ -193,56 +185,48 @@ const cat=(
   <img src={catStretched}  alt='shadow'/>
   <img src={workBuddy} alt='image of cat'/>
   <img src={canyonCat} alt='image of cat'/>
+  <img src={catInVan} alt='image of a van and a cat'/>
+  <img src={workingCat} alt='image of a van and a cat'/>
 </div>
 )
-const handleDisplay=(content)=>{
-setDisplay(content)
-}
-const handleWordColor = (word, setWord)=>{
-  let wordColor =  (word === 'white')? '#D5FE3D': 'white'
- setFactColor('white')
- setSkillColor('white')
-setFavColor('white')
- setAdventureColor('white')
- setHobbyColor('white')
- setCatColor('white')
-  setWord(wordColor)
-}
+
   return (
     <div className="About" >
 
 
 
-    <div className="menu">
-    <div className='option' >
+      <div className="menu">
+        <div className='option' >
  
- <Link to='/' className='icon'><AiFillHome/></Link>
-<p className='description'>Back</p>
-</div>
+          <Link to='/' className='icon'><AiFillHome/></Link>
+          <p className='description'>Back</p>
+        </div>
 
-      <div className='option'onClick={()=>{handleIconColor(emailColor, setEmailColor); showContactInfo()}} >
+        <div className='option'onClick={()=>{handleIconColor(emailColor, setEmailColor); showContactInfo()}} >
        
-        <span className='icon' style={{color: `${emailColor}`}} ><MdEmail/></span>
-        <p className='description'>Contact</p>
-      </div>
+          <span className='icon' style={{color: `${emailColor}`}} ><MdEmail/></span>
+          <p className='description'>Contact</p>
+        </div>
       {contactInfo}
-      <div className="option" >
-        <a href='https://github.com/lioness3' rel="noopener noreferrer" target = "_blank" className='icon' ><AiFillGithub/></a>
-        <p className="description">GitHub</p>
-      </div>
-      <div className="option" >
-        <a href='https://www.linkedin.com/in/joann-carter/' rel="noopener noreferrer" target = "_blank" className='icon' ><AiFillLinkedin/></a>
-        <p className="description">LinkedIn</p>
-      </div>
+        <div className="option" >
+          <a href='https://github.com/lioness3' rel="noopener noreferrer" target = "_blank" className='icon' ><AiFillGithub/></a>
+          <p className="description">GitHub</p>
+       </div>
+       <div className="option" >
+         <a href='https://www.linkedin.com/in/joann-carter/' rel="noopener noreferrer" target = "_blank" className='icon' ><AiFillLinkedin/></a>
+         <p className="description">LinkedIn</p>
+       </div>
 
-    </div>
+      </div>
 
 
 
 
       
         <div className='titleCol' >
-        <div className='leftArrow'><AiOutlineDoubleLeft/></div>
+          <div className='leftArrow'>
+            <AiOutlineDoubleLeft/>
+          </div>
           
           <div className='title' onClick={()=>{handleDisplay(funFacts); handleWordColor(factColor, setFactColor)}}>
             <p style={{color: `${factColor}`}}>FUN FACTS</p>
@@ -264,7 +248,9 @@ setFavColor('white')
           </div> 
      
           
-          <div className='rightArrow'><AiOutlineDoubleRight/></div>
+          <div className='rightArrow'>
+            <AiOutlineDoubleRight/>
+          </div>
          
         </div>
         <div className='changeableContent'>

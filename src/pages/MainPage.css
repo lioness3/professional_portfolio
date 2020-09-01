@@ -17,6 +17,7 @@ body{
   width:20vw;
   height:20vmax;
   border: 5px solid white;
+  border-radius: 10px;
   text-align: center;
   font-weight: bold;
 
@@ -43,6 +44,7 @@ margin:0;
 
 }
 .unAvailable{
+  background-color: grey;
   color: rgb(111, 8, 8 );
   position: absolute;
   bottom: 40vh;
@@ -62,8 +64,8 @@ margin:0;
  
  } 
  .help{
-   position: absolute;
+   position: fixed;
    bottom:0;
    right:0;
-   z-index: 100;
+   z-index: 3;
  }
