@@ -17,15 +17,17 @@ body{
     animation-iteration-count: 1;
     color:#9FBE2C;
     position: absolute;
-   width:100vw;
-   height:5vmax;
+   width:100vmin;
+   height:9vmax;
    background-color: black;
+
     bottom:0; 
-    left:0;
-    padding:3vh 0vw 3vh 3vw;
+
+
     font-size: 5vmax;
     text-decoration: none;
-    border-top: 3px solid grey;;
+    border-top: 3px solid grey;
+    text-indent: 3vw;
 
 }
 .homeLink:hover{
@@ -76,7 +78,7 @@ body{
         font-size:2vmax;
         display:flex;
     
-        width:100%;
+        width:100vw;
         overflow-x: scroll;
         position: relative;
         top:0;
@@ -90,7 +92,7 @@ body{
     background-color: black;
     position:sticky;
     top:0;
-    width:100%;
+    width:100vw;
     color:white;
     font-weight: bold;
     margin:0;
@@ -133,9 +135,9 @@ body{
 }
 .content{
     animation: contentBox 1s;  
-   justify-self: center;
+
     border: 3px solid darkgrey;
-    box-shadow: 40px 100px 50px rgba(0, 0 ,0 ,.6);
+
     height:80vh;
     width:100vw;
     position: relative;

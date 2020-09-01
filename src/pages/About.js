@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import { AiFillCloseCircle, AiOutlineDoubleLeft, AiOutlineDoubleRight} from 'react-icons/ai';
 import '../components/Menu.css';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillHome } from 'react-icons/ai';
 import { MdEmail, MdCall, MdSms, MdInfo } from 'react-icons/md';
 import {  RiArrowLeftSLine, RiArrowRightSLine  } from 'react-icons/ri';
 import './About.css'
@@ -28,6 +28,12 @@ const [displayHobbies, setDisplayHobbies] = useState('infoHidden')
 const [display, setDisplay]= useState(null)
 const [contactInfo, setContactInfo] = useState(null)
 const [emailColor, setEmailColor] = useState('black')
+const [factColor, setFactColor] = useState('white')
+const [skillColor, setSkillColor] = useState('white')
+const [favColor, setFavColor] = useState('white')
+const [adventureColor, setAdventureColor] = useState('white')
+const [hobbyColor, setHobbyColor] = useState('white')
+const [catColor, setCatColor] = useState('white')
 
 const show = (  <div className='contactInfo'>
                   <a href="tel:+16035665610"><MdCall/> Call</a> 
@@ -45,9 +51,9 @@ const showContactInfo = () =>{
   }
   
 }
-const handleIconColor = ( icon, seticon)=>{
+const handleIconColor = ( icon, setIcon)=>{
  let iconColor =  (icon === 'black')? 'rgba(15, 214, 237, .3  )': 'black'
-  seticon(iconColor)
+  setIcon(iconColor)
 }
 
 const showMentionablesInfo = ()=>{
@@ -192,13 +198,27 @@ const cat=(
 const handleDisplay=(content)=>{
 setDisplay(content)
 }
+const handleWordColor = (word, setWord)=>{
+  let wordColor =  (word === 'white')? '#D5FE3D': 'white'
+ setFactColor('white')
+ setSkillColor('white')
+setFavColor('white')
+ setAdventureColor('white')
+ setHobbyColor('white')
+ setCatColor('white')
+  setWord(wordColor)
+}
   return (
     <div className="About" >
 
 
 
     <div className="menu">
-      
+    <div className='option' >
+ 
+ <Link to='/' className='icon'><AiFillHome/></Link>
+<p className='description'>Back</p>
+</div>
 
       <div className='option'onClick={()=>{handleIconColor(emailColor, setEmailColor); showContactInfo()}} >
        
@@ -216,28 +236,31 @@ setDisplay(content)
       </div>
 
     </div>
- 
-        <Link to='/' className='homeLink'>Joann Carter</Link>
+
+
+
+
+      
         <div className='titleCol' >
         <div className='leftArrow'><AiOutlineDoubleLeft/></div>
           
-          <div className='title' onClick={()=>{handleDisplay(funFacts)}}>
-            <p>FUN FACTS</p>
+          <div className='title' onClick={()=>{handleDisplay(funFacts); handleWordColor(factColor, setFactColor)}}>
+            <p style={{color: `${factColor}`}}>FUN FACTS</p>
           </div> 
-          <div className='title' onClick={()=>{handleDisplay(skills)}}>
-            <p>SKILLS</p>
+          <div className='title' onClick={()=>{handleDisplay(skills);handleWordColor(skillColor, setSkillColor)}}>
+            <p style={{color: `${skillColor}`}}>SKILLS</p>
           </div> 
-          <div className='title' onClick={()=>{handleDisplay(fav)}}>
-            <p>FAVORITES</p>
+          <div className='title' onClick={()=>{handleDisplay(fav);handleWordColor(favColor, setFavColor)}}>
+            <p style={{color: `${favColor}`}}>FAVORITES</p>
           </div>  
-          <div className='title' onClick={()=>{handleDisplay(adventures)}}>
-            <p>ADVENTURES</p>
+          <div className='title' onClick={()=>{handleDisplay(adventures);handleWordColor(adventureColor, setAdventureColor)}}>
+            <p style={{color: `${adventureColor}`}}>ADVENTURES</p>
           </div>  
-          <div className='title' onClick={()=>{handleDisplay(crafts)}}>
-            <p>HOBBIES</p>
+          <div className='title' onClick={()=>{handleDisplay(crafts);handleWordColor(hobbyColor, setHobbyColor)}}>
+            <p style={{color: `${hobbyColor}`}}>HOBBIES</p>
           </div> 
-          <div className='title' onClick={()=>{handleDisplay(cat)}}>
-            <p>MY CAT</p>
+          <div className='title' onClick={()=>{handleDisplay(cat);handleWordColor(catColor, setCatColor)}}>
+            <p style={{color: `${catColor}`}}>MY CAT</p>
           </div> 
      
           
@@ -247,6 +270,7 @@ setDisplay(content)
         <div className='changeableContent'>
           {display}
         </div>
+        <Link to='/' className='homeLink'>Joann Carter</Link>
      </div>
 
   );
