@@ -3,8 +3,8 @@
 }
 .welcome{
     background-color:grey;
-    width:90vw;
-    padding:0;
+    width:100vw;
+   
     height:max-content;
     border: 5px solid white;
     text-align: center;
@@ -12,29 +12,32 @@
 }
 .hireMe{
     animation: hire 2s 1s 1 alternate;
-    background-color:rgba(15, 214, 237, .8  );
-    width:20vw;
+    background-color:white;
+    width:30vw;
     height:max-content;
-    border: 5px solid white;
+    border: 5px solid rgb(15, 214, 237);
     text-align: center;
     font-weight: bold;
-    
+    color: black;
+    text-shadow: 2px 2px 30px yellow;
+    text-decoration: underline;
     position: absolute;
    top: 40vh;
-    left: 39vw;
+    left: 34vw;
+    font-size: 3vmax;
 
 }
 .moreDetails{
-    background-color:rgba(15, 214, 237, .8  );
-    width:20vw;
+    background-color:white;
+    width:30vw;
     height:max-content;
-    border: 5px solid white;
+    border: 5px solid rgb(15, 214, 237);
     text-align: center;
     font-weight: bold;
     
     position: absolute;
    top: 40vh;
-    left: 39vw;
+   left: 34vw;
 }
 .moreDetails p{
     font-size: 3vmin;
@@ -43,13 +46,9 @@ margin: 0;
 .moreDetails :last-child{
  font-size: 2vmin;
 line-height: 100%;
+text-shadow: 2px 2px 30px yellow;
+}
 
-}
-.hireMe {
-    color: white;
-    text-shadow: 2px 2px 30px yellow;
-    text-decoration: underline;
-}
 @keyframes hire{
     0%{transform: rotate(0deg);
         

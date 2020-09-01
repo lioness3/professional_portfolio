@@ -15,19 +15,20 @@ body{
 .card{
   background-color:rgba(15, 214, 237, .8  );
   width:20vw;
-  height:10vmax;
+  height:20vmax;
   border: 5px solid white;
   text-align: center;
   font-weight: bold;
-  padding:2vh;
- font-size: 50px;
+
+
+ font-size: 10vmax;
 
 
 
 
 }
 .card p{
-  font-size: 1vmax;
+  font-size: 3vmin;
   color: black;
 line-height: 100%;
 margin:0;
