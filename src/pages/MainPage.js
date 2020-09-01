@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import Menu from '../components/Menu';
 import { MdEmail, MdCall, MdSms, MdGetApp } from 'react-icons/md';
-import './MainPage.css'
+import { VscFilePdf } from 'react-icons/vsc';
+import './MainPage.css';
+import Pdf from '../components/images/Resume.pdf';
 
-import star from '../components/images/star.png'
 
 
 
@@ -59,25 +60,13 @@ const [details, setDetails] = useState(contactMe)
           <MdGetApp/>
          <p>Download My App</p>     
       </div>
-      <div className='card contact'onClick={()=>{
-    handleContactInfo() 
-   }}>
-      {details}
-     
- 
-   </div>
-   {contact}
 
-      {/* <img src={star} className='star' alt='star' />
-      <img src={star} className='star2' alt='star' />
-      <img src={star} className='star3' alt='star' />
-      <img src={star} className='star4' alt='star' />
-      <img src={star} className='star5' alt='star' />
-      <img src={star} className='star6' alt='star' />
-      <img src={star} className='star7' alt='star' />
-      <img src={star} className='star8' alt='star' />
-      <img src={star} className='star9' alt='star' />
-      <img src={star} className='starRight' alt='star' /> */}
+      <div className='card resume'>
+        <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className=''> <VscFilePdf/> <p>Download My Resume</p>  </a>
+      </div>
+
+
+
   
     </div>
   );

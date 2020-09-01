@@ -10,175 +10,52 @@ body{
   height:100vh;
   width: 100vw;
 
+
 }
-.card {
+.card{
   background-color:rgba(15, 214, 237, .8  );
-  position: relative;
-  top: 25vh;
   width:30vw;
   height:15vh;
   border: 5px solid white;
- margin: 0px 20px;
- text-align: center;
+  text-align: center;
+  font-weight: bold;
+ font-size: 50px;
 
- font-size: 40px;
+
+
+
 }
 .card p{
-  margin:0;
   font-size: 15px;
   color: black;
+line-height: 100%;
+
+ 
+
 }
 .available{
   color: white;
-  float:left;
+  position: absolute;
+  bottom: 40vh;
+  left:10vw;
+
 }
 .unAvailable{
   color: red;
-  float:left;
-}
-.contact{
-  float:right;
-  color: white;
-}
-.contactDetails{
-  /* display: inline-flex; */
-  /* flex-direction: row; */
   position: absolute;
-  top:40vh;
-  right:1vw;
+  bottom: 40vh;
+  left:10vw;
+
 }
-.contactDetails a{
-  color: white;
-  font-size: 30px;
-  margin:5px;
+.resume {
+  position: absolute;
+  bottom: 40vh;
+  right:10vw;
+
+}
+.resume :any-link{
   text-decoration: none;
-}
-/* .star{
-  position: absolute;
-  top:-100px;
-  animation: fall 4s;
-  height:40px;
-  filter: grayscale(80%);
-}
-.star2{
-  position: absolute;
-  top:350px;
-  left:900px;
-  filter: grayscale(80%);
-  animation: flash 3s infinite alternate;
-  animation-delay:3s;
-  height:40px;
-}
-.star3{
-  position: absolute;
-  top:200px;
-  right:600px;
-  animation: flash 1s infinite alternate;
-  height:20px;
-}
-.star4{
-  position: absolute;
-  top:410px;
-  left:10px;
-  animation: flash 1s infinite alternate;
-  height:40px;
-}
-.star5{
-  position: absolute;
-  top:400px;
-  left:300px;
-  animation: flash 1s infinite alternate;
-  height:20px;
-}
-.star6{
-  position: absolute;
-  top:170px;
-  right:100px;
-  
-  animation: flash 5s infinite alternate;
-  height:30px;
-}
-
-.star7{
-  position: absolute;
-  top:200px;
-  left:200px;
-
-  animation: flash 3s infinite alternate;
-  height:30px;
-
-}
-.star8{
-  position: absolute;
-  top:600px;
-  right:10px;
-  
-  animation: flash 5s infinite alternate;
-  height:20px;
-}
-.star9{
-  position: absolute;
-  top:250px;
-  left:500px;
+  text-align: center;
+  color: white;
  
-  animation: flash 5s infinite alternate;
-  height:40px;
-}
-.starRight{
-  position: absolute;
-  top:-10px;
-
-  filter: grayscale(80%);
-  animation: rightStar 4s ;
-  animation-delay:6s;
-  height:40px;
-}
-
-
-@keyframes fall{
-
-  0% {
-    position: absolute;
-    top:-10px;
-    left:900px;
-   
-
-   }
-
-  100% {
-    position: absolute;
-    top:500px;
-    left:-200px;
-    height:0px;
-   
-    }
- }
- @keyframes flash{
-
-  0% {
-    filter: grayscale(60%);
-
-   }
-   
- 100% {
-  filter: grayscale(100%);
-   
-   }
- }
- @keyframes rightStar{
-  0% {
-    position: absolute; 
-    top: -450px;
-    left:-300px;
-   
-
-   }
-
- 100% {
-  position: absolute;
-  left:1000px;
-   top: 600px;
-   height:0px;
-
-   }
- } */
+ } 
