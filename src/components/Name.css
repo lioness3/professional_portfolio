@@ -1,10 +1,12 @@
-.name p{
-text-shadow: 0px 0px 20px white;
+.name p, :any-link {
+text-shadow: 0px 0px 10px white;
 
     color:black;
-    font-size: 8vmax;
- 
-    position: absolute;
-    top: 40vmin;
-    left:2vh
+    font-size: 5vmax;
+    text-decoration: none;
+  
+}
+.name{
+
+    text-align: center;
 }

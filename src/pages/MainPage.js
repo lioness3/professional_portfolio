@@ -67,27 +67,31 @@ const handleMessageDisplay = (content, setContent)=>{
     <div className="mainPage">
    
       <Menu/> 
-      
-  
-        <Message show={message} handleMessageDisplay={()=>{
-handleMessageDisplay(message, setMessage)
-    }} />
-      <div className={`card  ${available}`} onClick={()=>{ 
-      handleAppStore()
-        }}>
-          <MdGetApp/>
-         <p>{appDetails}</p>     
-      </div>
+      <Message show={message} handleMessageDisplay={()=>{handleMessageDisplay(message, setMessage)}} />
+
+      <div className='sidebar'>
+      <Link to='/about'><Name /></Link> 
       <div onClick={()=>{
-handleMessageDisplay(forHire, setForHire)
+        handleMessageDisplay(forHire, setForHire)
       }}>
       <ForHire show={forHire}/>
       </div>
-      <div className='card resume'>
-        <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className=''> <VscFilePdf/> <p>Download My Resume</p>  </a>
+        <div className={`card  ${available}`} onClick={()=>{ 
+        handleAppStore()
+          }}>
+            <MdGetApp/>
+          <p>{appDetails}</p>     
+        </div>
+        <div className='card resume'>
+          <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className=''> <VscFilePdf/> <p>Download My Resume</p>  </a>
+        </div>
       </div>
+  
 
-      <Link to='/about'><Name /></Link> 
+    
+    
+
+  
       <div className='help' onClick={()=>{
 handleMessageDisplay(message, setMessage)
       }}>

@@ -14,14 +14,20 @@ body{
 }
 .card{
   background-color:rgba(15, 214, 237);
-  width:20vmax;
-  height:20vmin;
+  margin:2vh 3vw;
+  box-shadow: 5px 5px black;
   border: 5px solid white;
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
  font-size: 10vmax;
 
+}
+.sidebar{
+  border: 2px solid white;
+  height:100vh;
+  width:30vw;
+  background-color: slategray;
 
 
 
@@ -36,25 +42,18 @@ margin:0;
 }
 .available{
   color: white;
-  position: absolute;
-  bottom: 60vmin;
-  left:3vw;
+
+
+
 
 }
 .unAvailable{
   background-color: grey;
   color: rgb(111, 8, 8 );
-  position: absolute;
-  bottom: 60vmin;
-  left:3vw;
+
 
 }
-.resume {
-  position: absolute;
-  bottom: 60vmin;
-  right:3vw;
 
-}
 .resume :any-link{
   text-decoration: none;
   text-align: center;
