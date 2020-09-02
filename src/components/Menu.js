@@ -41,7 +41,7 @@ function Menu() {
       <div className='option'onClick={()=>{handleIconColor(emailColor, setEmailColor); showContactInfo()}} >
        
         <span className='icon' style={{color: `${emailColor}`}} ><MdEmail/></span>
-        <p className='description'>Contact</p>
+        <p className='description'>Contact Me</p>
       </div>
       {contactInfo}
       <div className="option" >
@@ -58,7 +58,7 @@ function Menu() {
       <div className='option' >
  
           <Link to='/about' className='icon'><MdInfo/></Link>
-        <p className='description'>About</p>
+        <p className='description'>About Me</p>
       </div>
 
      

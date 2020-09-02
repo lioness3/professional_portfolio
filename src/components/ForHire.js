@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import './Message.css';
+import Pdf from './images/Resume.pdf';
 
 
 function ForHire(props) {
@@ -10,13 +11,13 @@ function ForHire(props) {
      <div className='moreDetails'>
 
 
-
-        <p>Hard Working</p>
-        <p>Creative</p>
-        <p>Interpersonal Skills</p>
-        <p>Problem Solver</p>
-        <p>Download my Resume for more details</p>
-    
+        <p className='lineB'>Problem Solver</p>
+        <p className='lineA'>Motivated</p>
+        <p className='creative'>Creative</p>
+   
+       
+        
+        <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className=''> <p>Download my Resume for more details</p>  </a>
     
     </div>
       );

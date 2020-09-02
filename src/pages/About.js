@@ -62,16 +62,16 @@ const handleIconColor = ( icon, setIcon)=>{
 const handleDisplay=(content)=>{
   setDisplay(content)
   }
-const handleWordColor = (word, setWord)=>{
- let wordColor =  (word === 'white')? '#D5FE3D': 'white'
-  setFactColor('white')
-  setSkillColor('white')
-  setFavColor('white')
-  setAdventureColor('white')
-  setHobbyColor('white')
-  setCatColor('white')
-    setWord(wordColor)
-  }
+  const handleWordColor = (word, setWord)=>{
+    let wordColor =  (word === 'white')? '#D5FE3D': 'white'
+     setFactColor('white')
+     setSkillColor('white')
+     setFavColor('white')
+     setAdventureColor('white')
+     setHobbyColor('white')
+     setCatColor('white')
+       setWord(wordColor)
+     }
 
 
 
@@ -81,73 +81,60 @@ const handleWordColor = (word, setWord)=>{
 const fav=(
   <div className='content'>
     <div  onClick={()=>{
-      handleDisplay(null)
-    }}> <p className='closeView'><AiFillCloseCircle/></p>
-    <p className='banner'>FAVORITES</p></div>
+      handleDisplay(null);setFavColor('white') 
+    }}> <p className='closeView'><AiFillCloseCircle/></p></div>
+    <p className='banner'>FAVORITES</p>
    
     <p className='pizza'>Pizza <span className='pizzaEmoji'>🍕</span></p>
     <p className='iceCream'>Ice Cream <span className='iceCreamEmoji'>🍦</span></p>
-    <p className='puzzles'>Puzzles <span className='puzzlesEmoji'>🧩</span></p>
     <p className='tacos'>Tacos <span className='tacosEmoji'>🌮</span> </p>
+    <p className='puzzles'>Puzzles <span className='puzzlesEmoji'>🧩</span></p>
     <p className='family'>Family <span className='familyEmoji'>👨‍👩‍👧</span></p>
     <p className='raceCar'>Race Cars <span className='raceCarEmoji'>🏎</span></p>
     <p className='crafts'>Crafts <span className='craftsEmoji'>🧶</span></p>
+    <p className='nature'>Nature <span className='natureEmoji'>🌻</span></p>
+    
   </div>)
-const interests = (
-  <div className='content'>
-    <div className='closeView' onClick={()=>{
-      handleDisplay(null)
-    }}><AiFillCloseCircle/></div>
-    <p className='banner'>CAREER INTERESTS</p>
-    <p >Front End Development</p>
-    <p>UI Design</p>
-    <p>UX Design</p>
-  </div>
-)
-const languages = (
-  <div className='content'>
-    <div className='closeView' onClick={()=>{
-      handleDisplay(null)
-    }}><AiFillCloseCircle/></div>
-    <p className='banner'>LANGUAGES</p>
-    <p>React</p>
-    <p>React Native</p>
-    <p>Ruby </p>
-    <p>Rails</p>
-    <p>Ionic</p>
-  </div>
-)
+
+
 const skills = (
   <div className='content'>
     <div className='closeView' onClick={()=>{
-      handleDisplay(null)
+      handleDisplay(null);setSkillColor('white')
     }}><AiFillCloseCircle/></div>
     <p className='banner'>SKILLS</p>
+    <p>Full Stack Development</p>
     <p>Pair Programming</p>
     <p>User Experiance </p>
     <p>Web and Mobile Design</p>
     <p>Customer Service</p>
+    <p>Team Player</p>
+    <p>Flexible</p>
+    <p>Hard Working</p>
+    <p>Motivated</p>
+
   </div>
 )
 const funFacts = (
   <div className='content'>
     <div className='closeView' onClick={()=>{
-      handleDisplay(null)
+      handleDisplay(null);setFactColor('white')
     }}><AiFillCloseCircle/></div>
     <p className='banner'>FUN FACTS</p>
     <p>Ham Radio Operator</p>
     <p>Licensed Manicurist</p>
     <p>Sig Sauer Training</p>
     <p>Van Life</p>
+    <p>Racing Cars</p>
   </div>
 )
 const adventures = (
   <div className='detailedContent content' >  
     <div className='closeView' onClick={()=>{
-      handleDisplay(null)
+      handleDisplay(null); setAdventureColor('white')
     }}><AiFillCloseCircle/></div>
     <p className='banner'>ADVENTURES</p>
-    <p className='caption'>I often travel with the cutest co pilot, Shadow( see more cat pictures in the 'MY CAT' section). </p>
+    <p className='caption'>I travel with the cutest co pilot, Shadow(see more cat pictures in the 'MY CAT' section). </p>
     <img src={coPiolit} className='coPiolit' alt='cat image'/>
     <p className='caption'>I love to explore and see all that nature has to offer.</p>
     <img src={Niagra} className='niagra' alt='image'/>
@@ -162,7 +149,7 @@ const crafts =(
 
   <div className='detailedContent content'>
     <div className='closeView' onClick={()=>{
-      handleDisplay(null)
+      handleDisplay(null);setHobbyColor('white')
     }}><AiFillCloseCircle/></div>
     <p className='banner'>HOBBIES</p>
     <p className='caption'>For self-care, I am most relaxed when in nature.</p> 
@@ -178,7 +165,7 @@ const crafts =(
 const cat=(
   <div className='detailedContent content' >  
   <div className='closeView' onClick={()=>{
-    handleDisplay(null)
+    handleDisplay(null);setCatColor('white')
   }}><AiFillCloseCircle/></div>
   <p className='banner'>PICTURES OF MY CAT</p>
   <img src={shadow} className='shadow' alt='shadow'/>

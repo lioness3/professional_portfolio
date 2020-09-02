@@ -5,7 +5,7 @@ body{
   
   background-image: url('../components/images/lio.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+
   background-position: bottom right;
   height:100vh;
   width: 100vw;
@@ -13,7 +13,7 @@ body{
 
 }
 .card{
-  background-color:rgba(15, 214, 237, .8  );
+  background-color:rgba(15, 214, 237);
   width:20vw;
   height:20vmax;
   border: 5px solid white;
@@ -39,7 +39,7 @@ margin:0;
 .available{
   color: white;
   position: absolute;
-  bottom: 40vh;
+  bottom: 30vh;
   left:3vw;
 
 }
@@ -47,13 +47,13 @@ margin:0;
   background-color: grey;
   color: rgb(111, 8, 8 );
   position: absolute;
-  bottom: 40vh;
+  bottom: 30vh;
   left:3vw;
 
 }
 .resume {
   position: absolute;
-  bottom: 40vh;
+  bottom: 30vh;
   right:3vw;
 
 }
@@ -64,8 +64,26 @@ margin:0;
  
  } 
  .help{
+   animation: help 1s ;
+  animation-delay: 5s;
    position: fixed;
    bottom:0;
    right:0;
    z-index: 3;
+ }
+ @keyframes help{
+   0%{
+    bottom:0;
+    right:0;
+  
+   }
+   50%{
+    bottom: 3vh;
+    right:0;
+   }
+   100%{
+   
+    bottom:0;
+    right:0;
+   }
  }

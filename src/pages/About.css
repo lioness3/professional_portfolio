@@ -17,7 +17,7 @@ body{
     animation-iteration-count: 1;
     color:#9FBE2C;
     position: fixed;
-   width:100vmin;
+    width:100vw;
    height:9vmax;
    background-color: black;
 
@@ -80,6 +80,7 @@ body{
     
         width:100vw;
         overflow-x: scroll;
+    
         position: relative;
         top:0;
         height:10vmax;
@@ -132,6 +133,7 @@ body{
     
     overflow:scroll;
     padding-bottom: 50vh;
+    
 }
 
 .content{
@@ -143,7 +145,7 @@ body{
     width:100vw;
     position: relative;
     top:0;
-  
+    z-index: 3;
     color:white;
 
     text-align: center;
@@ -200,11 +202,11 @@ body{
   
 
 /* HOVER EMOJIS */
-.pizzaEmoji, .iceCreamEmoji, .puzzlesEmoji, .tacosEmoji, .familyEmoji, .raceCarEmoji, .craftsEmoji {
+.natureEmoji,.pizzaEmoji, .iceCreamEmoji, .puzzlesEmoji, .tacosEmoji, .familyEmoji, .raceCarEmoji, .craftsEmoji {
 display:none;
 
 }
- .pizza:hover .pizzaEmoji, .iceCream:hover .iceCreamEmoji, .puzzles:hover .puzzlesEmoji, .tacos:hover .tacosEmoji, .family:hover .familyEmoji, .raceCar:hover .raceCarEmoji, .crafts:hover .craftsEmoji {  
+ .nature:hover .natureEmoji, .pizza:hover .pizzaEmoji, .iceCream:hover .iceCreamEmoji, .puzzles:hover .puzzlesEmoji, .tacos:hover .tacosEmoji, .family:hover .familyEmoji, .raceCar:hover .raceCarEmoji, .crafts:hover .craftsEmoji {  
   display:inline-block;
   
 }

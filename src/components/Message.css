@@ -11,20 +11,26 @@
     text-align: center;
     margin-top: 3vmin;
     padding:0vh 5vw;
+ 
+}
+#hello{
+    font-size: 3vmax;
+    animation: hello 1s;
+   
 }
 .hireMe{
     animation: hire 2s 1s 1 alternate;
-    background-color:white;
+    background-color: rgb(116, 145, 169);
     width:30vw;
     height:max-content;
     border: 5px solid rgb(15, 214, 237);
     text-align: center;
     font-weight: bold;
     color: black;
-    text-shadow: 2px 2px 10px yellow;
+    text-shadow: 2px 2px 5px rgb(15, 214, 237);
  
     position: absolute;
-   top: 40vh;
+   top: 11vmax;
     left: 34vw;
     font-size: 3vmax;
 
@@ -41,8 +47,12 @@
      color:rgb(111, 8, 8 );
      
 }
+
+.creative{
+    animation: creative 10s infinite;
+}
 .moreDetails{
-    background-color:white;
+    background-color: rgb(116, 145, 169);
     width:30vw;
     height:max-content;
     border: 5px solid rgb(15, 214, 237);
@@ -50,7 +60,7 @@
     font-weight: bold;
     
     position: absolute;
-   top: 40vh;
+   top: 11vmax;
    left: 34vw;
 }
 .moreDetails p{
@@ -60,7 +70,9 @@ margin: 0;
 .moreDetails :last-child{
  font-size: 2vmin;
 line-height: 100%;
-text-shadow: 2px 2px 30px yellow;
+background-color:rgb(15, 214, 237);
+text-decoration: none;
+color:black;
 }
 
 @keyframes hire{
@@ -77,5 +89,42 @@ text-shadow: 2px 2px 30px yellow;
     }
     100%{transform: rotate(0deg)
 
+    }
+
+}
+@keyframes hello{
+    0%{
+      color: black;
+      font-size: 3vmax;
+    }
+    50%{
+        color: blue;
+        font-size: 6vmax;
+   
+    }
+    100%{
+        color: blue;
+        font-weight: bold;
+        font-size: 6vmax;
+    }
+}
+@keyframes creative{
+    0%{
+      color: black;
+    }
+    20%{
+        color:yellow;
+    }
+    40%{
+        color:red;
+    }
+    60%{
+        color:orange;
+    }
+    80%{
+        color:green;
+    }
+    100%{
+       color: blue;
     }
 }
