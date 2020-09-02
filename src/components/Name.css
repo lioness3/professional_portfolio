@@ -1,10 +1,10 @@
 .name p{
-text-shadow: 5px 2px 10px rgb(15, 214, 237);
+text-shadow: 0px 0px 20px rgb(15, 214, 237);
 
     color:black;
-    font-size: 6vmax;
+    font-size: 8vmax;
  
     position: absolute;
-    bottom: 0vh;
+    top: 3vh;
     left:2vh
 }

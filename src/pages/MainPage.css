@@ -14,7 +14,7 @@ body{
 }
 .card{
   background-color:rgba(15, 214, 237);
-  width:20vw;
+  width:20vmax;
   height:20vmax;
   border: 5px solid white;
   border-radius: 10px;
@@ -39,7 +39,7 @@ margin:0;
 .available{
   color: white;
   position: absolute;
-  bottom: 30vh;
+  bottom: 50vmax;
   left:3vw;
 
 }
@@ -47,13 +47,13 @@ margin:0;
   background-color: grey;
   color: rgb(111, 8, 8 );
   position: absolute;
-  bottom: 30vh;
+  bottom: 50vmax;
   left:3vw;
 
 }
 .resume {
   position: absolute;
-  bottom: 30vh;
+  bottom: 50vmax;
   right:3vw;
 
 }

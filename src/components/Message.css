@@ -20,18 +20,18 @@
 }
 .hireMe{
     animation: hire 2s 1s 1 alternate;
-    background-color: rgb(116, 145, 169);
+    background-color:rgb(15, 214, 237);
     width:30vw;
     height:max-content;
-    border: 5px solid rgb(15, 214, 237);
+    border: 5px solid rgb(116, 145, 169);
     text-align: center;
     font-weight: bold;
     color: black;
-    text-shadow: 2px 2px 5px rgb(15, 214, 237);
- 
+    text-shadow: 0px 0px 20px white;
+    border-radius: 10px;
     position: absolute;
-   top: 11vmax;
-    left: 34vw;
+   bottom: 11vmax;
+    left: 3vw;
     font-size: 3vmax;
 
 }
@@ -58,14 +58,14 @@
     border: 5px solid rgb(15, 214, 237);
     text-align: center;
     font-weight: bold;
-    
+    border-radius: 10px;
     position: absolute;
-   top: 11vmax;
-   left: 34vw;
+    bottom: 11vmax;
+    left: 3vw;
 }
 .moreDetails p{
     font-size: 3vmin;
-margin: 0;
+    margin: 0;
 }
 .moreDetails :last-child{
  font-size: 2vmin;
