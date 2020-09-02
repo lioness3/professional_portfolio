@@ -15,13 +15,11 @@ body{
 .card{
   background-color:rgba(15, 214, 237);
   width:20vmax;
-  height:20vmax;
+  height:20vmin;
   border: 5px solid white;
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
-
-
  font-size: 10vmax;
 
 
@@ -39,7 +37,7 @@ margin:0;
 .available{
   color: white;
   position: absolute;
-  bottom: 50vmax;
+  bottom: 60vmin;
   left:3vw;
 
 }
@@ -47,13 +45,13 @@ margin:0;
   background-color: grey;
   color: rgb(111, 8, 8 );
   position: absolute;
-  bottom: 50vmax;
+  bottom: 60vmin;
   left:3vw;
 
 }
 .resume {
   position: absolute;
-  bottom: 50vmax;
+  bottom: 60vmin;
   right:3vw;
 
 }

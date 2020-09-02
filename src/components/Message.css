@@ -23,7 +23,8 @@
     background-color:rgb(15, 214, 237);
     width:30vw;
     height:max-content;
-    border: 5px solid rgb(116, 145, 169);
+    border: 5px solid red;
+    /* border: 5px solid rgb(116, 145, 169); */
     text-align: center;
     font-weight: bold;
     color: black;
