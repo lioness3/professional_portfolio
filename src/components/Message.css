@@ -20,20 +20,19 @@
 }
 .hireMe{
     animation: hire 2s 1s 1 alternate;
-    background-color:rgb(15, 214, 237);
-    /* width:30vw; */
-    height:10vmax;
-    /* border: 5px solid red; */
-    border: 5px solid rgb(116, 145, 169);
+    background-color: slategrey;
+  
+    height:max-content;
+    margin:3vmax 3vw;
+padding:0;
+    border: 5px solid white;
     text-align: center;
     font-weight: bold;
-    color: black;
-    text-shadow: 0px 0px 20px white;
+    color: white;
+    text-shadow: 0px 0px 30px black;
     border-radius: 10px;
-    box-shadow: 5px 5px black;
-    /* position: absolute;
-   bottom: 11vmax;
-    left: 3vw; */
+    box-shadow: 0px 0px 10px rgb(15, 214, 237);
+
     font-size: 3vmax;
 
 }
