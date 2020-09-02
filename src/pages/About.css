@@ -8,7 +8,7 @@ body{
     width:100vw;
     background-position: fixed;
     background-image: url('../components/images/bridge.jpg');
-    background-size:cover;
+    background-size:contain;
     background-repeat: no-repeat;
 }
 .homeLink {
@@ -18,7 +18,7 @@ body{
     color:#9FBE2C;
     position: fixed;
     width:100vw;
-   height:9vmax;
+   height:20vmax;
    background-color: black;
 
     bottom:0; 
@@ -125,7 +125,7 @@ body{
      font-size: 3vmax;
      float:left;
      padding:1vmin;
-     color:rgb(111, 8, 8 );
+     color:rgb(169, 14, 14);
      
 }
 
@@ -155,7 +155,7 @@ body{
 
 .detailedContent img{
 
-    width:90vw;
+    width:80vw;
     margin:5vw 0;
     border: 10px solid white;
 }

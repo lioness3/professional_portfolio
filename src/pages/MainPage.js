@@ -76,7 +76,7 @@ const handleMessageDisplay = (content, setContent)=>{
       }}>
       <ForHire show={forHire}/>
       </div>
-      <hr className='hr'/>
+      <hr/>
         <div className={`card  ${available}`} onClick={()=>{ 
         handleAppStore()
           }}>
@@ -98,7 +98,7 @@ const handleMessageDisplay = (content, setContent)=>{
       <div className='help' onClick={()=>{
 handleMessageDisplay(message, setMessage)
       }}>
-      <MdHelpOutline color='rgb(111, 8, 8 )' size='5vmax'/>
+      <MdHelpOutline color='rgb(169, 8, 8 )' size='5vmax'/>
  
       </div>
 

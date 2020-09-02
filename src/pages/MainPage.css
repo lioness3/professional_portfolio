@@ -5,15 +5,15 @@ body{
   
   background-image: url('../components/images/lio.jpg');
   background-repeat: no-repeat;
-
-  background-position: bottom right;
+background-position: bottom;
+  background-size: cover;
   height:100vh;
   width: 100vw;
 
 
 }
 .card{
-  background-color:rgba(15, 214, 237);
+  background-color:rgb(74, 221, 237);
   margin:3vmax 3vw;
   box-shadow: 5px 5px black;
   border: 5px solid white;
@@ -28,17 +28,17 @@ body{
   height:100vh;
   width:30vw;
   background-color: slategrey;
-
+box-shadow: 10px -4px 20px grey;
 }
 .hr{
 color:solid yellow;
 height:1px;
 }
 .card p{
-  font-size: 3vmin;
+  font-size: 2vmin;
   color: black;
 line-height: 100%;
-margin:0;
+
  
 
 }
@@ -51,7 +51,7 @@ margin:0;
 }
 .unAvailable{
   background-color: grey;
-  color: rgb(111, 8, 8 );
+  color: rgb(169, 14, 14);
 
 
 }
