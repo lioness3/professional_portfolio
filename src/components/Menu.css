@@ -1,13 +1,16 @@
 /* MENU STYLES */
 .menu{
   background-color: rgb(156,190,139);
-  box-shadow: 0px 0px 30px grey;   
+  box-shadow: 0px 20px 30px rgb(53, 53, 40);   
   display: inline-flex;
+  position: fixed;
+  z-index: 3;
   justify-content: space-evenly;
   border-bottom: 5px solid black ;
   width: 100vw;
   height:max-content;
   margin:0;
+ 
 }
 .contactInfo a:link{
   font-size: 3vmin;

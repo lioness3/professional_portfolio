@@ -2,46 +2,49 @@ body{
   margin:0;
 }
 .mainPage{
-  
-  background-image: url('../components/images/IMG_9047.jpeg');
+  background-image: url('../components/images/palms_edited.jpg');
   background-repeat: no-repeat;
-background-size: cover;
-
+  background-size: cover;
   height:100vh;
   width: 100vw;
 
 
 }
 .card{
-  background-color:rgb(116, 142, 104);
+  background-color:white;
   margin:3vmax 3vw;
-  box-shadow: 5px 5px rgb(50, 45, 56);
-  border: 5px solid white;
+  box-shadow: 5px 5px rgb(53, 53, 40);
+  border: 5px solid #799BB0;
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
  font-size: 10vmax;
 
+
 }
 .sidebar{
-  position: fixed;
+ 
   border: 2px solid black;
-  height:100vh;
+  height:max-content;
+  position: relative;
+ top:10vh;
   width:30vw;
-  background-color: rgb(185, 175, 169);
-box-shadow: 10px 4px 20px rgb(50, 45, 56);
+  padding-top: 10vh;
+  background-color: rgb(156,190,139);
+  /* background-color: rgb(139, 139, 117); */
+box-shadow: 20px 4px 20px rgb(53, 53, 40);
 }
 
 .card p{
   font-size: 2vmin;
-  color: black;
+  color: #799BB0 ;
 line-height: 100%;
 
  
 
 }
 .available{
-  color: white;
+  color: rgb(63,83,53);
 
 
 
@@ -57,7 +60,7 @@ line-height: 100%;
 .resume :any-link{
   text-decoration: none;
   text-align: center;
-  color: white;
+  color: rgb(63,83,53);
  
  } 
  .help{
