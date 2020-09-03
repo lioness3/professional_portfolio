@@ -106,13 +106,13 @@
 }
 .closeView{
     margin:0;
-     position:fixed;
-     z-index: 6;
-     top:20vh;
-     left:1vw;
-     font-size: 5vw;
-     padding:1vh;
-     color:rgb(169, 14, 14);
+    position:fixed;
+    z-index: 6;
+    top:20vh;
+    left:1vw;
+    font-size: 5vw;
+    padding:1vh;
+    color:rgb(169, 14, 14);
      
 }
 
