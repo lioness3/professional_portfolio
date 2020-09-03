@@ -19,6 +19,8 @@ function Message(props) {
           <p>Thank you for taking the time to be here today. Feel free to click and explore to discover what I'm all about.</p>
           <p>There is an 'About Me' section, a PDF download for my resume, contact information, my custom app download, and even pictures of my cat.</p>
           <p>I'm currently seeking a career in software development.</p>
+          
+          <p style={{float:'right'}}>- Joann Carter</p>
       </div>
       );
   }else{

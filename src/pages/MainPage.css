@@ -1,6 +1,5 @@
-body{
-  margin:0;
-}
+
+
 .mainPage{
   background-image: url('../components/images/palms_edited.jpg');
   background-repeat: no-repeat;
@@ -8,13 +7,12 @@ body{
   height:100vh;
   width: 100vw;
 
-
 }
 .card{
-  background-color:white;
+
   margin:3vmax 3vw;
   box-shadow: 5px 5px rgb(53, 53, 40);
-  border: 5px solid #799BB0;
+  border: 5px solid rgb(63,83,53);
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
@@ -25,20 +23,21 @@ body{
 .sidebar{
  
   border: 2px solid black;
-  height:max-content;
-  position: relative;
- top:10vh;
+  height:85vh;
+  position: absolute;
+  top:10vh;
   width:30vw;
-  padding-top: 10vh;
+  padding-top: 5vh;
   background-color: rgb(156,190,139);
   /* background-color: rgb(139, 139, 117); */
-box-shadow: 20px 4px 20px rgb(53, 53, 40);
+  box-shadow: 20px 4px 20px rgb(53, 53, 40);
+  overflow:scroll;
 }
 
 .card p{
   font-size: 2vmin;
-  color: #799BB0 ;
-line-height: 100%;
+  color: rgb(63,83,53) ;
+  line-height: 100%;
 
  
 

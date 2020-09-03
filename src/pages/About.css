@@ -18,12 +18,9 @@ body{
     color:rgb(165,204,95);
     position: fixed;
     width:100vw;
-   height:10vmax;
-   background-color: black;
-
+    height:10vmax;
+    background-color: black;
     bottom:0; 
-
-
     font-size: 5vmax;
     text-decoration: none;
     border-top: 3px solid grey;
@@ -37,11 +34,10 @@ body{
 }
 .rightArrow, .leftArrow{
     color:rgba(255, 255, 255, .6);
-
     font-size: 4vmax;
     margin:0;
     position: sticky;
-   z-index: 5;
+     z-index: 5;
   
 }
 .rightArrow{
@@ -77,22 +73,20 @@ body{
         color:white;
         font-size:2vmax;
         display:flex;
-    
         width:100vw;
         overflow-x: scroll;
-    
-        position: relative;
-        top:0;
-        height:10vmax;
+        position: absolute;
+        z-index: 4;
+        top:15vh;
+        height:10vh;
        align-items: center;
-      
        background-image: radial-gradient(rgb(128, 139, 150)   2%, black 80% );
     
     }
 .banner{
     background-color: black;
     position:sticky;
-    top:0;
+    top:20vh;
     width:100vw;
     color:white;
     font-weight: bold;
@@ -106,25 +100,25 @@ body{
     position: sticky;
     width:100%;
     z-index:5;
-    top: 0vh;
+    top: 20vh;
     text-align: center;
     background:rgba(0, 0, 0, .99);
     color:white;
     height:50px;
     margin:0;
     padding:4vmax 0px;
-    font-size: 20px;
+    font-size: 2vmax;
  
 }
 .closeView{
     margin:0;
      position:sticky;
      z-index: 6;
-     top:1vh;
+     top:28vh;
      left:1vw;
      font-size: 3vmax;
      float:left;
-     padding:1vmin;
+   
      color:rgb(169, 14, 14);
      
 }
@@ -132,22 +126,19 @@ body{
 .detailedContent{
     
     overflow:scroll;
-    padding-bottom: 50vh;
+    padding-bottom: 5vmax;
     
 }
 
 .content{
     animation: contentBox 1s;  
-
     border: 3px solid darkgrey;
-
-    height:80vh;
+    height:90vh;
     width:100vw;
     position: relative;
     top:0;
     z-index: 3;
     color:white;
-
     text-align: center;
     background-color: black;
 
