@@ -56,14 +56,14 @@ const showContactInfo = () =>{
   
 }
 const handleIconColor = ( icon, setIcon)=>{
- let iconColor =  (icon === 'black')? 'rgba(15, 214, 237, .3  )': 'black'
+ let iconColor =  (icon === 'black')? 'rgba(93,130,73,.5  )': 'black'
   setIcon(iconColor)
 }
 const handleDisplay=(content)=>{
   setDisplay(content)
   }
   const handleWordColor = (word, setWord)=>{
-    let wordColor =  (word === 'white')? '#D5FE3D': 'white'
+    let wordColor =  (word === 'white')? 'rgb(165,204,95)': 'white'
      setFactColor('white')
      setSkillColor('white')
      setFavColor('white')

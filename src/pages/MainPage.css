@@ -3,9 +3,9 @@ body{
 }
 .mainPage{
   
-  background-image: url('../components/images/lio.jpg');
+  background-image: url('../components/images/lion-unsplash.jpg');
   background-repeat: no-repeat;
-background-position: bottom;
+
   background-size: cover;
   height:100vh;
   width: 100vw;
@@ -13,9 +13,9 @@ background-position: bottom;
 
 }
 .card{
-  background-color:rgb(74, 221, 237);
+  background-color:rgb(94,87, 97);
   margin:3vmax 3vw;
-  box-shadow: 5px 5px black;
+  box-shadow: 5px 5px rgb(50, 45, 56);
   border: 5px solid white;
   border-radius: 10px;
   text-align: center;
@@ -24,11 +24,12 @@ background-position: bottom;
 
 }
 .sidebar{
+  position: fixed;
   border: 2px solid black;
   height:100vh;
   width:30vw;
-  background-color: slategrey;
-box-shadow: 10px -4px 20px grey;
+  background-color: rgb(169, 167, 166);
+box-shadow: 10px -4px 20px rgb(50, 45, 56);
 }
 .hr{
 color:solid yellow;
