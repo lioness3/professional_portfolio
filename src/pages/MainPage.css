@@ -3,17 +3,17 @@ body{
 }
 .mainPage{
   
-  background-image: url('../components/images/lion-unsplash.jpg');
+  background-image: url('../components/images/IMG_9047.jpeg');
   background-repeat: no-repeat;
+background-size: cover;
 
-  background-size: cover;
   height:100vh;
   width: 100vw;
 
 
 }
 .card{
-  background-color:rgb(94,87, 97);
+  background-color:rgb(116, 142, 104);
   margin:3vmax 3vw;
   box-shadow: 5px 5px rgb(50, 45, 56);
   border: 5px solid white;
@@ -28,13 +28,10 @@ body{
   border: 2px solid black;
   height:100vh;
   width:30vw;
-  background-color: rgb(169, 167, 166);
-box-shadow: 10px -4px 20px rgb(50, 45, 56);
+  background-color: rgb(185, 175, 169);
+box-shadow: 10px 4px 20px rgb(50, 45, 56);
 }
-.hr{
-color:solid yellow;
-height:1px;
-}
+
 .card p{
   font-size: 2vmin;
   color: black;

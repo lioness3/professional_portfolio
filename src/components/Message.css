@@ -20,7 +20,7 @@
 }
 .hireMe{
     animation: hire 2s 1s 1 alternate;
-    background-color: slategrey;
+    background-color: rgb(50, 45, 56);
   
     height:max-content;
     margin:3vmax 3vw;
@@ -29,9 +29,9 @@ padding:0;
     text-align: center;
     font-weight: bold;
     color: white;
-    text-shadow: 0px 0px 30px black;
+    /* text-shadow: 0px 0px 30px black; */
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(15, 214, 237);
+    box-shadow: 0px 0px 20px rgb(156,190,139);
 
     font-size: 3vmax;
 
@@ -45,7 +45,7 @@ padding:0;
      font-size: 3vmax;
 
  
-     color:rgb(111, 8, 8 );
+     color:rgb(169, 14, 14);
      
 }
 
@@ -97,12 +97,12 @@ color:black;
       font-size: 3vmax;
     }
     50%{
-        color: blue;
+        color: rgb(156,190,139);
         font-size: 6vmax;
    
     }
     100%{
-        color: blue;
+        color: rgb(156,190,139);
         font-weight: bold;
         font-size: 6vmax;
     }
