@@ -24,7 +24,7 @@ function Menu() {
   }
   // IF the Icon color isnt black then change it to green and vice versa
   const handleIconColor = ( icon, seticon)=>{
-   let iconColor =  (icon === 'black')? 'rgba(15, 214, 237, .3  )': 'black'
+   let iconColor =  (icon === 'black')? 'rgba(93,130,73,.5 )': 'black'
     seticon(iconColor)
   }
 

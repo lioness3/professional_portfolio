@@ -56,7 +56,7 @@ const showContactInfo = () =>{
   
 }
 const handleIconColor = ( icon, setIcon)=>{
- let iconColor =  (icon === 'black')? 'rgba(93,130,73,.5  )': 'black'
+ let iconColor =  (icon === 'black')? 'rgba(93,130,73,.5 )': 'black'
   setIcon(iconColor)
 }
 const handleDisplay=(content)=>{
@@ -180,17 +180,13 @@ const cat=(
   return (
     <div className="About" >
 
-
-
       <div className="menu">
         <div className='option' >
- 
           <Link to='/' className='icon'><AiFillHome/></Link>
           <p className='description'>Back</p>
         </div>
 
         <div className='option'onClick={()=>{handleIconColor(emailColor, setEmailColor); showContactInfo()}} >
-       
           <span className='icon' style={{color: `${emailColor}`}} ><MdEmail/></span>
           <p className='description'>Contact</p>
         </div>
@@ -203,47 +199,41 @@ const cat=(
          <a href='https://www.linkedin.com/in/joann-carter/' rel="noopener noreferrer" target = "_blank" className='icon' ><AiFillLinkedin/></a>
          <p className="description">LinkedIn</p>
        </div>
-
       </div>
 
+      <div className='titleCol' >
+        <div className='leftArrow'>
+          <AiOutlineDoubleLeft/>
+        </div>
+        
+        <div className='title' onClick={()=>{handleDisplay(funFacts); handleWordColor(factColor, setFactColor)}}>
+          <p style={{color: `${factColor}`}}>FUN FACTS</p>
+        </div> 
+        <div className='title' onClick={()=>{handleDisplay(skills);handleWordColor(skillColor, setSkillColor)}}>
+          <p style={{color: `${skillColor}`}}>SKILLS</p>
+        </div> 
+        <div className='title' onClick={()=>{handleDisplay(fav);handleWordColor(favColor, setFavColor)}}>
+          <p style={{color: `${favColor}`}}>FAVORITES</p>
+        </div>  
+        <div className='title' onClick={()=>{handleDisplay(adventures);handleWordColor(adventureColor, setAdventureColor)}}>
+          <p style={{color: `${adventureColor}`}}>ADVENTURES</p>
+        </div>  
+        <div className='title' onClick={()=>{handleDisplay(crafts);handleWordColor(hobbyColor, setHobbyColor)}}>
+          <p style={{color: `${hobbyColor}`}}>HOBBIES</p>
+        </div> 
+        <div className='title' onClick={()=>{handleDisplay(cat);handleWordColor(catColor, setCatColor)}}>
+          <p style={{color: `${catColor}`}}>MY CAT</p>
+        </div> 
 
-
+        <div className='rightArrow'>
+          <AiOutlineDoubleRight/>
+        </div>
+      </div>
 
       
-        <div className='titleCol' >
-          <div className='leftArrow'>
-            <AiOutlineDoubleLeft/>
-          </div>
-          
-          <div className='title' onClick={()=>{handleDisplay(funFacts); handleWordColor(factColor, setFactColor)}}>
-            <p style={{color: `${factColor}`}}>FUN FACTS</p>
-          </div> 
-          <div className='title' onClick={()=>{handleDisplay(skills);handleWordColor(skillColor, setSkillColor)}}>
-            <p style={{color: `${skillColor}`}}>SKILLS</p>
-          </div> 
-          <div className='title' onClick={()=>{handleDisplay(fav);handleWordColor(favColor, setFavColor)}}>
-            <p style={{color: `${favColor}`}}>FAVORITES</p>
-          </div>  
-          <div className='title' onClick={()=>{handleDisplay(adventures);handleWordColor(adventureColor, setAdventureColor)}}>
-            <p style={{color: `${adventureColor}`}}>ADVENTURES</p>
-          </div>  
-          <div className='title' onClick={()=>{handleDisplay(crafts);handleWordColor(hobbyColor, setHobbyColor)}}>
-            <p style={{color: `${hobbyColor}`}}>HOBBIES</p>
-          </div> 
-          <div className='title' onClick={()=>{handleDisplay(cat);handleWordColor(catColor, setCatColor)}}>
-            <p style={{color: `${catColor}`}}>MY CAT</p>
-          </div> 
-     
-          
-          <div className='rightArrow'>
-            <AiOutlineDoubleRight/>
-          </div>
-         
-        </div>
-        <div className='changeableContent'>
-          {display}
-        </div>
-        <Link to='/' className='homeLink'>Joann Carter</Link>
+        {display}
+   
+        {/* <Link to='/' className='homeLink'>Joann Carter</Link> */}
      </div>
 
   );

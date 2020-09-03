@@ -6,9 +6,8 @@
   position: fixed;
   z-index: 4;
   justify-content: space-evenly;
-  border-bottom: 5px solid black ;
   width: 100vw;
-  height:max-content;
+  height:10vh;
   margin:0;
  
 }
@@ -26,17 +25,18 @@
 .option, .option a{
   display: block;
   text-align: center;
+  
 }
 
 
 .icon, .option a{
   color:black;
-  font-size: 5vmax;
- 
+  font-size: 6vh;
+
 }
 
 .description{
-  font-size: 2vmin;
+  font-size: 2vh;
   color:rgb(63,83,53);
   margin:0;
   font-weight: bold;
