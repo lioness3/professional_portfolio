@@ -1,7 +1,6 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import MainPage from '../pages/MainPage';
-
 import About  from '../pages/About';
 
 

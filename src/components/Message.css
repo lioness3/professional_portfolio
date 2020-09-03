@@ -3,8 +3,8 @@
     color:black;
     background-color:grey;
     max-width:90vw;
-   position: relative;
-   z-index: 2;
+    position: relative;
+    z-index: 2;
     height:100vh;
     max-height: 100vh;
     border: 5px solid white;
@@ -24,7 +24,7 @@
   
     height:max-content;
     margin:3vmax 3vw;
-padding:0;
+    padding:0;
     border: 5px solid white;
     text-align: center;
     font-weight: bold;
@@ -32,29 +32,24 @@ padding:0;
     /* text-shadow: 0px 0px 30px black; */
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgb(156,190,139);
-
     font-size: 3vmax;
-
 }
+
 .closeMessage{
     margin:0;
-     position:absolute;
-     left:0;
-     z-index: 2;
-
-     font-size: 3vmax;
-
- 
-     color:rgb(169, 14, 14);
-     
+    position:absolute;
+    left:0;
+    z-index: 2;
+    font-size: 3vmax;
+    color:rgb(169, 14, 14);
 }
 
 .creative{
     animation: creative 10s infinite;
 }
+
 .moreDetails{
     background-color: rgb(116, 145, 169);
-   
     height:20vmax;
     border: 5px solid rgb(15, 214, 237);
     text-align: center;
@@ -62,35 +57,32 @@ padding:0;
     border-radius: 10px;
  
 }
+
 .moreDetails p{
     font-size: 3vmin;
     margin: 0;
 }
 .moreDetails :last-child{
- font-size: 2vmin;
-line-height: 100%;
-background-color:rgb(15, 214, 237);
-text-decoration: none;
-color:black;
+    font-size: 2vmin;
+    line-height: 100%;
+    background-color:rgb(15, 214, 237);
+    text-decoration: none;
+    color:black;
 }
 
 @keyframes hire{
-    0%{transform: rotate(0deg);
-        
+    0%{transform: rotate(0deg);     
 
-}
-   40%{transform: rotate(10deg);
-       
-     
-    
+    }
+    40%{transform: rotate(10deg);
+ 
     }
     80%{transform: rotate(-10deg)
     }
     100%{transform: rotate(0deg)
-
     }
-
 }
+
 @keyframes hello{
     0%{
       color: black;

@@ -15,12 +15,12 @@ function ForHire(props) {
         <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className=''> <p>Download my Resume for more details</p>  </a>
     
      </div>
-      );
-  }else{
+      )
+   }else{
       return (
           <div className='hireMe'>
-        <p>FOR HIRE!</p>
-        </div>
+            <p>FOR HIRE!</p>
+          </div>
       )
   }
 
