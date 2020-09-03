@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.60935916.chunk.css",
-    "main.js": "/static/js/main.220909e4.chunk.js",
-    "main.js.map": "/static/js/main.220909e4.chunk.js.map",
+    "main.css": "/static/css/main.7fb0683a.chunk.css",
+    "main.js": "/static/js/main.b97d2e3c.chunk.js",
+    "main.js.map": "/static/js/main.b97d2e3c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
     "static/js/2.7b1f5629.chunk.js": "/static/js/2.7b1f5629.chunk.js",
     "static/js/2.7b1f5629.chunk.js.map": "/static/js/2.7b1f5629.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.85fb71061d323e3bc22f99a0ed1b0fff.js": "/precache-manifest.85fb71061d323e3bc22f99a0ed1b0fff.js",
+    "precache-manifest.e0dafeaeec30f15fcd1374a22d8acebf.js": "/precache-manifest.e0dafeaeec30f15fcd1374a22d8acebf.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.60935916.chunk.css.map": "/static/css/main.60935916.chunk.css.map",
+    "static/css/main.7fb0683a.chunk.css.map": "/static/css/main.7fb0683a.chunk.css.map",
     "static/js/2.7b1f5629.chunk.js.LICENSE.txt": "/static/js/2.7b1f5629.chunk.js.LICENSE.txt",
     "static/media/Niagra.jpeg": "/static/media/Niagra.78d52b89.jpeg",
     "static/media/Resume.pdf": "/static/media/Resume.1f747e83.pdf",
     "static/media/beach.jpeg": "/static/media/beach.823a2b2b.jpeg",
-    "static/media/About.css": "/static/media/bridge.136fef00.jpg",
     "static/media/canyonCat.jpeg": "/static/media/canyonCat.7d861a90.jpeg",
     "static/media/catInVan.jpeg": "/static/media/catInVan.fc407209.jpeg",
     "static/media/catStretched.jpeg": "/static/media/catStretched.3d15657c.jpeg",
@@ -23,12 +22,13 @@
     "static/media/coPiolit.jpeg": "/static/media/coPiolit.a85f402b.jpeg",
     "static/media/craft.jpeg": "/static/media/craft.30d2a550.jpeg",
     "static/media/hike.jpeg": "/static/media/hike.0d246dce.jpeg",
-    "static/media/MainPage.css": "/static/media/lio.6d3e1b4f.jpg",
+    "static/media/MainPage.css": "/static/media/lion-unsplash.3d688706.jpg",
     "static/media/nebraska.jpeg": "/static/media/nebraska.41ad33b3.jpeg",
     "static/media/peace.jpeg": "/static/media/peace.a2feeed0.jpeg",
     "static/media/shadow.jpeg": "/static/media/shadow.03d8a6fb.jpeg",
     "static/media/van.jpeg": "/static/media/van.afcd48d8.jpeg",
     "static/media/volcano.jpeg": "/static/media/volcano.20c941da.jpeg",
+    "static/media/About.css": "/static/media/wallpaperLeaves.aef8f7b6.jpg",
     "static/media/waterfallAdventure.jpeg": "/static/media/waterfallAdventure.b92e9b89.jpeg",
     "static/media/workBuddy.jpeg": "/static/media/workBuddy.1b185b67.jpeg",
     "static/media/workingCat.jpeg": "/static/media/workingCat.a95c117d.jpeg"
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
     "static/js/2.7b1f5629.chunk.js",
-    "static/css/main.60935916.chunk.css",
-    "static/js/main.220909e4.chunk.js"
+    "static/css/main.7fb0683a.chunk.css",
+    "static/js/main.b97d2e3c.chunk.js"
   ]
 }
