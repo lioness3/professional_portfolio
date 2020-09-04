@@ -58,6 +58,7 @@
  } 
  .help{
    animation: help 1s ;
+   animation-iteration-count: 3;
   animation-delay: 5s;
    position: fixed;
    bottom:0;
@@ -71,7 +72,7 @@
   
    }
    50%{
-    bottom: 3vh;
+    bottom: 20vh;
     right:0;
    }
    100%{

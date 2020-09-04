@@ -109,9 +109,9 @@
     position:fixed;
     z-index: 6;
     top:20vh;
-    left:1vw;
+    left:0vw;
     font-size: 5vw;
-    padding:1vh;
+    padding:1vh 1vw;
     color:rgb(169, 14, 14);
      
 }

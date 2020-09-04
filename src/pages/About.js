@@ -25,6 +25,8 @@ import peace from '../components/images/peace.jpeg'
 import nebraska from '../components/images/nebraska.jpeg'
 function About() {
 
+
+
 const [displayMentionables, setDisplayMentionables] = useState('infoHidden')
 const [displayFavorites, setDisplayFavorites] = useState('infoHidden')
 const [displayAdventures, setDisplayAdventures]= useState('infoHidden')
@@ -60,8 +62,23 @@ const handleIconColor = ( icon, setIcon)=>{
   setIcon(iconColor)
 }
 const handleDisplay=(content)=>{
-  setDisplay(content)
-  }
+  if(!null){
+    
+    const el = document.querySelector('.content')
+    
+    if(el){
+      // FINDS SCROLL POSITION
+      // SET SCROLL POSITION TO 0 WHEN SETTING NEW CONTENT
+      const scroll = el.scrollTop
+      console.log(el.scrollTop);
+    }
+ 
+  
+setDisplay(content)
+}
+setDisplay(content)
+ }
+
   const handleWordColor = (word, setWord)=>{
     let wordColor =  (word === 'white')? 'rgb(165,204,95)': 'white'
      setFactColor('white')
@@ -77,6 +94,7 @@ const handleDisplay=(content)=>{
 
   
 
+   
 
 const fav=(
   <div className='content'>
