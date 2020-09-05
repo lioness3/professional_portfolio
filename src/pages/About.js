@@ -174,8 +174,7 @@ const crafts =(
     <img src={peace} alt='image of scenery'/>
     <p className='caption'>I achieve a great sense of acomplishment when I am able to create crafts out of recycled material. </p>
     <img src={craft} className='craft' alt='craft image' /> 
-    <p className='caption'>In my free time, I find myself drawn to all things related to customization.</p>
-    <p className='caption'> Currently, I am renovating a camper van as I discover the hidden treasures of our beautiful country.</p>
+    <p className='caption'>In my free time, I find myself drawn to all things related to customization. Recently, I renovated a camper van to discover the hidden treasures of our beautiful country.</p>
     <img src={van} alt='image of a van'/>
   </div>
 )
@@ -253,7 +252,7 @@ const cat=(
           {display}
       
    
-        {/* <Link to='/' className='homeLink'>Joann Carter</Link> */}
+        <Link to='/' className='homeLink'>Joann Carter</Link>
      </div>
 
   );

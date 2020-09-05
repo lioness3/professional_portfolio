@@ -81,8 +81,8 @@
     background-color: black;
     position:sticky;
     top:0;
-    width:95vw;
-    color:white;
+    width:98vw;
+    color:rgb(165,204,95);
     font-weight: bold;
     margin:0;
     padding:2vh 0vw;
@@ -92,24 +92,24 @@
 }
 .caption{
     position: sticky;
-    width:95vw;
+    width:98vw;
     z-index:5;
     top: 0vh;
     text-align: center;
     background:rgba(0, 0, 0, .99);
     color:white;
-    height:5vh;
+    height:max-content;
     margin:0;
-    padding:5vh 0vw;
+    padding: 4vh 0vw;
     font-size: 2vw;
-    text-indent: 5vw;
+    text-indent: 6vw;
 }
 .closeView{
     margin:0;
     position:fixed;
     z-index: 6;
-    top:20vh;
-    left:0vw;
+    top:21vh;
+    left:1vw;
     font-size: 5vw;
     padding:1vh 1vw;
     color:rgb(169, 14, 14);
@@ -120,21 +120,21 @@
 .detailedContent{
 
     overflow:scroll;
-    padding-bottom: 10vh;
+    padding-bottom: 100vh;
     
 }
-
 .content{
+    overflow:scroll;
     animation: contentBox 1s;  
-    border: 3px solid darkgrey;
+    border: 1vw solid darkgrey;
     position: absolute;
     top:20vh;
     z-index: 2;
     color:white;
     text-align: center;
     background-color: black;
-    height:80vh;
-    width:95vw;
+    height:76vh;
+    width:98vw;
     font-size: 5vmin;
 }
 
@@ -156,14 +156,9 @@
     }
     50%{
         width:100vw;
-        /* transform: rotate(90deg); */
         transform: rotateY(180deg);
         text-shadow: 10px 10px 10px black;
-        /* background-color: unset; */
       
-        
-    }80%{
-        
     }
     100%{
     

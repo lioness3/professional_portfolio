@@ -8,7 +8,7 @@ import './MainPage.css';
 import Pdf from '../components/images/Resume.pdf';
 import Message from '../components/Message'
 import ForHire from '../components/ForHire'
-import { AiFillCloseCircle} from 'react-icons/ai';
+// import { AiFillCloseCircle} from 'react-icons/ai';
 function MainPage() {
 const [contact, setContactInfo]= useState(null)
 const [appDetails, setAppDetails] = useState('Download My App')

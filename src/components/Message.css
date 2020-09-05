@@ -5,13 +5,11 @@
     font-family: 'Homemade Apple', cursive;
     font-size: 3vmax;
     background-color:lightyellow;
-  
     max-width:90vw;
     position: relative;
     overflow: scroll;
     z-index: 4;
     height:100vh;
-
     border: 5px solid white;
     text-align: center;
     padding:0vh 5vw;
@@ -28,18 +26,16 @@
 }
 .hireMe{
     animation: hire 2s 1s 1 alternate;
-  /* font-family: 'Codystar', cursive;   */
-    /* font-family: 'Bungee Outline', cursive; */
+    font-family: 'Codystar', cursive;  
     height:max-content;
     margin:3vmax 3vw;
     padding:0;
     border: 5px solid rgb(235, 255, 173);
     text-align: center;
-    /* font-weight: bold; */
-    color: white;
-   
+    font-weight: bold;
+    color: rgb(235, 255, 173);
     background-color: rgb(116, 140, 102);
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 5px rgb(63,83,53);
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgb(219, 255, 109);
     font-size: 3vmax;
@@ -61,9 +57,7 @@
 }
 
 .moreDetails{
-    /* background-color: rgb(116, 145, 169); */
     height:20vmax;
-    border: 5px solid #799BB0;
     text-align: center;
     font-weight: bold;
     border-radius: 10px;
