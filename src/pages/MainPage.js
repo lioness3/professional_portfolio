@@ -27,7 +27,7 @@ const [details, setDetails] = useState(contactMe)
    
     
     if (available === 'available'){
-      setAppDetails('Work in Progress')
+      setAppDetails('Coming Soon')
       setAvailability('unAvailable')
     }else {
       setAppDetails('Download My App')

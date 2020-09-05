@@ -34,7 +34,7 @@ const [favColor, setFavColor] = useState('white')
 const [adventureColor, setAdventureColor] = useState('white')
 const [hobbyColor, setHobbyColor] = useState('white')
 const scroll = useRef(null)
-const colorRef = useRef(null)
+const titleScroll = useRef(null)
 
 const show = (  <div className='contactInfo'>
                   <a href="tel:+16035665610"><MdCall/> Call</a> 
@@ -87,7 +87,15 @@ const handleDisplay=(content)=>{
   }
 }
     
-   
+  const handleScroll = (direction) =>{
+    if(direction === 'left'){
+      titleScroll.current.scrollLeft = 0
+
+      
+    }else if(direction === 'right'){
+      titleScroll.current.scrollRight = 0
+    }
+  }
 
 
 
@@ -218,31 +226,35 @@ const cat=(
        </div>
       </div>
 
-      <div className='titleCol' >
-        <div className='leftArrow'>
+      <div className='titleCol' ref={titleScroll} >
+        <div className='leftArrow' onClick={()=>{
+          handleScroll('left')
+        }}>
           <AiOutlineDoubleLeft/>
         </div>
         
         <div className='title' onClick={()=>{handleDisplay(funFacts); handleWordColor(factColor, setFactColor)}}>
-          <p ref={colorRef} style={{color: `${factColor}`}}>FUN FACTS</p>
+          <p style={{color: `${factColor}`}}>FUN FACTS</p>
         </div> 
         <div className='title' onClick={()=>{handleDisplay(skills);handleWordColor(skillColor, setSkillColor)}}>
-          <p ref={colorRef} style={{color: `${skillColor}`}}>SKILLS</p>
+          <p style={{color: `${skillColor}`}}>SKILLS</p>
         </div> 
         <div className='title' onClick={()=>{handleDisplay(fav);handleWordColor(favColor, setFavColor)}}>
-          <p ref={colorRef} style={{color: `${favColor}`}}>FAVORITES</p>
+          <p style={{color: `${favColor}`}}>FAVORITES</p>
         </div>  
         <div className='title' onClick={()=>{handleDisplay(adventures);handleWordColor(adventureColor, setAdventureColor)}}>
-          <p  ref={colorRef} style={{color: `${adventureColor}`}}>ADVENTURES</p>
+          <p  style={{color: `${adventureColor}`}}>ADVENTURES</p>
         </div>  
         <div className='title' onClick={()=>{handleDisplay(crafts);handleWordColor(hobbyColor, setHobbyColor)}}>
-          <p ref={colorRef} style={{color: `${hobbyColor}`}}>HOBBIES</p>
+          <p style={{color: `${hobbyColor}`}}>HOBBIES</p>
         </div> 
         <div className='title' onClick={()=>{handleDisplay(cat);handleWordColor(catColor, setCatColor)}}>
-          <p ref={colorRef} style={{color: `${catColor}`}}>MY CAT</p>
+          <p style={{color: `${catColor}`}}>MY CAT</p>
         </div> 
 
-        <div className='rightArrow'>
+        <div className='rightArrow' onClick={()=>{
+          handleScroll('right')
+        }}>
           <AiOutlineDoubleRight/>
         </div>
       </div>
