@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillCloseCircle, AiOutlineDoubleLeft, AiOutlineDoubleRight} from 'react-icons/ai';
 import { AiFillGithub, AiFillLinkedin, AiFillHome } from 'react-icons/ai';
@@ -23,7 +23,8 @@ import peace from '../components/images/peace.jpeg'
 import nebraska from '../components/images/nebraska.jpeg'
 
 function About() {
-  
+
+
 const [display, setDisplay]= useState(null)
 const [contactInfo, setContactInfo] = useState(null)
 const [emailColor, setEmailColor] = useState('black')
@@ -86,14 +87,14 @@ const handleDisplay=(content)=>{
     setCatColor('white')
   }
 }
-    
+// when user clicks arrows the title column will scroll all the way left or right 
   const handleScroll = (direction) =>{
     if(direction === 'left'){
-      titleScroll.current.scrollLeft = 0
-
-      
+      titleScroll.current.scrollLeft = 0      
     }else if(direction === 'right'){
-      titleScroll.current.scrollRight = 0
+     
+      
+     titleScroll.current.scrollLeft = titleScroll.current.scrollWidth 
     }
   }
 
@@ -202,6 +203,41 @@ const cat=(
 )
 
 
+
+const titleItems = [{title:'FUN FACTS' ,content:funFacts }, {title:'SKILLS' ,content:skills }, {title: 'FAVORITES',content: fav }, {title: 'ADVENTURES',content:adventures }, {title:'HOBBIES' ,content:crafts }, {title: 'MY CAT',content:cat }]
+const [titleIndex, setTitleIndex] = useState(0)
+const [titleDisplay, setTitleDisplay] = useState(titleItems[0].title)
+
+const handleTitleDisplay = (direction)=>{
+  if (direction === 'left'){
+    if (titleIndex === 0){
+     console.log('titile index', titleIndex);
+     
+      setTitleIndex(0)
+    }else{
+      setTitleIndex(titleIndex - 1)
+    
+    }
+  
+  }else if (direction === 'right'){
+  
+   let lastTitle = titleItems.length - 1
+    if (titleIndex === lastTitle){
+      setTitleIndex(lastTitle)
+    }else{
+      setTitleIndex(titleIndex + 1)
+     
+    }
+   
+  }
+
+  
+}
+useEffect(() => {
+  setTitleDisplay(titleItems[titleIndex].title)
+setDisplay(titleItems[titleIndex].content)
+}, [titleIndex]);
+
   return (
     <div className="About" >
 
@@ -228,12 +264,15 @@ const cat=(
 
       <div className='titleCol' ref={titleScroll} >
         <div className='leftArrow' onClick={()=>{
-          handleScroll('left')
+          handleTitleDisplay('left')
         }}>
           <AiOutlineDoubleLeft/>
         </div>
+     
+{titleDisplay}
+      
         
-        <div className='title' onClick={()=>{handleDisplay(funFacts); handleWordColor(factColor, setFactColor)}}>
+        {/* <div className='title' onClick={()=>{handleDisplay(funFacts); handleWordColor(factColor, setFactColor)}}>
           <p style={{color: `${factColor}`}}>FUN FACTS</p>
         </div> 
         <div className='title' onClick={()=>{handleDisplay(skills);handleWordColor(skillColor, setSkillColor)}}>
@@ -250,10 +289,10 @@ const cat=(
         </div> 
         <div className='title' onClick={()=>{handleDisplay(cat);handleWordColor(catColor, setCatColor)}}>
           <p style={{color: `${catColor}`}}>MY CAT</p>
-        </div> 
+        </div>  */}
 
         <div className='rightArrow' onClick={()=>{
-          handleScroll('right')
+          handleTitleDisplay('right')
         }}>
           <AiOutlineDoubleRight/>
         </div>
