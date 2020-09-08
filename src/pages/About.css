@@ -34,40 +34,19 @@
 .rightArrow, .leftArrow{
     color:rgba(255, 255, 255, .8);
     font-size: 4vmax;
-    margin:0;
-    position: sticky;
-    z-index: 4;
 
 }
-
-.rightArrow{
-    right:2vw;
+.titleDisplay{
+    font-size: 4vmax;
+    margin:auto;
 }
-
-.leftArrow{
-   left:2vw;
-}
-
-.title{
-    padding: 0vh 5vmax;
-    
-    }
-
-    .title p{
-        text-align: center;
-        padding: 0;
-    }
-    
-    .title:hover{
-        text-shadow: 2px 2px 30px white ;
-    }
 
     .titleCol{
         border-top: .5vh solid grey;
         border-bottom: .5vh solid grey;
         color:white;
         font-size:2vh;
-        display:flex;
+        display:none;
         width:100vw;
         overflow-x: scroll;
         position: fixed;
@@ -78,18 +57,17 @@
        background-image: radial-gradient(rgb(128, 139, 150)   2%, black 80% );
     }
 
-.banner{
-    background-color: black;
-    position:sticky;
-    top:0;
-    width:98vw;
-    color:rgb(165,204,95);
-    font-weight: bold;
-    margin:0;
-    padding:2vh 0vw;
-    z-index: 4;
-    font-size:3vmax;
-    border-bottom: 3px solid grey;
+
+.learnMore img{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:20vh;
+}
+.learnMore img::after{
+    display:none;
 }
 .caption{
     position: sticky;

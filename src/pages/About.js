@@ -21,21 +21,18 @@ import catInVan from '../components/images/catInVan.jpeg'
 import workingCat from '../components/images/workingCat.jpeg'
 import peace from '../components/images/peace.jpeg'
 import nebraska from '../components/images/nebraska.jpeg'
-
+import me from '../components/images/me.jpeg'
 function About() {
 
 
 const [display, setDisplay]= useState(null)
 const [contactInfo, setContactInfo] = useState(null)
 const [emailColor, setEmailColor] = useState('black')
-const [catColor, setCatColor] = useState('white')
-const [factColor, setFactColor] = useState('white')
-const [skillColor, setSkillColor] = useState('white')
-const [favColor, setFavColor] = useState('white')
-const [adventureColor, setAdventureColor] = useState('white')
-const [hobbyColor, setHobbyColor] = useState('white')
+
+
 const scroll = useRef(null)
 const titleScroll = useRef(null)
+const introPicture = useRef(null)
 
 const show = (  <div className='contactInfo'>
                   <a href="tel:+16035665610"><MdCall/> Call</a> 
@@ -63,53 +60,24 @@ const handleIconColor = ( icon, setIcon)=>{
 const handleDisplay=(content)=>{
 
  if(display){
-  handleWordColor()
+ 
   scroll.current.scrollTop = 0
   setDisplay(content)
 
   }else{
-    handleWordColor()
+
     setDisplay(content)
   }
  }
-// make current word yellow and the rest white
-  const handleWordColor = (word, setWord)=>{
-  if(word && setWord){
-    let wordColor =  (word === 'white')? 'rgb(165,204,95)': 'white'
-    setWord(wordColor)
-
-  }else{
-    setFactColor('white')
-    setSkillColor('white')
-    setFavColor('white')
-    setAdventureColor('white')
-    setHobbyColor('white')
-    setCatColor('white')
-  }
-}
-// when user clicks arrows the title column will scroll all the way left or right 
-  const handleScroll = (direction) =>{
-    if(direction === 'left'){
-      titleScroll.current.scrollLeft = 0      
-    }else if(direction === 'right'){
-     
-      
-     titleScroll.current.scrollLeft = titleScroll.current.scrollWidth 
-    }
-  }
 
 
-
-  
-
-   
 
 const fav=(
   <div className='content' ref={scroll}>
     <div className='closeView' onClick={()=>{
       handleDisplay(null); 
     }}> <AiFillCloseCircle/></div>
-    <p className='banner'>FAVORITES</p>
+    {/* <p className='banner'>FAVORITES</p> */}
    
     <p className='pizza'>Pizza <span className='pizzaEmoji'>🍕</span></p>
     <p className='iceCream'>Ice Cream <span className='iceCreamEmoji'>🍦</span></p>
@@ -128,7 +96,7 @@ const skills = (
     <div className='closeView' onClick={()=>{
       handleDisplay(null);
     }}><AiFillCloseCircle/></div>
-    <p className='banner'>SKILLS</p>
+    {/* <p className='banner'>SKILLS</p> */}
     <p>Full Stack Development</p>
     <p>Pair Programming</p>
     <p>User Experiance </p>
@@ -146,7 +114,7 @@ const funFacts = (
     <div className='closeView' onClick={()=>{
       handleDisplay(null);
     }}><AiFillCloseCircle/></div>
-    <p className='banner'>FUN FACTS</p>
+    {/* <p className='banner'>FUN FACTS</p> */}
     <p>Ham Radio Operator</p>
     <p>Licensed Manicurist</p>
     <p>Sig Sauer Training</p>
@@ -159,7 +127,7 @@ const adventures = (
     <div className='closeView' onClick={()=>{
       handleDisplay(null); 
     }}><AiFillCloseCircle/></div>
-    <p className='banner'>ADVENTURES</p>
+    {/* <p className='banner'>ADVENTURES</p> */}
     <p className='caption'>I travel with the cutest co pilot, Shadow(see more cat pictures in the 'MY CAT' section). </p>
     <img src={coPiolit} className='coPiolit' alt='cat image'/>
     <p className='caption'>I love to explore and see all that nature has to offer.</p>
@@ -177,7 +145,7 @@ const crafts =(
     <div className='closeView' onClick={()=>{
       handleDisplay(null);
     }}><AiFillCloseCircle/></div>
-    <p className='banner'>HOBBIES</p>
+    {/* <p className='banner'>HOBBIES</p> */}
     <p className='caption'>For self-care, I am most relaxed when in nature.</p> 
     <img src={beach} alt='image'/>
     <img src={peace} alt='image of scenery'/>
@@ -192,7 +160,7 @@ const cat=(
   <div className='closeView' onClick={()=>{
     handleDisplay(null);
   }}><AiFillCloseCircle/></div>
-  <p className='banner'>PICTURES OF MY CAT</p>
+  {/* <p className='banner'>PICTURES OF MY CAT</p> */}
   <img src={shadow} className='shadow' alt='shadow'/>
   <img src={catStretched}  alt='shadow'/>
   <img src={workBuddy} alt='image of cat'/>
@@ -204,15 +172,19 @@ const cat=(
 
 
 
+
+
+
+
+
 const titleItems = [{title:'FUN FACTS' ,content:funFacts }, {title:'SKILLS' ,content:skills }, {title: 'FAVORITES',content: fav }, {title: 'ADVENTURES',content:adventures }, {title:'HOBBIES' ,content:crafts }, {title: 'MY CAT',content:cat }]
-const [titleIndex, setTitleIndex] = useState(0)
+const [titleIndex, setTitleIndex] = useState(null)
 const [titleDisplay, setTitleDisplay] = useState(titleItems[0].title)
 
 const handleTitleDisplay = (direction)=>{
+
   if (direction === 'left'){
     if (titleIndex === 0){
-     console.log('titile index', titleIndex);
-     
       setTitleIndex(0)
     }else{
       setTitleIndex(titleIndex - 1)
@@ -220,23 +192,37 @@ const handleTitleDisplay = (direction)=>{
     }
   
   }else if (direction === 'right'){
+  console.log('right clicked');
   
    let lastTitle = titleItems.length - 1
     if (titleIndex === lastTitle){
       setTitleIndex(lastTitle)
     }else{
       setTitleIndex(titleIndex + 1)
+     console.log('title index after right click', titleIndex);
      
     }
    
   }
 
+ 
+  console.log(direction, titleIndex, titleDisplay);
   
 }
 useEffect(() => {
+if(titleIndex !== null){
   setTitleDisplay(titleItems[titleIndex].title)
-setDisplay(titleItems[titleIndex].content)
+  handleDisplay(titleItems[titleIndex].content)
+}
+ 
+
+
+
+ 
+
 }, [titleIndex]);
+
+
 
   return (
     <div className="About" >
@@ -261,44 +247,33 @@ setDisplay(titleItems[titleIndex].content)
          <p className="description">LinkedIn</p>
        </div>
       </div>
-
       <div className='titleCol' ref={titleScroll} >
-        <div className='leftArrow' onClick={()=>{
-          handleTitleDisplay('left')
-        }}>
-          <AiOutlineDoubleLeft/>
-        </div>
-     
-{titleDisplay}
-      
-        
-        {/* <div className='title' onClick={()=>{handleDisplay(funFacts); handleWordColor(factColor, setFactColor)}}>
-          <p style={{color: `${factColor}`}}>FUN FACTS</p>
-        </div> 
-        <div className='title' onClick={()=>{handleDisplay(skills);handleWordColor(skillColor, setSkillColor)}}>
-          <p style={{color: `${skillColor}`}}>SKILLS</p>
-        </div> 
-        <div className='title' onClick={()=>{handleDisplay(fav);handleWordColor(favColor, setFavColor)}}>
-          <p style={{color: `${favColor}`}}>FAVORITES</p>
-        </div>  
-        <div className='title' onClick={()=>{handleDisplay(adventures);handleWordColor(adventureColor, setAdventureColor)}}>
-          <p  style={{color: `${adventureColor}`}}>ADVENTURES</p>
-        </div>  
-        <div className='title' onClick={()=>{handleDisplay(crafts);handleWordColor(hobbyColor, setHobbyColor)}}>
-          <p style={{color: `${hobbyColor}`}}>HOBBIES</p>
-        </div> 
-        <div className='title' onClick={()=>{handleDisplay(cat);handleWordColor(catColor, setCatColor)}}>
-          <p style={{color: `${catColor}`}}>MY CAT</p>
-        </div>  */}
+      <div className='leftArrow' onClick={()=>{
+      handleTitleDisplay('left')
+    }}>
+      <AiOutlineDoubleLeft/>
+    </div>
+    <div className='titleDisplay' 
+    >
+      {titleDisplay}
+    </div>
+    <div className='rightArrow' onClick={()=>{
+      handleTitleDisplay('right')
+    }}>
+      <AiOutlineDoubleRight/>
+    </div>
+  </div>
+   
+      <div className='learnMore' ref={introPicture} onClick={()=>{
+    introPicture.current.style.display = 'none'
+    titleScroll.current.style.display = 'flex'
+    setTitleIndex(0)
+  }}>
+    <img src={me} alt={'image of Joann'}/>
 
-        <div className='rightArrow' onClick={()=>{
-          handleTitleDisplay('right')
-        }}>
-          <AiOutlineDoubleRight/>
-        </div>
-      </div>
+  </div>
 
-      
+
  
           {display}
       
