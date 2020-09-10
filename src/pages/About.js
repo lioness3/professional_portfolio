@@ -171,8 +171,8 @@ const vanBuild = (
   <p className='caption'>Then came the floor, ceiling, bed platform and battery power.</p> 
   <img src={vanBuild7} alt='seventh step'/>
   <img src={vanBuild8} alt='eighth step'/>
-  <p className='caption'>All the hard work was worth it!</p> 
   <img src={vanBuild9} alt='nineth step'/>
+  <p className='caption'>All the hard work was worth it!</p> 
   <img src={vanBuild10} alt='tenth step'/>
 
 

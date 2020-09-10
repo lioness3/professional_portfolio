@@ -59,8 +59,8 @@
  .help{
    animation: help 3s ;
    
-   /* animation-delay: 5s; */
-   animation-timing-function: ease-in;
+   animation-delay: 5s;
+   animation-timing-function: linear;
    animation-fill-mode: forwards;
    box-shadow: 1vw 5vh 10vh black;
    position: fixed;
@@ -71,7 +71,7 @@
   
  }
  .help img{
-   width:25vw;
+   width:30vw;
  }
  @keyframes help{
    0%{
