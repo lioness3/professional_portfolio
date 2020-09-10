@@ -45,11 +45,8 @@
     .titleCol{
         border-top: .5vh solid grey;
         border-bottom: .5vh solid grey;
-       
-    
         display:none;
         width:100vw;
-  
         position: fixed;
         top:10vh;
         z-index: 3;
@@ -65,8 +62,8 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-   height:40vh;
-    top:40vh;
+    height:40vh;
+    top:30vh;
 }
 .learnMore img::after{
     display:none;
@@ -101,7 +98,7 @@
 .detailedContent{
 
     overflow:scroll;
-    padding-bottom: 100vh;
+  
     
 }
 .content{
@@ -123,6 +120,9 @@
     width:60vw;
     margin:5vw 0;
     border: 2vw solid white;
+}
+.detailedContent img:last-child{
+    margin-bottom:30vh;
 }
 
 

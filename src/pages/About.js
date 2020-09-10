@@ -87,10 +87,10 @@ const handleDisplay=(content)=>{
 const fav=(
   <div className='content' ref={scroll}>
     <div className='closeView' onClick={()=>{
-      handleDisplay(null); 
-    }}> <AiFillCloseCircle/></div>
-    {/* <p className='banner'>FAVORITES</p> */}
-   
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
     <p className='pizza'>Pizza <span className='pizzaEmoji'>🍕</span></p>
     <p className='iceCream'>Ice Cream <span className='iceCreamEmoji'>🍦</span></p>
     <p className='tacos'>Tacos <span className='tacosEmoji'>🌮</span> </p>
@@ -105,10 +105,11 @@ const fav=(
 
 const skills = (
   <div className='content'ref={scroll}>
-    <div className='closeView' onClick={()=>{
-      handleDisplay(null);
-    }}><AiFillCloseCircle/></div>
-    {/* <p className='banner'>SKILLS</p> */}
+   <div className='closeView' onClick={()=>{
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
     <p>Full Stack Development</p>
     <p>Pair Programming</p>
     <p>User Experiance </p>
@@ -124,9 +125,10 @@ const skills = (
 const funFacts = (
   <div className='content' ref={scroll}>
     <div className='closeView' onClick={()=>{
-      handleDisplay(null);
-    }}><AiFillCloseCircle/></div>
-    {/* <p className='banner'>FUN FACTS</p> */}
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
     <p>Ham Radio Operator</p>
     <p>Licensed Manicurist</p>
     <p>Sig Sauer Training</p>
@@ -137,8 +139,10 @@ const funFacts = (
 const adventures = (
   <div className='detailedContent content' ref={scroll}>  
     <div className='closeView' onClick={()=>{
-      handleDisplay(null); 
-    }}><AiFillCloseCircle/></div>
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
     <p className='caption'>Hiking in Oregon.</p> 
     <img src={hike} alt='image'/>
     <p className='caption'>Niagra Falls.</p> 
@@ -154,45 +158,38 @@ const adventures = (
 )
 const vanBuild = (
   <div className='detailedContent content' ref={scroll}>  
-  <div className='closeView' onClick={()=>{
-    handleDisplay(null); 
-  }}><AiFillCloseCircle/></div>
- 
-  <p className='caption'>I bought a used cargo van</p> 
-  <img src={vanBuild1} alt='first step'/>
-  <img src={vanBuild2} alt='second step'/>
-  <p className='caption'>It was full of screws and grease!</p> 
-  <img src={vanBuild3} alt='third step'/>
-  <img src={vanBuild4} alt='fourth step'/>
-  <p className='caption'>It needed a deep clean!</p> 
-  <img src={vanBuild5} alt='fifth step'/>
-  <p className='caption'>We cut a hole for a window and Ceiling vent.</p> 
-  <img src={vanBuild6} alt='sixth step'/>
-  <p className='caption'>Then came the floor, ceiling, bed platform and battery power.</p> 
-  <img src={vanBuild7} alt='seventh step'/>
-  <img src={vanBuild8} alt='eighth step'/>
-  <img src={vanBuild9} alt='nineth step'/>
-  <p className='caption'>All the hard work was worth it!</p> 
-  <img src={vanBuild10} alt='tenth step'/>
-
-
-
-
-
-
- 
-
-
-
-
-</div>
+    <div className='closeView' onClick={()=>{
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
+    <p className='caption'>I bought a used cargo van</p> 
+    <img src={vanBuild1} alt='first step'/>
+    <img src={vanBuild2} alt='second step'/>
+    <p className='caption'>It was full of screws and grease!</p> 
+    <img src={vanBuild3} alt='third step'/>
+    <img src={vanBuild4} alt='fourth step'/>
+    <p className='caption'>It needed a deep clean!</p> 
+    <img src={vanBuild5} alt='fifth step'/>
+    <p className='caption'>We cut a hole for a window and Ceiling vent.</p> 
+    <img src={vanBuild6} alt='sixth step'/>
+    <p className='caption'>Then came the floor, ceiling, bed platform and battery power.</p> 
+    <img src={vanBuild7} alt='seventh step'/>
+    <img src={vanBuild8} alt='eighth step'/>
+    <img src={vanBuild9} alt='nineth step'/>
+    <p className='caption'>All the hard work was worth it!</p> 
+    <img src={vanBuild10} alt='tenth step'/>
+  </div>
 )
+
 const hobbies =(
 
   <div className='detailedContent content' ref={scroll}>
     <div className='closeView' onClick={()=>{
-      handleDisplay(null);
-    }}><AiFillCloseCircle/></div>
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
      <p className='caption'>For self-care, I recharge in nature.</p> 
     <img src={beach} alt='image'/>
     <img src={peace} alt='image of scenery'/>
@@ -200,24 +197,24 @@ const hobbies =(
     <img src={craft} className='craft' alt='craft image' /> 
     <p className='caption'>In my free time, I find myself drawn to all things related to customization. Recently, I renovated a camper van to discover the hidden treasures of our beautiful country.</p>
     <img src={van} alt='image of a van'/>
-  
-  
   </div>
 )
 const cat=(
   <div className='detailedContent content' ref={scroll}>  
-  <div className='closeView' onClick={()=>{
-    handleDisplay(null);
-  }}><AiFillCloseCircle/></div>
-  <p className='caption'>I travel with the cutest co pilot. </p>
-  <img src={coPiolit} className='coPiolit' alt='cat image'/>
-  <img src={shadow} className='shadow' alt='shadow'/>
-  <img src={catStretched}  alt='shadow'/>
-  <img src={workBuddy} alt='image of cat'/>
-  <img src={canyonCat} alt='image of cat'/>
-  <img src={catInVan} alt='image of a van and a cat'/>
-  <img src={workingCat} alt='image of a van and a cat'/>
-</div>
+    <div className='closeView' onClick={()=>{
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
+    <p className='caption'>I travel with the cutest co pilot. </p>
+    <img src={coPiolit} className='coPiolit' alt='cat image'/>
+    <img src={shadow} className='shadow' alt='shadow'/>
+    <img src={catStretched}  alt='shadow'/>
+    <img src={workBuddy} alt='image of cat'/>
+    <img src={canyonCat} alt='image of cat'/>
+    <img src={catInVan} alt='image of a van and a cat'/>
+    <img src={workingCat} alt='image of a van and a cat'/>
+  </div>
 )
 
 
@@ -231,44 +228,30 @@ const titleItems = [{title:' JOB SKILLS' ,content:skills }, {title:'FUN FACTS' ,
 const [titleIndex, setTitleIndex] = useState(null)
 const [titleDisplay, setTitleDisplay] = useState(titleItems[0].title)
 
+// Show next title based on arrow click
 const handleTitleDisplay = (direction)=>{
-
   if (direction === 'left'){
     if (titleIndex === 0){
       setTitleIndex(0)
     }else{
       setTitleIndex(titleIndex - 1)
-    
     }
-  
-  }else if (direction === 'right'){
-  console.log('right clicked');
-  
+  }else if (direction === 'right'){  
    let lastTitle = titleItems.length - 1
+
     if (titleIndex === lastTitle){
       setTitleIndex(lastTitle)
     }else{
-      setTitleIndex(titleIndex + 1)
-     console.log('title index after right click', titleIndex);
-     
+      setTitleIndex(titleIndex + 1)   
     }
-   
   }
-
- 
-  console.log(direction, titleIndex, titleDisplay);
-  
 }
+// everytime titleindex is changed, update the content to be displayed
 useEffect(() => {
-if(titleIndex !== null){
-  setTitleDisplay(titleItems[titleIndex].title)
-  handleDisplay(titleItems[titleIndex].content)
-}
- 
-
-
-
- 
+  if(titleIndex !== null){
+    setTitleDisplay(titleItems[titleIndex].title)
+    handleDisplay(titleItems[titleIndex].content)
+  } 
 
 }, [titleIndex]);
 
@@ -297,37 +280,35 @@ if(titleIndex !== null){
          <p className="description">LinkedIn</p>
        </div>
       </div>
+
       <div className='titleCol' ref={titleScroll} >
-      <div className='leftArrow' onClick={()=>{
-      handleTitleDisplay('left')
-    }}>
-      <AiOutlineDoubleLeft/>
-    </div>
-    <div className='titleDisplay' 
-    >
-      {titleDisplay}
-    </div>
-    <div className='rightArrow' onClick={()=>{
-      handleTitleDisplay('right')
-    }}>
-      <AiOutlineDoubleRight/>
-    </div>
-  </div>
+        <div className='leftArrow' onClick={()=>{
+          handleTitleDisplay('left')
+        }}>
+          <AiOutlineDoubleLeft/>
+       </div>
+
+        <div className='titleDisplay'>
+          {titleDisplay}
+        </div>
+
+        <div className='rightArrow' onClick={()=>{
+            handleTitleDisplay('right')
+          }}>
+            <AiOutlineDoubleRight/>
+        </div>
+      </div>
    
       <div className='learnMore' ref={introPicture} onClick={()=>{
-    introPicture.current.style.display = 'none'
-    titleScroll.current.style.display = 'flex'
-    setTitleIndex(0)
-  }}>
-    <img src={me} alt={'image of Joann'}/>
+        introPicture.current.style.display = 'none'
+        titleScroll.current.style.display = 'flex'
+        setTitleIndex(0)
+      }}>
 
-  </div>
+        <img src={me} alt={'image of Joann'}/>
 
-
- 
+      </div>
           {display}
-      
-   
         <Link to='/' className='homeLink'>Joann Carter</Link>
      </div>
 
