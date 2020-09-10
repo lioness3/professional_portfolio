@@ -34,41 +34,19 @@
 .rightArrow, .leftArrow{
     color:rgba(255, 255, 255, .8);
     font-size: 4vmax;
-    margin:0;
-    position: sticky;
-    z-index: 4;
 
 }
-
-.rightArrow{
-    right:2vw;
+.titleDisplay{
+    font-size: 4vmax;
+    margin:auto;
+    color:white;
 }
-
-.leftArrow{
-   left:2vw;
-}
-
-.title{
-    padding: 0vh 5vmax;
-    
-    }
-    .title p{
-        text-align: center;
-        padding: 0;
-    }
-    
-    .title:hover{
-        text-shadow: 2px 2px 30px white ;
-    }
 
     .titleCol{
         border-top: .5vh solid grey;
         border-bottom: .5vh solid grey;
-        color:white;
-        font-size:2vh;
-        display:flex;
+        display:none;
         width:100vw;
-        overflow-x: scroll;
         position: fixed;
         top:10vh;
         z-index: 3;
@@ -77,18 +55,18 @@
        background-image: radial-gradient(rgb(128, 139, 150)   2%, black 80% );
     }
 
-.banner{
-    background-color: black;
-    position:sticky;
-    top:0;
-    width:98vw;
-    color:rgb(165,204,95);
-    font-weight: bold;
-    margin:0;
-    padding:2vh 0vw;
-    z-index: 4;
-    font-size:3vmax;
-    border-bottom: 3px solid grey;
+
+.learnMore img{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height:40vh;
+    top:30vh;
+}
+.learnMore img::after{
+    display:none;
 }
 .caption{
     position: sticky;
@@ -101,8 +79,8 @@
     height:max-content;
     margin:0;
     padding: 4vh 0vw;
-    font-size: 2vw;
-    text-indent: 6vw;
+    font-size: 3vw;
+    text-indent: 9vw;
 }
 .closeView{
     margin:0;
@@ -120,7 +98,7 @@
 .detailedContent{
 
     overflow:scroll;
-    padding-bottom: 100vh;
+  
     
 }
 .content{
@@ -135,13 +113,16 @@
     background-color: black;
     height:76vh;
     width:98vw;
-    font-size: 5vmin;
+    font-size: 4vmin;
 }
 
 .detailedContent img{
     width:60vw;
     margin:5vw 0;
     border: 2vw solid white;
+}
+.detailedContent img:last-child{
+    margin-bottom:30vh;
 }
 
 

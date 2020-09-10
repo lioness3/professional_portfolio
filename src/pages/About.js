@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillCloseCircle, AiOutlineDoubleLeft, AiOutlineDoubleRight} from 'react-icons/ai';
 import { AiFillGithub, AiFillLinkedin, AiFillHome } from 'react-icons/ai';
@@ -21,20 +21,30 @@ import catInVan from '../components/images/catInVan.jpeg'
 import workingCat from '../components/images/workingCat.jpeg'
 import peace from '../components/images/peace.jpeg'
 import nebraska from '../components/images/nebraska.jpeg'
+import me from '../components/images/me.jpeg'
+import vanBuild1 from '../components/images/vanBuild1.jpeg'
+import vanBuild2 from '../components/images/vanBuild2.jpeg'
+import vanBuild3 from '../components/images/vanBuild3.jpeg'
+import vanBuild4 from '../components/images/vanBuild4.jpeg'
+import vanBuild5 from '../components/images/vanBuild5.jpeg'
+import vanBuild6 from '../components/images/vanBuild6.jpeg'
+import vanBuild7 from '../components/images/vanBuild7.jpeg'
+import vanBuild8 from '../components/images/vanBuild8.jpeg'
+import vanBuild9 from '../components/images/vanBuild9.jpeg'
+
+import vanBuild10 from '../components/images/vanBuild10.jpeg'
 
 function About() {
-  
+
+
 const [display, setDisplay]= useState(null)
 const [contactInfo, setContactInfo] = useState(null)
 const [emailColor, setEmailColor] = useState('black')
-const [catColor, setCatColor] = useState('white')
-const [factColor, setFactColor] = useState('white')
-const [skillColor, setSkillColor] = useState('white')
-const [favColor, setFavColor] = useState('white')
-const [adventureColor, setAdventureColor] = useState('white')
-const [hobbyColor, setHobbyColor] = useState('white')
+
+
 const scroll = useRef(null)
 const titleScroll = useRef(null)
+const introPicture = useRef(null)
 
 const show = (  <div className='contactInfo'>
                   <a href="tel:+16035665610"><MdCall/> Call</a> 
@@ -62,54 +72,25 @@ const handleIconColor = ( icon, setIcon)=>{
 const handleDisplay=(content)=>{
 
  if(display){
-  handleWordColor()
+ 
   scroll.current.scrollTop = 0
   setDisplay(content)
 
   }else{
-    handleWordColor()
+
     setDisplay(content)
   }
  }
-// make current word yellow and the rest white
-  const handleWordColor = (word, setWord)=>{
-  if(word && setWord){
-    let wordColor =  (word === 'white')? 'rgb(165,204,95)': 'white'
-    setWord(wordColor)
-
-  }else{
-    setFactColor('white')
-    setSkillColor('white')
-    setFavColor('white')
-    setAdventureColor('white')
-    setHobbyColor('white')
-    setCatColor('white')
-  }
-}
-    
-  const handleScroll = (direction) =>{
-    if(direction === 'left'){
-      titleScroll.current.scrollLeft = 0
-
-      
-    }else if(direction === 'right'){
-      titleScroll.current.scrollRight = 0
-    }
-  }
 
 
-
-  
-
-   
 
 const fav=(
   <div className='content' ref={scroll}>
     <div className='closeView' onClick={()=>{
-      handleDisplay(null); 
-    }}> <AiFillCloseCircle/></div>
-    <p className='banner'>FAVORITES</p>
-   
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
     <p className='pizza'>Pizza <span className='pizzaEmoji'>🍕</span></p>
     <p className='iceCream'>Ice Cream <span className='iceCreamEmoji'>🍦</span></p>
     <p className='tacos'>Tacos <span className='tacosEmoji'>🌮</span> </p>
@@ -124,10 +105,11 @@ const fav=(
 
 const skills = (
   <div className='content'ref={scroll}>
-    <div className='closeView' onClick={()=>{
-      handleDisplay(null);
-    }}><AiFillCloseCircle/></div>
-    <p className='banner'>SKILLS</p>
+   <div className='closeView' onClick={()=>{
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
     <p>Full Stack Development</p>
     <p>Pair Programming</p>
     <p>User Experiance </p>
@@ -143,9 +125,10 @@ const skills = (
 const funFacts = (
   <div className='content' ref={scroll}>
     <div className='closeView' onClick={()=>{
-      handleDisplay(null);
-    }}><AiFillCloseCircle/></div>
-    <p className='banner'>FUN FACTS</p>
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
     <p>Ham Radio Operator</p>
     <p>Licensed Manicurist</p>
     <p>Sig Sauer Training</p>
@@ -156,28 +139,58 @@ const funFacts = (
 const adventures = (
   <div className='detailedContent content' ref={scroll}>  
     <div className='closeView' onClick={()=>{
-      handleDisplay(null); 
-    }}><AiFillCloseCircle/></div>
-    <p className='banner'>ADVENTURES</p>
-    <p className='caption'>I travel with the cutest co pilot, Shadow(see more cat pictures in the 'MY CAT' section). </p>
-    <img src={coPiolit} className='coPiolit' alt='cat image'/>
-    <p className='caption'>I love to explore and see all that nature has to offer.</p>
-    <img src={Niagra} className='niagra' alt='image'/>
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
+    <p className='caption'>Hiking in Oregon.</p> 
     <img src={hike} alt='image'/>
+    <p className='caption'>Niagra Falls.</p> 
+    <img src={Niagra} className='niagra' alt='image'/>
+    <p className='caption'>California.</p> 
     <img src={cliff} alt='image of edge of cliff'/>
+    <p className='caption'>Mount Hood.</p> 
     <img src={volcano} alt='image of scenery'/>
+    <p className='caption'>Nebraska.</p> 
     <img src={nebraska} alt='image of scenery'/>
   
   </div>
 )
-const crafts =(
+const vanBuild = (
+  <div className='detailedContent content' ref={scroll}>  
+    <div className='closeView' onClick={()=>{
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
+    <p className='caption'>I bought a used cargo van</p> 
+    <img src={vanBuild1} alt='first step'/>
+    <img src={vanBuild2} alt='second step'/>
+    <p className='caption'>It was full of screws and grease!</p> 
+    <img src={vanBuild3} alt='third step'/>
+    <img src={vanBuild4} alt='fourth step'/>
+    <p className='caption'>It needed a deep clean!</p> 
+    <img src={vanBuild5} alt='fifth step'/>
+    <p className='caption'>We cut a hole for a window and Ceiling vent.</p> 
+    <img src={vanBuild6} alt='sixth step'/>
+    <p className='caption'>Then came the floor, ceiling, bed platform and battery power.</p> 
+    <img src={vanBuild7} alt='seventh step'/>
+    <img src={vanBuild8} alt='eighth step'/>
+    <img src={vanBuild9} alt='nineth step'/>
+    <p className='caption'>All the hard work was worth it!</p> 
+    <img src={vanBuild10} alt='tenth step'/>
+  </div>
+)
+
+const hobbies =(
 
   <div className='detailedContent content' ref={scroll}>
     <div className='closeView' onClick={()=>{
-      handleDisplay(null);
-    }}><AiFillCloseCircle/></div>
-    <p className='banner'>HOBBIES</p>
-    <p className='caption'>For self-care, I am most relaxed when in nature.</p> 
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
+     <p className='caption'>For self-care, I recharge in nature.</p> 
     <img src={beach} alt='image'/>
     <img src={peace} alt='image of scenery'/>
     <p className='caption'>I achieve a great sense of acomplishment when I am able to create crafts out of recycled material. </p>
@@ -188,18 +201,60 @@ const crafts =(
 )
 const cat=(
   <div className='detailedContent content' ref={scroll}>  
-  <div className='closeView' onClick={()=>{
-    handleDisplay(null);
-  }}><AiFillCloseCircle/></div>
-  <p className='banner'>PICTURES OF MY CAT</p>
-  <img src={shadow} className='shadow' alt='shadow'/>
-  <img src={catStretched}  alt='shadow'/>
-  <img src={workBuddy} alt='image of cat'/>
-  <img src={canyonCat} alt='image of cat'/>
-  <img src={catInVan} alt='image of a van and a cat'/>
-  <img src={workingCat} alt='image of a van and a cat'/>
-</div>
+    <div className='closeView' onClick={()=>{
+        handleDisplay(null); 
+      }}> 
+      <AiFillCloseCircle/>
+    </div>
+    <p className='caption'>I travel with the cutest co pilot. </p>
+    <img src={coPiolit} className='coPiolit' alt='cat image'/>
+    <img src={shadow} className='shadow' alt='shadow'/>
+    <img src={catStretched}  alt='shadow'/>
+    <img src={workBuddy} alt='image of cat'/>
+    <img src={canyonCat} alt='image of cat'/>
+    <img src={catInVan} alt='image of a van and a cat'/>
+    <img src={workingCat} alt='image of a van and a cat'/>
+  </div>
 )
+
+
+
+
+
+
+
+
+const titleItems = [{title:' JOB SKILLS' ,content:skills }, {title:'FUN FACTS' ,content:funFacts }, {title: 'FAVORITES',content: fav },  {title:'HOBBIES' ,content:hobbies },{title: 'ADVENTURES',content:adventures },{title: 'VAN BUILD',content:vanBuild }, {title: 'MY CAT',content:cat }]
+const [titleIndex, setTitleIndex] = useState(null)
+const [titleDisplay, setTitleDisplay] = useState(titleItems[0].title)
+
+// Show next title based on arrow click
+const handleTitleDisplay = (direction)=>{
+  if (direction === 'left'){
+    if (titleIndex === 0){
+      setTitleIndex(0)
+    }else{
+      setTitleIndex(titleIndex - 1)
+    }
+  }else if (direction === 'right'){  
+   let lastTitle = titleItems.length - 1
+
+    if (titleIndex === lastTitle){
+      setTitleIndex(lastTitle)
+    }else{
+      setTitleIndex(titleIndex + 1)   
+    }
+  }
+}
+// everytime titleindex is changed, update the content to be displayed
+useEffect(() => {
+  if(titleIndex !== null){
+    setTitleDisplay(titleItems[titleIndex].title)
+    handleDisplay(titleItems[titleIndex].content)
+  } 
+
+}, [titleIndex]);
+
 
 
   return (
@@ -228,42 +283,32 @@ const cat=(
 
       <div className='titleCol' ref={titleScroll} >
         <div className='leftArrow' onClick={()=>{
-          handleScroll('left')
+          handleTitleDisplay('left')
         }}>
           <AiOutlineDoubleLeft/>
+       </div>
+
+        <div className='titleDisplay'>
+          {titleDisplay}
         </div>
-        
-        <div className='title' onClick={()=>{handleDisplay(funFacts); handleWordColor(factColor, setFactColor)}}>
-          <p style={{color: `${factColor}`}}>FUN FACTS</p>
-        </div> 
-        <div className='title' onClick={()=>{handleDisplay(skills);handleWordColor(skillColor, setSkillColor)}}>
-          <p style={{color: `${skillColor}`}}>SKILLS</p>
-        </div> 
-        <div className='title' onClick={()=>{handleDisplay(fav);handleWordColor(favColor, setFavColor)}}>
-          <p style={{color: `${favColor}`}}>FAVORITES</p>
-        </div>  
-        <div className='title' onClick={()=>{handleDisplay(adventures);handleWordColor(adventureColor, setAdventureColor)}}>
-          <p  style={{color: `${adventureColor}`}}>ADVENTURES</p>
-        </div>  
-        <div className='title' onClick={()=>{handleDisplay(crafts);handleWordColor(hobbyColor, setHobbyColor)}}>
-          <p style={{color: `${hobbyColor}`}}>HOBBIES</p>
-        </div> 
-        <div className='title' onClick={()=>{handleDisplay(cat);handleWordColor(catColor, setCatColor)}}>
-          <p style={{color: `${catColor}`}}>MY CAT</p>
-        </div> 
 
         <div className='rightArrow' onClick={()=>{
-          handleScroll('right')
-        }}>
-          <AiOutlineDoubleRight/>
+            handleTitleDisplay('right')
+          }}>
+            <AiOutlineDoubleRight/>
         </div>
       </div>
-
-      
- 
-          {display}
-      
    
+      <div className='learnMore' ref={introPicture} onClick={()=>{
+        introPicture.current.style.display = 'none'
+        titleScroll.current.style.display = 'flex'
+        setTitleIndex(0)
+      }}>
+
+        <img src={me} alt={'image of Joann'}/>
+
+      </div>
+          {display}
         <Link to='/' className='homeLink'>Joann Carter</Link>
      </div>
 

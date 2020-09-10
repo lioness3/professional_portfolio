@@ -8,6 +8,7 @@ import './MainPage.css';
 import Pdf from '../components/images/Resume.pdf';
 import Message from '../components/Message'
 import ForHire from '../components/ForHire'
+import envelope from '../components/images/envelope.png'
 // import { AiFillCloseCircle} from 'react-icons/ai';
 function MainPage() {
 const [contact, setContactInfo]= useState(null)
@@ -98,7 +99,7 @@ const handleMessageDisplay = (content, setContent)=>{
       <div className='help' onClick={()=>{
 handleMessageDisplay(message, setMessage)
       }}>
-      <MdHelpOutline color='rgb(169, 8, 8 )' size='5vmax'/>
+      <img src={envelope} alt={envelope}/>
  
       </div>
 
