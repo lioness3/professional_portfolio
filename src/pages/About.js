@@ -145,13 +145,13 @@ const adventures = (
     </div>
     <p className='caption'>Hiking in Oregon.</p> 
     <img src={hike} alt='image'/>
-    <p className='caption'>Niagra Falls.</p> 
+    <p className='caption'>Niagara Falls, NY.</p> 
     <img src={Niagra} className='niagra' alt='image'/>
-    <p className='caption'>California.</p> 
+    <p className='caption'>Northern California.</p> 
     <img src={cliff} alt='image of edge of cliff'/>
-    <p className='caption'>Mount Hood.</p> 
+    <p className='caption'>Mount Hood, Oregon.</p> 
     <img src={volcano} alt='image of scenery'/>
-    <p className='caption'>Nebraska.</p> 
+    <p className='caption'>Camping in Nebraska.</p> 
     <img src={nebraska} alt='image of scenery'/>
   
   </div>
