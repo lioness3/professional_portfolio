@@ -39,16 +39,17 @@
 .titleDisplay{
     font-size: 4vmax;
     margin:auto;
+    color:white;
 }
 
     .titleCol{
         border-top: .5vh solid grey;
         border-bottom: .5vh solid grey;
-        color:white;
-        font-size:2vh;
+       
+    
         display:none;
         width:100vw;
-        overflow-x: scroll;
+  
         position: fixed;
         top:10vh;
         z-index: 3;
@@ -64,7 +65,8 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top:20vh;
+   height:40vh;
+    top:40vh;
 }
 .learnMore img::after{
     display:none;
@@ -80,8 +82,8 @@
     height:max-content;
     margin:0;
     padding: 4vh 0vw;
-    font-size: 2vw;
-    text-indent: 6vw;
+    font-size: 3vw;
+    text-indent: 9vw;
 }
 .closeView{
     margin:0;
@@ -114,7 +116,7 @@
     background-color: black;
     height:76vh;
     width:98vw;
-    font-size: 5vmin;
+    font-size: 4vmin;
 }
 
 .detailedContent img{

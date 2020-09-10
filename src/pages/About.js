@@ -22,6 +22,18 @@ import workingCat from '../components/images/workingCat.jpeg'
 import peace from '../components/images/peace.jpeg'
 import nebraska from '../components/images/nebraska.jpeg'
 import me from '../components/images/me.jpeg'
+import vanBuild1 from '../components/images/vanBuild1.jpeg'
+import vanBuild2 from '../components/images/vanBuild2.jpeg'
+import vanBuild3 from '../components/images/vanBuild3.jpeg'
+import vanBuild4 from '../components/images/vanBuild4.jpeg'
+import vanBuild5 from '../components/images/vanBuild5.jpeg'
+import vanBuild6 from '../components/images/vanBuild6.jpeg'
+import vanBuild7 from '../components/images/vanBuild7.jpeg'
+import vanBuild8 from '../components/images/vanBuild8.jpeg'
+import vanBuild9 from '../components/images/vanBuild9.jpeg'
+
+import vanBuild10 from '../components/images/vanBuild10.jpeg'
+
 function About() {
 
 
@@ -127,32 +139,69 @@ const adventures = (
     <div className='closeView' onClick={()=>{
       handleDisplay(null); 
     }}><AiFillCloseCircle/></div>
-    {/* <p className='banner'>ADVENTURES</p> */}
-    <p className='caption'>I travel with the cutest co pilot, Shadow(see more cat pictures in the 'MY CAT' section). </p>
-    <img src={coPiolit} className='coPiolit' alt='cat image'/>
-    <p className='caption'>I love to explore and see all that nature has to offer.</p>
-    <img src={Niagra} className='niagra' alt='image'/>
+    <p className='caption'>Hiking in Oregon.</p> 
     <img src={hike} alt='image'/>
+    <p className='caption'>Niagra Falls.</p> 
+    <img src={Niagra} className='niagra' alt='image'/>
+    <p className='caption'>California.</p> 
     <img src={cliff} alt='image of edge of cliff'/>
+    <p className='caption'>Mount Hood.</p> 
     <img src={volcano} alt='image of scenery'/>
+    <p className='caption'>Nebraska.</p> 
     <img src={nebraska} alt='image of scenery'/>
   
   </div>
 )
-const crafts =(
+const vanBuild = (
+  <div className='detailedContent content' ref={scroll}>  
+  <div className='closeView' onClick={()=>{
+    handleDisplay(null); 
+  }}><AiFillCloseCircle/></div>
+ 
+  <p className='caption'>I bought a used cargo van</p> 
+  <img src={vanBuild1} alt='first step'/>
+  <img src={vanBuild2} alt='second step'/>
+  <p className='caption'>It was full of screws and grease!</p> 
+  <img src={vanBuild3} alt='third step'/>
+  <img src={vanBuild4} alt='fourth step'/>
+  <p className='caption'>It needed a deep clean!</p> 
+  <img src={vanBuild5} alt='fifth step'/>
+  <p className='caption'>We cut a hole for a window and Ceiling vent.</p> 
+  <img src={vanBuild6} alt='sixth step'/>
+  <p className='caption'>Then came the floor, ceiling, bed platform and battery power.</p> 
+  <img src={vanBuild7} alt='seventh step'/>
+  <img src={vanBuild8} alt='eighth step'/>
+  <p className='caption'>All the hard work was worth it!</p> 
+  <img src={vanBuild9} alt='nineth step'/>
+  <img src={vanBuild10} alt='tenth step'/>
+
+
+
+
+
+
+ 
+
+
+
+
+</div>
+)
+const hobbies =(
 
   <div className='detailedContent content' ref={scroll}>
     <div className='closeView' onClick={()=>{
       handleDisplay(null);
     }}><AiFillCloseCircle/></div>
-    {/* <p className='banner'>HOBBIES</p> */}
-    <p className='caption'>For self-care, I am most relaxed when in nature.</p> 
+     <p className='caption'>For self-care, I recharge in nature.</p> 
     <img src={beach} alt='image'/>
     <img src={peace} alt='image of scenery'/>
     <p className='caption'>I achieve a great sense of acomplishment when I am able to create crafts out of recycled material. </p>
     <img src={craft} className='craft' alt='craft image' /> 
     <p className='caption'>In my free time, I find myself drawn to all things related to customization. Recently, I renovated a camper van to discover the hidden treasures of our beautiful country.</p>
     <img src={van} alt='image of a van'/>
+  
+  
   </div>
 )
 const cat=(
@@ -160,7 +209,8 @@ const cat=(
   <div className='closeView' onClick={()=>{
     handleDisplay(null);
   }}><AiFillCloseCircle/></div>
-  {/* <p className='banner'>PICTURES OF MY CAT</p> */}
+  <p className='caption'>I travel with the cutest co pilot. </p>
+  <img src={coPiolit} className='coPiolit' alt='cat image'/>
   <img src={shadow} className='shadow' alt='shadow'/>
   <img src={catStretched}  alt='shadow'/>
   <img src={workBuddy} alt='image of cat'/>
@@ -177,7 +227,7 @@ const cat=(
 
 
 
-const titleItems = [{title:'FUN FACTS' ,content:funFacts }, {title:'SKILLS' ,content:skills }, {title: 'FAVORITES',content: fav }, {title: 'ADVENTURES',content:adventures }, {title:'HOBBIES' ,content:crafts }, {title: 'MY CAT',content:cat }]
+const titleItems = [{title:' JOB SKILLS' ,content:skills }, {title:'FUN FACTS' ,content:funFacts }, {title: 'FAVORITES',content: fav },  {title:'HOBBIES' ,content:hobbies },{title: 'ADVENTURES',content:adventures },{title: 'VAN BUILD',content:vanBuild }, {title: 'MY CAT',content:cat }]
 const [titleIndex, setTitleIndex] = useState(null)
 const [titleDisplay, setTitleDisplay] = useState(titleItems[0].title)
 
