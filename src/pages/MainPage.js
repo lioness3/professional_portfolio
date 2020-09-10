@@ -11,17 +11,12 @@ import ForHire from '../components/ForHire'
 import envelope from '../components/images/envelope.png'
 // import { AiFillCloseCircle} from 'react-icons/ai';
 function MainPage() {
-const [contact, setContactInfo]= useState(null)
+
 const [appDetails, setAppDetails] = useState('Download My App')
 const [message, setMessage] = useState(false)
 const [forHire, setForHire] = useState(false)
-const contactMe = (
-  <div>
-    <MdEmail/>
-   <p>Contact Me</p>
-   </div>
-)
-const [details, setDetails] = useState(contactMe)
+
+
   const [available, setAvailability] = useState('available')
 
   const handleAppStore = ()=>{
@@ -38,23 +33,6 @@ const [details, setDetails] = useState(contactMe)
 
  
 
- const contactInfo = (
- <div className='contactDetails' onClick={()=>{ setContactInfo(null)}}>
-    <a href="tel:+16035665610">Call <MdCall/></a>
-    <a href="sms://+16035665610">Text <MdSms/></a> 
-    <a href="mailto: joann333carter@gmail.com">Email <MdEmail/></a> 
-   </div>
- )
- const handleContactInfo = ()=>{
-  
-  if (details ){
-    setContactInfo(contactInfo)
-    setDetails(null)
-  }else {
-    setDetails(contactMe)
-    setContactInfo(null)
-  }
-}
 const handleMessageDisplay = (content, setContent)=>{
   if(content){
     setContent(false)
@@ -86,7 +64,7 @@ const handleMessageDisplay = (content, setContent)=>{
         </div>
       
         <div className='card resume'>
-          <a href = {Pdf} target = "_blank" rel="noopener noreferrer" className=''> <VscFilePdf/> <p>Download My Resume</p>  </a>
+          <a href = {Pdf} target = "_blank" rel="noopener noreferrer" > <VscFilePdf/> <p>Download My Resume</p>  </a>
         </div>
         <hr/>
       </div>
@@ -97,7 +75,7 @@ const handleMessageDisplay = (content, setContent)=>{
 
   
       <div className='help' onClick={()=>{
-handleMessageDisplay(message, setMessage)
+        handleMessageDisplay(message, setMessage)
       }}>
       <img src={envelope} alt={envelope}/>
  

@@ -70,7 +70,7 @@
 }
 .caption{
     position: sticky;
-    width:98vw;
+    width:97vw;
     z-index:5;
     top: 0vh;
     text-align: center;
@@ -80,7 +80,7 @@
     margin:0;
     padding: 4vh 0vw;
     font-size: 3vw;
-    text-indent: 9vw;
+    text-indent: 5vw;
 }
 .closeView{
     margin:0;
