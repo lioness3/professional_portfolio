@@ -309,7 +309,7 @@ useEffect(() => {
 
       </div>
           {display}
-        <Link to='/' className='homeLink'>Joann Carter</Link>
+        <Link to='/' className='homeLink'>Joann Carter, Software Engineer</Link>
      </div>
 
   );
